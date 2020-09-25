@@ -1,0 +1,44 @@
+
+fsm_encoding {915281521} onehot
+
+fsm_state_encoding {915281521} st_reset {00000000000001}
+
+fsm_state_encoding {915281521} st_reset_wait_clk_high {00000000000010}
+
+fsm_state_encoding {915281521} st_reset_wait_clk_low {00000000000100}
+
+fsm_state_encoding {915281521} st_wait_cmd {00000000001000}
+
+fsm_state_encoding {915281521} st_idle_wait_clk_high {00000000010000}
+
+fsm_state_encoding {915281521} st_idle_wait_clk_low {00000000100000}
+
+fsm_state_encoding {915281521} st_wait_clk_high {00000001000000}
+
+fsm_state_encoding {915281521} st_wait_clk_low {00000010000000}
+
+fsm_state_encoding {915281521} st_wait_state_0 {00000100000000}
+
+fsm_state_encoding {915281521} st_wait_state_1 {00001000000000}
+
+fsm_state_encoding {915281521} st_wait_state_2 {00010000000000}
+
+fsm_state_encoding {915281521} st_wait_state_3 {00100000000000}
+
+fsm_state_encoding {915281521} st_wait_state_4 {01000000000000}
+
+fsm_state_encoding {915281521} st_wait_state_5 {10000000000000}
+
+fsm_registers {915281521} {state[0]}  {state[1]}  {state[2]}  {state[3]}  {state[4]}  {state[5]}  {state[6]}  {state[7]}  {state[8]}  {state[9]}  {state[10]}  {state[11]}  {state[12]}  {state[13]} 
+
+fsm_encoding {1014081402} sequential
+
+fsm_state_encoding {1014081402} st_reset {00}
+
+fsm_state_encoding {1014081402} st_idle {01}
+
+fsm_state_encoding {1014081402} st_busy {10}
+
+fsm_state_encoding {1014081402} st_normal {11}
+
+fsm_registers {1014081402} {state[1]}  {state[0]} 

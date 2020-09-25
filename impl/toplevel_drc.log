@@ -1,0 +1,36 @@
+Results of NGD DRC are available in toplevel_drc.log.
+Loading NGL library 'D:/lscc/diamond/3.11_x64/ispfpga/xo2c00a/data/xo2alib.ngl'...
+Loading NGL library 'D:/lscc/diamond/3.11_x64/ispfpga/xo2c00/data/xo2clib.ngl'...
+Loading NGL library 'D:/lscc/diamond/3.11_x64/ispfpga/mg5g00/data/mg5glib.ngl'...
+Loading NGL library 'D:/lscc/diamond/3.11_x64/ispfpga/or5g00/data/orc5glib.ngl'...
+
+
+Running DRC...
+
+WARNING - synthesis: logical net 'sid_pal_clk' has no load.
+WARNING - synthesis: input pad net 'sid_pal_clk' has no legal load.
+WARNING - synthesis: logical net 'sid_ntsc_clk' has no load.
+WARNING - synthesis: input pad net 'sid_ntsc_clk' has no legal load.
+WARNING - synthesis: logical net 'sid_data[7]' has no load.
+WARNING - synthesis: input pad net 'sid_data[7]' has no legal load.
+WARNING - synthesis: logical net 'sid_data[6]' has no load.
+WARNING - synthesis: input pad net 'sid_data[6]' has no legal load.
+WARNING - synthesis: logical net 'sid_data[5]' has no load.
+WARNING - synthesis: input pad net 'sid_data[5]' has no legal load.
+WARNING - synthesis: logical net 'sid_data[4]' has no load.
+WARNING - synthesis: input pad net 'sid_data[4]' has no legal load.
+WARNING - synthesis: logical net 'sid_data[3]' has no load.
+WARNING - synthesis: input pad net 'sid_data[3]' has no legal load.
+WARNING - synthesis: logical net 'sid_data[2]' has no load.
+WARNING - synthesis: input pad net 'sid_data[2]' has no legal load.
+WARNING - synthesis: logical net 'sid_data[1]' has no load.
+WARNING - synthesis: input pad net 'sid_data[1]' has no legal load.
+WARNING - synthesis: logical net 'sid_data[0]' has no load.
+WARNING - synthesis: input pad net 'sid_data[0]' has no legal load.
+WARNING - synthesis: DRC complete with 20 warnings.
+
+Design Results:
+     87 blocks expanded
+completed the first expansion
+All blocks are expanded and NGD expansion is successful.
+Writing NGD file sid_impl.ngd.

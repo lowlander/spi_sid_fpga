@@ -1,0 +1,244 @@
+<HTML>
+<HEAD><TITLE>Lattice Synthesis Timing Report</TITLE>
+<STYLE TYPE="text/css">
+<!--
+ body,pre{    font-family:'Courier New', monospace;    color: #000000;    font-size:88%;    background-color: #ffffff;}h1 {    font-weight: bold;    margin-top: 24px;    margin-bottom: 10px;    border-bottom: 3px solid #000;    font-size: 1em;}h2 {    font-weight: bold;    margin-top: 18px;    margin-bottom: 5px;    font-size: 0.90em;}h3 {    font-weight: bold;    margin-top: 12px;    margin-bottom: 5px;    font-size: 0.80em;}p {    font-size:78%;}P.Table {    margin-top: 4px;    margin-bottom: 4px;    margin-right: 4px;    margin-left: 4px;}table{    border-width: 1px 1px 1px 1px;    border-style: solid solid solid solid;    border-color: black black black black;    border-collapse: collapse;}th {    font-weight:bold;    padding: 4px;    border-width: 1px 1px 1px 1px;    border-style: solid solid solid solid;    border-color: black black black black;    vertical-align:top;    text-align:left;    font-size:78%;}td {    padding: 4px;    border-width: 1px 1px 1px 1px;    border-style: solid solid solid solid;    border-color: black black black black;    vertical-align:top;    font-size:78%;}a {    color:#013C9A;    text-decoration:none;}a:visited {    color:#013C9A;}a:hover, a:active {    text-decoration:underline;    color:#5BAFD4;}.pass{background-color: #00ff00;}.fail{background-color: #ff0000;}.comment{    font-size: 90%;    font-style: italic;}
+-->
+</STYLE>
+</HEAD>
+<PRE><A name="Map_Twr"></A><B><U><big>Lattice Synthesis Timing Report</big></U></B>
+--------------------------------------------------------------------------------
+Lattice Synthesis Timing Report, Version  
+Sat Sep 19 15:43:43 2020
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2019 Lattice Semiconductor Corporation,  All rights reserved.
+
+<A name="mtw1_ri"></A><B><U><big>Report Information</big></U></B>
+------------------
+Design:     toplevel
+Constraint file:  
+Report level:    verbose report, limited to 3 items per constraint
+--------------------------------------------------------------------------------
+
+
+
+================================================================================
+Constraint: create_clock -period 5.000000 -name clk0 [get_nets spi_sck_c]
+            140 items scored, 121 timing errors detected.
+--------------------------------------------------------------------------------
+
+
+Error:  The following path violates requirements by 8.191ns
+
+ Logical Details:  Cell type  Pin type       Cell name  (clock net +/-)
+
+   Source:         FD1S3AX    CK             spi_bit_counter_FSM_i2  (from spi_sck_c +)
+   Destination:    FD1P3AX    SP             spi_data_in_i0_i7  (to spi_sck_c +)
+
+   Delay:                  10.406ns  (28.0% logic, 72.0% route), 6 logic levels.
+
+ Constraint Details:
+
+     10.406ns data_path spi_bit_counter_FSM_i2 to spi_data_in_i0_i7 violates
+      2.500ns delay constraint less
+      0.285ns LCE_S requirement (totaling 2.215ns) by 8.191ns
+
+ Path Details: spi_bit_counter_FSM_i2 to spi_data_in_i0_i7
+
+   Name    Fanout   Delay (ns)          Pins               Resource(Cell.Net)
+L_CO        ---     0.444             CK to Q              spi_bit_counter_FSM_i2 (from spi_sck_c)
+Route         7   e 1.559                                  spi_sck_c_enable_13
+LUT4        ---     0.493              A to Z              i2_3_lut
+Route         2   e 1.141                                  n1094
+LUT4        ---     0.493              D to Z              i3_4_lut
+Route         3   e 1.258                                  n1095
+LUT4        ---     0.493              B to Z              i2_3_lut_rep_7
+Route         4   e 1.340                                  n1171
+LUT4        ---     0.493              B to Z              i553_3_lut_rep_5_4_lut
+Route         3   e 1.258                                  n1169
+LUT4        ---     0.493              D to Z              i665_3_lut_4_lut
+Route         1   e 0.941                                  spi_sck_c_enable_16
+                  --------
+                   10.406  (28.0% logic, 72.0% route), 6 logic levels.
+
+
+Error:  The following path violates requirements by 8.191ns
+
+ Logical Details:  Cell type  Pin type       Cell name  (clock net +/-)
+
+   Source:         FD1S3AX    CK             spi_bit_counter_FSM_i2  (from spi_sck_c +)
+   Destination:    FD1P3AX    SP             spi_data_in_i0_i5  (to spi_sck_c +)
+
+   Delay:                  10.406ns  (28.0% logic, 72.0% route), 6 logic levels.
+
+ Constraint Details:
+
+     10.406ns data_path spi_bit_counter_FSM_i2 to spi_data_in_i0_i5 violates
+      2.500ns delay constraint less
+      0.285ns LCE_S requirement (totaling 2.215ns) by 8.191ns
+
+ Path Details: spi_bit_counter_FSM_i2 to spi_data_in_i0_i5
+
+   Name    Fanout   Delay (ns)          Pins               Resource(Cell.Net)
+L_CO        ---     0.444             CK to Q              spi_bit_counter_FSM_i2 (from spi_sck_c)
+Route         7   e 1.559                                  spi_sck_c_enable_13
+LUT4        ---     0.493              A to Z              i2_3_lut
+Route         2   e 1.141                                  n1094
+LUT4        ---     0.493              D to Z              i3_4_lut
+Route         3   e 1.258                                  n1095
+LUT4        ---     0.493              B to Z              i2_3_lut_rep_7
+Route         4   e 1.340                                  n1171
+LUT4        ---     0.493              B to Z              i553_3_lut_rep_5_4_lut
+Route         3   e 1.258                                  n1169
+LUT4        ---     0.493              A to Z              i652_3_lut
+Route         1   e 0.941                                  spi_sck_c_enable_15
+                  --------
+                   10.406  (28.0% logic, 72.0% route), 6 logic levels.
+
+
+Error:  The following path violates requirements by 8.191ns
+
+ Logical Details:  Cell type  Pin type       Cell name  (clock net +/-)
+
+   Source:         FD1S3AX    CK             spi_bit_counter_FSM_i2  (from spi_sck_c +)
+   Destination:    FD1P3AX    SP             spi_data_in_i0_i6  (to spi_sck_c +)
+
+   Delay:                  10.406ns  (28.0% logic, 72.0% route), 6 logic levels.
+
+ Constraint Details:
+
+     10.406ns data_path spi_bit_counter_FSM_i2 to spi_data_in_i0_i6 violates
+      2.500ns delay constraint less
+      0.285ns LCE_S requirement (totaling 2.215ns) by 8.191ns
+
+ Path Details: spi_bit_counter_FSM_i2 to spi_data_in_i0_i6
+
+   Name    Fanout   Delay (ns)          Pins               Resource(Cell.Net)
+L_CO        ---     0.444             CK to Q              spi_bit_counter_FSM_i2 (from spi_sck_c)
+Route         7   e 1.559                                  spi_sck_c_enable_13
+LUT4        ---     0.493              A to Z              i2_3_lut
+Route         2   e 1.141                                  n1094
+LUT4        ---     0.493              D to Z              i3_4_lut
+Route         3   e 1.258                                  n1095
+LUT4        ---     0.493              B to Z              i2_3_lut_rep_7
+Route         4   e 1.340                                  n1171
+LUT4        ---     0.493              B to Z              i553_3_lut_rep_5_4_lut
+Route         3   e 1.258                                  n1169
+LUT4        ---     0.493              D to Z              i2_3_lut_4_lut_adj_1
+Route         1   e 0.941                                  spi_sck_c_enable_1
+                  --------
+                   10.406  (28.0% logic, 72.0% route), 6 logic levels.
+
+Warning: 10.691 ns is the maximum delay for this constraint.
+
+
+<A name="mtw1_rs"></A><B><U><big>Timing Report Summary</big></U></B>
+--------------
+--------------------------------------------------------------------------------
+Constraint                              |   Constraint|       Actual|Levels
+--------------------------------------------------------------------------------
+                                        |             |             |
+create_clock -period 5.000000 -name     |             |             |
+clk0 [get_nets spi_sck_c]               |     5.000 ns|    21.382 ns|     6 *
+                                        |             |             |
+--------------------------------------------------------------------------------
+
+
+1 constraints not met.
+
+--------------------------------------------------------------------------------
+Critical Nets                           |   Loads|  Errors| % of total
+--------------------------------------------------------------------------------
+n1095                                   |       3|      48|     39.67%
+                                        |        |        |
+n1171                                   |       4|      48|     39.67%
+                                        |        |        |
+n1169                                   |       3|      36|     29.75%
+                                        |        |        |
+n1094                                   |       2|      27|     22.31%
+                                        |        |        |
+spi_sck_c_enable_1                      |       1|      15|     12.40%
+                                        |        |        |
+spi_sck_c_enable_16                     |       1|      15|     12.40%
+                                        |        |        |
+spi_sck_c_enable_15                     |       1|      14|     11.57%
+                                        |        |        |
+n300                                    |       6|      13|     10.74%
+                                        |        |        |
+spi_sck_c_enable_3                      |       1|      13|     10.74%
+                                        |        |        |
+spi_sck_c_enable_13                     |       7|      13|     10.74%
+                                        |        |        |
+--------------------------------------------------------------------------------
+
+
+<A name="mtw1_ts"></A><B><U><big>Timing summary:</big></U></B>
+---------------
+
+Timing errors: 121  Score: 895906
+
+Constraints cover  140 paths, 38 nets, and 138 connections (73.0% coverage)
+
+
+Peak memory: 78639104 bytes, TRCE: 1417216 bytes, DLYMAN: 0 bytes
+CPU_TIME_REPORT: 0 secs 
+
+
+
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+</PRE></FONT>
+</BODY>
+</HTML>

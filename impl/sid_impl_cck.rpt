@@ -1,0 +1,109 @@
+
+Copyright (C) 1994-2018 Synopsys, Inc.
+This Synopsys software and all associated documentation are proprietary to Synopsys, Inc.
+and may only be used pursuant to the terms and conditions of a written license agreement
+with Synopsys, Inc. All other use, reproduction, modification, or distribution of the
+Synopsys software or the associated documentation is strictly prohibited.
+Tool: Synplify Pro (R)
+Build: N-2018.03L-SP1-1
+Install: D:\lscc\diamond\3.11_x64\synpbase
+OS: Windows 6.2
+
+Hostname: THINK
+
+Implementation : impl
+
+# Written on Mon Sep 21 20:56:47 2020
+
+##### DESIGN INFO #######################################################
+
+Top View:                "top_level"
+Constraint File(s):      (none)
+
+
+
+
+##### SUMMARY ############################################################
+
+Found 0 issues in 0 out of 0 constraints
+
+
+##### DETAILS ############################################################
+
+
+
+Clock Relationships
+*******************
+
+Starting                                         Ending                                           |     rise to rise     |     fall to fall     |     rise to fall     |     fall to rise                     
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+pll|CLKOP_inferred_clock                         pll|CLKOP_inferred_clock                         |     5.000            |     No paths         |     No paths         |     No paths                         
+pll|CLKOP_inferred_clock                         top_level|spi_sck_xfer_pipe_derived_clock[2]     |     5.000            |     No paths         |     No paths         |     No paths                         
+top_level|spi_sck_xfer_pipe_derived_clock[2]     pll|CLKOP_inferred_clock                         |     5.000            |     No paths         |     No paths         |     No paths                         
+top_level|spi_sck_xfer_pipe_derived_clock[2]     top_level|spi_sck_xfer_pipe_derived_clock[2]     |     5.000            |     No paths         |     No paths         |     No paths                         
+=============================================================================================================================================================================================================
+ Note: 'No paths' indicates there are no paths in the design for that pair of clock edges.
+       'Diff grp' indicates that paths exist but the starting clock and ending clock are in different clock groups.
+
+
+Unconstrained Start/End Points
+******************************
+
+p:clk
+p:rst_n
+p:sid_addr[0]
+p:sid_addr[1]
+p:sid_addr[2]
+p:sid_addr[3]
+p:sid_addr[4]
+p:sid_clk
+p:sid_cs_n
+p:sid_data[0] (bidir end point)
+p:sid_data[0] (bidir start point)
+p:sid_data[1] (bidir end point)
+p:sid_data[1] (bidir start point)
+p:sid_data[2] (bidir end point)
+p:sid_data[2] (bidir start point)
+p:sid_data[3] (bidir end point)
+p:sid_data[3] (bidir start point)
+p:sid_data[4] (bidir end point)
+p:sid_data[4] (bidir start point)
+p:sid_data[5] (bidir end point)
+p:sid_data[5] (bidir start point)
+p:sid_data[6] (bidir end point)
+p:sid_data[6] (bidir start point)
+p:sid_data[7] (bidir end point)
+p:sid_data[7] (bidir start point)
+p:sid_rst_n
+p:sid_rw
+p:sid_timer
+p:spi_busy
+p:spi_cs_n
+p:spi_miso
+p:spi_mosi
+p:spi_sck
+
+
+Inapplicable constraints
+************************
+
+(none)
+
+
+Applicable constraints with issues
+**********************************
+
+(none)
+
+
+Constraints with matching wildcard expressions
+**********************************************
+
+(none)
+
+
+Library Report
+**************
+
+
+# End of Constraint Checker Report

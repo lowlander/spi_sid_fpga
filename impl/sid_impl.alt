@@ -1,0 +1,40 @@
+NOTE Copyright (C), 1992-2010, Lattice Semiconductor Corporation *
+NOTE All Rights Reserved *
+NOTE DATE CREATED: Sat Sep 26 01:24:09 2020 *
+NOTE DESIGN NAME: top_level *
+NOTE DEVICE NAME: LCMXO2-7000HE-4TQFP144 *
+NOTE PIN ASSIGNMENTS *
+NOTE PINS sid_data[1] : 133 : inout *
+NOTE PINS spi_cs_n : 49 : in *
+NOTE PINS sid_clk : 117 : out *
+NOTE PINS spi_mosi : 54 : in *
+NOTE PINS spi_sck : 56 : in *
+NOTE PINS rst_n : 5 : in *
+NOTE PINS spi_busy : 52 : out *
+NOTE PINS sid_data[2] : 138 : inout *
+NOTE PINS sid_data[3] : 139 : inout *
+NOTE PINS sid_rst_n : 122 : out *
+NOTE PINS sid_rw : 127 : out *
+NOTE PINS sid_timer : 128 : out *
+NOTE PINS sid_cs_n : 121 : out *
+NOTE PINS sid_addr[0] : 111 : out *
+NOTE PINS sid_data[4] : 140 : inout *
+NOTE PINS sid_addr[1] : 112 : out *
+NOTE PINS sid_data[5] : 141 : inout *
+NOTE PINS sid_addr[2] : 113 : out *
+NOTE PINS sid_addr[3] : 114 : out *
+NOTE PINS sid_addr[4] : 115 : out *
+NOTE PINS spi_miso : 50 : out *
+NOTE PINS sid_data[7] : 143 : inout *
+NOTE PINS led[0] : 97 : out *
+NOTE PINS sid_data[6] : 142 : inout *
+NOTE PINS led[1] : 98 : out *
+NOTE PINS led[2] : 99 : out *
+NOTE PINS led[3] : 100 : out *
+NOTE PINS led[4] : 104 : out *
+NOTE PINS led[5] : 105 : out *
+NOTE PINS led[6] : 106 : out *
+NOTE PINS led[7] : 107 : out *
+NOTE PINS sid_data[0] : 132 : inout *
+NOTE CONFIGURATION MODE: NONE *
+NOTE COMPRESSION: on *

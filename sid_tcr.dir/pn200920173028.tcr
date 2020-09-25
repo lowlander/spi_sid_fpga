@@ -1,0 +1,4 @@
+#Start recording tcl command: 9/20/2020 13:15:45
+#Project Location: J:/AlfheimSystems/Projects/lattice/sid; Project name: sid
+prj_project open "J:/AlfheimSystems/Projects/lattice/sid/sid.ldf"
+#Stop recording: 9/20/2020 17:30:28

@@ -1,0 +1,173 @@
+--------------------------------------------------------------------------------
+Lattice Synthesis Timing Report, Version  
+Sat Sep 26 01:22:47 2020
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2019 Lattice Semiconductor Corporation,  All rights reserved.
+
+Report Information
+------------------
+Design:     top_level
+Constraint file:  
+Report level:    verbose report, limited to 3 items per constraint
+--------------------------------------------------------------------------------
+
+
+
+================================================================================
+Constraint: create_clock -period 5.000000 -name clk0 [get_nets clk_fast]
+            509 items scored, 230 timing errors detected.
+--------------------------------------------------------------------------------
+
+
+Error:  The following path violates requirements by 4.348ns
+
+ Logical Details:  Cell type  Pin type       Cell name  (clock net +/-)
+
+   Source:         FD1P3JX    CK             \u_sid_spi/spi_bit_counter_i0_i1  (from clk_fast +)
+   Destination:    FD1P3AX    SP             \u_sid_spi/spi_cmd_buf_i1  (to clk_fast +)
+
+   Delay:                   9.063ns  (26.7% logic, 73.3% route), 5 logic levels.
+
+ Constraint Details:
+
+      9.063ns data_path \u_sid_spi/spi_bit_counter_i0_i1 to \u_sid_spi/spi_cmd_buf_i1 violates
+      5.000ns delay constraint less
+      0.285ns LCE_S requirement (totaling 4.715ns) by 4.348ns
+
+ Path Details: \u_sid_spi/spi_bit_counter_i0_i1 to \u_sid_spi/spi_cmd_buf_i1
+
+   Name    Fanout   Delay (ns)          Pins               Resource(Cell.Net)
+L_CO        ---     0.444             CK to Q              \u_sid_spi/spi_bit_counter_i0_i1 (from clk_fast)
+Route        20   e 1.885                                  \u_sid_spi/spi_bit_counter[1]
+LUT4        ---     0.493              B to Z              \u_sid_spi/i1_2_lut_rep_31
+Route         4   e 1.340                                  \u_sid_spi/n1860
+LUT4        ---     0.493              B to Z              \u_sid_spi/i246_2_lut_rep_18_3_lut_4_lut
+Route         2   e 1.141                                  \u_sid_spi/n1847
+LUT4        ---     0.493              B to Z              \u_sid_spi/i1182_2_lut_rep_16_4_lut
+Route         4   e 1.340                                  \u_sid_spi/n1845
+LUT4        ---     0.493              B to Z              \u_sid_spi/i1_3_lut_4_lut_adj_10
+Route         1   e 0.941                                  \u_sid_spi/clk_fast_enable_19
+                  --------
+                    9.063  (26.7% logic, 73.3% route), 5 logic levels.
+
+
+Error:  The following path violates requirements by 4.348ns
+
+ Logical Details:  Cell type  Pin type       Cell name  (clock net +/-)
+
+   Source:         FD1P3JX    CK             \u_sid_spi/spi_bit_counter_i0_i1  (from clk_fast +)
+   Destination:    FD1P3AX    SP             \u_sid_spi/spi_cmd_buf_i9  (to clk_fast +)
+
+   Delay:                   9.063ns  (26.7% logic, 73.3% route), 5 logic levels.
+
+ Constraint Details:
+
+      9.063ns data_path \u_sid_spi/spi_bit_counter_i0_i1 to \u_sid_spi/spi_cmd_buf_i9 violates
+      5.000ns delay constraint less
+      0.285ns LCE_S requirement (totaling 4.715ns) by 4.348ns
+
+ Path Details: \u_sid_spi/spi_bit_counter_i0_i1 to \u_sid_spi/spi_cmd_buf_i9
+
+   Name    Fanout   Delay (ns)          Pins               Resource(Cell.Net)
+L_CO        ---     0.444             CK to Q              \u_sid_spi/spi_bit_counter_i0_i1 (from clk_fast)
+Route        20   e 1.885                                  \u_sid_spi/spi_bit_counter[1]
+LUT4        ---     0.493              B to Z              \u_sid_spi/i1_2_lut_rep_31
+Route         4   e 1.340                                  \u_sid_spi/n1860
+LUT4        ---     0.493              B to Z              \u_sid_spi/i246_2_lut_rep_18_3_lut_4_lut
+Route         2   e 1.141                                  \u_sid_spi/n1847
+LUT4        ---     0.493              B to Z              \u_sid_spi/i1182_2_lut_rep_16_4_lut
+Route         4   e 1.340                                  \u_sid_spi/n1845
+LUT4        ---     0.493              D to Z              \u_sid_spi/i1_4_lut
+Route         1   e 0.941                                  \u_sid_spi/clk_fast_enable_20
+                  --------
+                    9.063  (26.7% logic, 73.3% route), 5 logic levels.
+
+
+Error:  The following path violates requirements by 4.348ns
+
+ Logical Details:  Cell type  Pin type       Cell name  (clock net +/-)
+
+   Source:         FD1P3JX    CK             \u_sid_spi/spi_bit_counter_i0_i1  (from clk_fast +)
+   Destination:    FD1P3AX    SP             \u_sid_spi/spi_cmd_buf_i3  (to clk_fast +)
+
+   Delay:                   9.063ns  (26.7% logic, 73.3% route), 5 logic levels.
+
+ Constraint Details:
+
+      9.063ns data_path \u_sid_spi/spi_bit_counter_i0_i1 to \u_sid_spi/spi_cmd_buf_i3 violates
+      5.000ns delay constraint less
+      0.285ns LCE_S requirement (totaling 4.715ns) by 4.348ns
+
+ Path Details: \u_sid_spi/spi_bit_counter_i0_i1 to \u_sid_spi/spi_cmd_buf_i3
+
+   Name    Fanout   Delay (ns)          Pins               Resource(Cell.Net)
+L_CO        ---     0.444             CK to Q              \u_sid_spi/spi_bit_counter_i0_i1 (from clk_fast)
+Route        20   e 1.885                                  \u_sid_spi/spi_bit_counter[1]
+LUT4        ---     0.493              B to Z              \u_sid_spi/i1_2_lut_rep_31
+Route         4   e 1.340                                  \u_sid_spi/n1860
+LUT4        ---     0.493              B to Z              \u_sid_spi/i246_2_lut_rep_18_3_lut_4_lut
+Route         2   e 1.141                                  \u_sid_spi/n1847
+LUT4        ---     0.493              B to Z              \u_sid_spi/i1182_2_lut_rep_16_4_lut
+Route         4   e 1.340                                  \u_sid_spi/n1845
+LUT4        ---     0.493              B to Z              \u_sid_spi/i1_3_lut_4_lut
+Route         1   e 0.941                                  \u_sid_spi/clk_fast_enable_25
+                  --------
+                    9.063  (26.7% logic, 73.3% route), 5 logic levels.
+
+Warning: 9.348 ns is the maximum delay for this constraint.
+
+
+Timing Report Summary
+--------------
+--------------------------------------------------------------------------------
+Constraint                              |   Constraint|       Actual|Levels
+--------------------------------------------------------------------------------
+                                        |             |             |
+create_clock -period 5.000000 -name     |             |             |
+clk0 [get_nets clk_fast]                |     5.000 ns|     9.348 ns|     5 *
+                                        |             |             |
+--------------------------------------------------------------------------------
+
+
+1 constraints not met.
+
+--------------------------------------------------------------------------------
+Critical Nets                           |   Loads|  Errors| % of total
+--------------------------------------------------------------------------------
+\u_sid_spi/spi_bit_counter[1]           |      20|      37|     16.09%
+                                        |        |        |
+\u_sid_spi/spi_bit_counter[0]           |      19|      36|     15.65%
+                                        |        |        |
+\u_sid_spi/spi_bit_counter[3]           |      13|      35|     15.22%
+                                        |        |        |
+\u_sid_spi/n1845                        |       4|      32|     13.91%
+                                        |        |        |
+\u_sid_spi/spi_bit_counter[2]           |      22|      31|     13.48%
+                                        |        |        |
+\u_sid_spi/n96                          |      13|      29|     12.61%
+                                        |        |        |
+\u_sid_spi/n1846                        |       4|      28|     12.17%
+                                        |        |        |
+\u_sid_spi/n1848                        |       4|      28|     12.17%
+                                        |        |        |
+\u_sid_spi/n11                          |      13|      26|     11.30%
+                                        |        |        |
+\u_sid_spi/n1847                        |       2|      25|     10.87%
+                                        |        |        |
+--------------------------------------------------------------------------------
+
+
+Timing summary:
+---------------
+
+Timing errors: 230  Score: 305202
+
+Constraints cover  518 paths, 154 nets, and 429 connections (74.5% coverage)
+
+
+Peak memory: 81571840 bytes, TRCE: 2023424 bytes, DLYMAN: 167936 bytes
+CPU_TIME_REPORT: 0 secs 

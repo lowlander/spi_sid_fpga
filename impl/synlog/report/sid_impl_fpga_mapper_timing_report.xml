@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!-- *************************************************************************************
+FILE DESCRIPTION
+Max Top 5 critical clocks will be reported. For rest user needs to refer to Detailed report
+*******************************************************************************************-->
+<report_table display_priority="2" name="Timing Summary">
+<report_link name="Detailed report">
+<data>J:\AlfheimSystems\Projects\lattice\sid\impl\synlog\sid_impl_fpga_mapper.srr</data>
+<title>START OF TIMING REPORT</title>
+</report_link>
+<row>
+<data tcl_name="clock_name">Clock Name</data>
+<data tcl_name="req_freq">Req Freq</data>
+<data tcl_name="est_freq">Est Freq</data>
+<data tcl_name="slack">Slack</data>
+</row>
+<row>
+<data>pll|CLKOP_inferred_clock</data>
+<data>200.0 MHz</data>
+<data>202.0 MHz</data>
+<data>0.049</data>
+</row>
+<row>
+<data>top_level|spi_sck_xfer_pipe_derived_clock[2]</data>
+<data>200.0 MHz</data>
+<data>252.7 MHz</data>
+<data>2.235</data>
+</row>
+<row>
+<data>System</data>
+<data>200.0 MHz</data>
+<data>NA</data>
+<data>NA</data>
+</row>
+</report_table>

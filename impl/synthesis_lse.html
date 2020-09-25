@@ -1,0 +1,365 @@
+<HTML>
+<HEAD><TITLE>Synthesis and Ngdbuild Report</TITLE>
+<STYLE TYPE="text/css">
+<!--
+ body,pre{    font-family:'Courier New', monospace;    color: #000000;    font-size:88%;    background-color: #ffffff;}h1 {    font-weight: bold;    margin-top: 24px;    margin-bottom: 10px;    border-bottom: 3px solid #000;    font-size: 1em;}h2 {    font-weight: bold;    margin-top: 18px;    margin-bottom: 5px;    font-size: 0.90em;}h3 {    font-weight: bold;    margin-top: 12px;    margin-bottom: 5px;    font-size: 0.80em;}p {    font-size:78%;}P.Table {    margin-top: 4px;    margin-bottom: 4px;    margin-right: 4px;    margin-left: 4px;}table{    border-width: 1px 1px 1px 1px;    border-style: solid solid solid solid;    border-color: black black black black;    border-collapse: collapse;}th {    font-weight:bold;    padding: 4px;    border-width: 1px 1px 1px 1px;    border-style: solid solid solid solid;    border-color: black black black black;    vertical-align:top;    text-align:left;    font-size:78%;}td {    padding: 4px;    border-width: 1px 1px 1px 1px;    border-style: solid solid solid solid;    border-color: black black black black;    vertical-align:top;    font-size:78%;}a {    color:#013C9A;    text-decoration:none;}a:visited {    color:#013C9A;}a:hover, a:active {    text-decoration:underline;    color:#5BAFD4;}.pass{background-color: #00ff00;}.fail{background-color: #ff0000;}.comment{    font-size: 90%;    font-style: italic;}
+-->
+</STYLE>
+</HEAD>
+<PRE><A name="Syn"></A><B><U><big>Synthesis and Ngdbuild  Report</big></U></B>
+synthesis:  version Diamond (64-bit) 3.11.0.396.4
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2019 Lattice Semiconductor Corporation,  All rights reserved.
+Sat Sep 26 01:22:43 2020
+
+
+Command Line:  synthesis -f sid_impl_lattice.synproj -gui -msgset J:/AlfheimSystems/Projects/lattice/sid/promote.xml 
+
+Synthesis options:
+The -a option is MachXO2.
+The -s option is 4.
+The -t option is TQFP144.
+The -d option is LCMXO2-7000HE.
+Using package TQFP144.
+Using performance grade 4.
+                                                          
+
+##########################################################
+
+### Lattice Family : MachXO2
+
+### Device  : LCMXO2-7000HE
+
+### Package : TQFP144
+
+### Speed   : 4
+
+##########################################################
+
+                                                          
+
+INFO - synthesis: User-Selected Strategy Settings
+Optimization goal = Balanced
+Top-level module name = top_level.
+Target frequency = 200.000000 MHz.
+Maximum fanout = 1000.
+Timing path count = 3
+BRAM utilization = 100.000000 %
+DSP usage = true
+DSP utilization = 100.000000 %
+fsm_encoding_style = auto
+resolve_mixed_drivers = 0
+fix_gated_clocks = 1
+
+Mux style = Auto
+Use Carry Chain = true
+carry_chain_length = 0
+Loop Limit = 1950.
+Use IO Insertion = TRUE
+Use IO Reg = AUTO
+
+Resource Sharing = TRUE
+Propagate Constants = TRUE
+Remove Duplicate Registers = TRUE
+force_gsr = auto
+ROM style = auto
+RAM style = auto
+The -comp option is FALSE.
+The -syn option is FALSE.
+-p D:/lscc/diamond/3.11_x64/ispfpga/xo2c00/data (searchpath added)
+-p J:/AlfheimSystems/Projects/lattice/sid/impl (searchpath added)
+-p J:/AlfheimSystems/Projects/lattice/sid (searchpath added)
+VHDL library = work
+VHDL design file = J:/AlfheimSystems/Projects/lattice/sid/spi_sid.vhd
+VHDL design file = J:/AlfheimSystems/Projects/lattice/sid/sid.vhd
+VHDL design file = J:/AlfheimSystems/Projects/lattice/sid/top_level.vhd
+VHDL design file = J:/AlfheimSystems/Projects/lattice/sid/pll.vhd
+NGD file = sid_impl.ngd
+-sdc option: SDC file input not used.
+-lpf option: Output file option is ON.
+Hardtimer checking is enabled (default). The -dt option is not used.
+The -r option is OFF. [ Remove LOC Properties is OFF. ]
+Technology check ok...
+
+Analyzing Verilog file D:/lscc/diamond/3.11_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v. VERI-1482
+Compile design.
+Compile Design Begin
+INFO - synthesis: The default VHDL library search path is now "J:/AlfheimSystems/Projects/lattice/sid/impl". VHDL-1504
+Analyzing VHDL file j:/alfheimsystems/projects/lattice/sid/spi_sid.vhd. VHDL-1481
+INFO - synthesis: j:/alfheimsystems/projects/lattice/sid/spi_sid.vhd(34): analyzing entity spi_sid. VHDL-1012
+INFO - synthesis: j:/alfheimsystems/projects/lattice/sid/spi_sid.vhd(54): analyzing architecture behavioral. VHDL-1010
+unit top_level is not yet analyzed. VHDL-1485
+Analyzing VHDL file j:/alfheimsystems/projects/lattice/sid/sid.vhd. VHDL-1481
+INFO - synthesis: j:/alfheimsystems/projects/lattice/sid/sid.vhd(34): analyzing entity sid. VHDL-1012
+INFO - synthesis: j:/alfheimsystems/projects/lattice/sid/sid.vhd(58): analyzing architecture behavioral. VHDL-1010
+unit top_level is not yet analyzed. VHDL-1485
+Analyzing VHDL file j:/alfheimsystems/projects/lattice/sid/top_level.vhd. VHDL-1481
+INFO - synthesis: j:/alfheimsystems/projects/lattice/sid/top_level.vhd(37): analyzing entity top_level. VHDL-1012
+INFO - synthesis: j:/alfheimsystems/projects/lattice/sid/top_level.vhd(60): analyzing architecture behavioral. VHDL-1010
+unit top_level is not yet analyzed. VHDL-1485
+Analyzing VHDL file j:/alfheimsystems/projects/lattice/sid/pll.vhd. VHDL-1481
+INFO - synthesis: j:/alfheimsystems/projects/lattice/sid/pll.vhd(14): analyzing entity pll. VHDL-1012
+INFO - synthesis: j:/alfheimsystems/projects/lattice/sid/pll.vhd(21): analyzing architecture structure. VHDL-1010
+unit top_level is not yet analyzed. VHDL-1485
+unit top_level is not yet analyzed. VHDL-1485
+j:/alfheimsystems/projects/lattice/sid/top_level.vhd(37): executing top_level(Behavioral)
+
+WARNING - synthesis: j:/alfheimsystems/projects/lattice/sid/top_level.vhd(58): replacing existing netlist top_level(Behavioral). VHDL-1205
+Top module name (VHDL): top_level
+Loading NGL library 'D:/lscc/diamond/3.11_x64/ispfpga/xo2c00a/data/xo2alib.ngl'...
+Loading NGL library 'D:/lscc/diamond/3.11_x64/ispfpga/xo2c00/data/xo2clib.ngl'...
+Loading NGL library 'D:/lscc/diamond/3.11_x64/ispfpga/mg5g00/data/mg5glib.ngl'...
+Loading NGL library 'D:/lscc/diamond/3.11_x64/ispfpga/or5g00/data/orc5glib.ngl'...
+Loading device for application map from file 'xo2c7000.nph' in environment: D:/lscc/diamond/3.11_x64/ispfpga.
+Package Status:                     Final          Version 1.39.
+Top-level module name = top_level.
+WARNING - synthesis: I/O Port clk 's net has no driver and is unused.
+WARNING - synthesis: I/O Port sid_timer 's net has no driver and is unused.
+######## Missing driver on net sid_timer. Patching with GND.
+INFO - synthesis: Extracted state machine for register '\u_sid_spi/state' with one-hot encoding
+State machine has 5 reachable states with original encodings of:
+
+ 000 
+
+ 001 
+
+ 010 
+
+ 011 
+
+ 100 
+
+original encoding -> new encoding (one-hot encoding)
+
+ 000 -> 00001
+
+ 001 -> 00010
+
+ 010 -> 00100
+
+ 011 -> 01000
+
+ 100 -> 10000
+
+INFO - synthesis: Extracted state machine for register '\u_sid_spi/u_sid/state' with one-hot encoding
+State machine has 14 reachable states with original encodings of:
+
+ 0000 
+
+ 0001 
+
+ 0010 
+
+ 0011 
+
+ 0100 
+
+ 0101 
+
+ 0110 
+
+ 0111 
+
+ 1000 
+
+ 1001 
+
+ 1010 
+
+ 1011 
+
+ 1100 
+
+ 1101 
+
+original encoding -> new encoding (one-hot encoding)
+
+ 0000 -> 00000000000001
+
+ 0001 -> 00000000000010
+
+ 0010 -> 00000000000100
+
+ 0011 -> 00000000001000
+
+ 0100 -> 00000000010000
+
+ 0101 -> 00000000100000
+
+ 0110 -> 00000001000000
+
+ 0111 -> 00000010000000
+
+ 1000 -> 00000100000000
+
+ 1001 -> 00001000000000
+
+ 1010 -> 00010000000000
+
+ 1011 -> 00100000000000
+
+ 1100 -> 01000000000000
+
+ 1101 -> 10000000000000
+
+
+
+
+WARNING - synthesis: Bit 0 of Register \u_sid_spi/state_FSM is stuck at Zero
+WARNING - synthesis: Bit 1 of Register \u_sid_spi/state_FSM is stuck at Zero
+WARNING - synthesis: Bit 2 of Register \u_sid_spi/state_FSM is stuck at Zero
+WARNING - synthesis: Bit 0 of Register \u_sid_spi/u_sid/state_FSM is stuck at Zero
+WARNING - synthesis: Bit 1 of Register \u_sid_spi/u_sid/state_FSM is stuck at Zero
+WARNING - synthesis: I/O Port clk 's net has no driver and is unused.
+GSR instance connected to net rst_n_c.
+Applying 200.000000 MHz constraint to all clocks
+
+WARNING - synthesis: No user .sdc file.
+Results of NGD DRC are available in top_level_drc.log.
+Loading NGL library 'D:/lscc/diamond/3.11_x64/ispfpga/xo2c00a/data/xo2alib.ngl'...
+Loading NGL library 'D:/lscc/diamond/3.11_x64/ispfpga/xo2c00/data/xo2clib.ngl'...
+Loading NGL library 'D:/lscc/diamond/3.11_x64/ispfpga/mg5g00/data/mg5glib.ngl'...
+Loading NGL library 'D:/lscc/diamond/3.11_x64/ispfpga/or5g00/data/orc5glib.ngl'...
+WARNING - synthesis: logical net 'clk' has no load.
+WARNING - synthesis: input pad net 'clk' has no legal load.
+WARNING - synthesis: DRC complete with 2 warnings.
+All blocks are expanded and NGD expansion is successful.
+Writing NGD file sid_impl.ngd.
+
+################### Begin Area Report (top_level)######################
+Number of register bits => 74 of 7209 (1 % )
+BB => 8
+EHXPLLJ => 1
+FD1P3AX => 28
+FD1P3IX => 19
+FD1P3JX => 5
+FD1S3AX => 18
+FD1S3AY => 3
+FD1S3IX => 1
+GSR => 1
+IB => 4
+L6MUX21 => 1
+LUT4 => 95
+OB => 19
+OBZ => 1
+OSCH => 1
+PFUMX => 3
+################### End Area Report ##################
+
+################### Begin BlackBox Report ######################
+TSALL => 1
+################### End BlackBox Report ##################
+
+################### Begin Clock Report ######################
+Clock Nets
+Number of Clocks: 3
+  Net : u_pll/clk_fast, loads : 75
+  Net : u_pll/sid_clk_c, loads : 10
+  Net : osc_clk, loads : 1
+Clock Enable Nets
+Number of Clock Enables: 27
+Top 10 highest fanout Clock Enables:
+  Net : u_sid_spi/u_sid/clk_fast_enable_37, loads : 13
+  Net : u_sid_spi/u_sid/clk_fast_enable_44, loads : 8
+  Net : u_sid_spi/u_sid/clk_fast_enable_50, loads : 4
+  Net : u_sid_spi/clk_fast_enable_49, loads : 4
+  Net : u_sid_spi/u_sid/clk_fast_enable_29, loads : 2
+  Net : u_sid_spi/u_sid/clk_fast_enable_31, loads : 2
+  Net : u_sid_spi/clk_fast_enable_26, loads : 1
+  Net : u_sid_spi/clk_fast_enable_32, loads : 1
+  Net : u_sid_spi/clk_fast_enable_45, loads : 1
+  Net : u_sid_spi/clk_fast_enable_21, loads : 1
+Highest fanout non-clock nets
+Top 10 highest fanout non-clock nets:
+  Net : u_sid_spi/spi_bit_counter_2, loads : 22
+  Net : u_sid_spi/spi_bit_counter_1, loads : 20
+  Net : u_sid_spi/spi_bit_counter_0, loads : 19
+  Net : u_sid_spi/next_spi_cmd_buf_8, loads : 15
+  Net : u_sid_spi/n96, loads : 13
+  Net : u_sid_spi/n11, loads : 13
+  Net : u_sid_spi/spi_bit_counter_3, loads : 13
+  Net : u_sid_spi/u_sid/clk_fast_enable_37, loads : 13
+  Net : u_sid_spi/u_sid/n594, loads : 13
+  Net : u_sid_spi/n94, loads : 11
+################### End Clock Report ##################
+
+<A name="lse_trs"></A><B><U><big>Timing Report Summary</big></U></B>
+--------------
+--------------------------------------------------------------------------------
+Constraint                              |   Constraint|       Actual|Levels
+--------------------------------------------------------------------------------
+                                        |             |             |
+create_clock -period 5.000000 -name     |             |             |
+clk0 [get_nets clk_fast]                |  200.000 MHz|  106.975 MHz|     5 *
+                                        |             |             |
+--------------------------------------------------------------------------------
+
+
+1 constraints not met.
+
+
+Peak Memory Usage: 78.391  MB
+
+--------------------------------------------------------------
+Elapsed CPU time for LSE flow : 1.438  secs
+--------------------------------------------------------------
+
+
+
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+</PRE></FONT>
+</BODY>
+</HTML>

@@ -1,0 +1,17 @@
+@N|Running in 64-bit mode
+@N|Running in 64-bit mode
+@N:"J:\AlfheimSystems\Projects\lattice\sid\top_level.vhd":35:7:35:15|Top entity is set to top_level.
+@N: CD630 :"J:\AlfheimSystems\Projects\lattice\sid\top_level.vhd":35:7:35:15|Synthesizing work.top_level.behavioral.
+@N: CD630 :"J:\AlfheimSystems\Projects\lattice\sid\spi_sid.vhd":34:7:34:13|Synthesizing work.spi_sid.behavioral.
+@N: CD233 :"J:\AlfheimSystems\Projects\lattice\sid\spi_sid.vhd":78:20:78:21|Using sequential encoding for type state_type.
+@N: CD604 :"J:\AlfheimSystems\Projects\lattice\sid\spi_sid.vhd":203:8:203:21|OTHERS clause is not synthesized.
+@N: CD630 :"J:\AlfheimSystems\Projects\lattice\sid\sid.vhd":34:7:34:9|Synthesizing work.sid.behavioral.
+@N: CD231 :"J:\AlfheimSystems\Projects\lattice\sid\sid.vhd":66:20:66:21|Using onehot encoding for type state_type. For example, enumeration st_reset is mapped to "10000000000000".
+@N: CD604 :"J:\AlfheimSystems\Projects\lattice\sid\sid.vhd":307:12:307:25|OTHERS clause is not synthesized.
+@N: CD630 :"J:\AlfheimSystems\Projects\lattice\sid\pll.vhd":14:7:14:9|Synthesizing work.pll.structure.
+@N: CD630 :"D:\lscc\diamond\3.11_x64\cae_library\synthesis\vhdl\machxo2.vhd":2221:10:2221:16|Synthesizing work.ehxpllj.syn_black_box.
+@N: CD630 :"D:\lscc\diamond\3.11_x64\cae_library\synthesis\vhdl\machxo2.vhd":1490:10:1490:12|Synthesizing work.vlo.syn_black_box.
+@N: CL201 :"J:\AlfheimSystems\Projects\lattice\sid\sid.vhd":152:8:152:9|Trying to extract state machine for register state.
+@N: CL201 :"J:\AlfheimSystems\Projects\lattice\sid\spi_sid.vhd":140:8:140:9|Trying to extract state machine for register state.
+@N|Running in 64-bit mode
+

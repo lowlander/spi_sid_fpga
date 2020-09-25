@@ -1,0 +1,2 @@
+@W: MT246 :"j:\alfheimsystems\projects\lattice\sid\pll.vhd":104:4:104:12|Blackbox EHXPLLJ is missing a user supplied timing model. This may have a negative effect on timing analysis and optimizations (Quality of Results)
+@W: MT420 |Found inferred clock pll|CLKOP_inferred_clock with period 5.00ns. Please declare a user-defined clock on net u_pll.clk_gen.

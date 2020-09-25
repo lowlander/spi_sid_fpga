@@ -1,0 +1,55 @@
+BLOCK RESETPATHS ;
+BLOCK ASYNCPATHS ;
+BANK 0 VCCIO 3.3 V;
+BANK 1 VCCIO 3.3 V;
+BANK 2 VCCIO 3.3 V;
+BANK 3 VCCIO 3.3 V;
+IOBUF ALLPORTS IO_TYPE=LVCMOS33 ;
+
+
+## NTSC 14.318181 MHz * 10 = 143.18181
+## PAL 17.734472MHz * 6 = 106.406832  * 8 = 141.875776 MHz
+
+FREQUENCY NET "osc_clk" 17.734472 MHz ; 
+#FREQUENCY NET "clk_gen" 106.406832 MHz ; 
+#FREQUENCY NET "spi_sck_xfer_pipe[2]" 25 MHz ;
+
+#
+LOCATE COMP "led[0]" SITE "97" ;
+LOCATE COMP "led[1]" SITE "98" ;
+LOCATE COMP "led[2]" SITE "99" ;
+LOCATE COMP "led[3]" SITE "100" ;
+LOCATE COMP "led[4]" SITE "104" ;
+LOCATE COMP "led[5]" SITE "105" ;
+LOCATE COMP "led[6]" SITE "106" ;
+LOCATE COMP "led[7]" SITE "107" ;
+
+LOCATE  COMP  "clk"    SITE  "3"; # J4-7
+LOCATE  COMP  "rst_n"  SITE  "5"; # J4-9
+
+LOCATE  COMP  "sid_addr[0]"  SITE  "111"; # J2-5
+LOCATE  COMP  "sid_addr[1]"  SITE  "112"; # J2-6
+LOCATE  COMP  "sid_addr[2]"  SITE  "113"; # J2-9
+LOCATE  COMP  "sid_addr[3]"  SITE  "114"; # J2-10
+LOCATE  COMP  "sid_addr[4]"  SITE  "115"; # J2-11
+
+LOCATE  COMP  "sid_clk"    SITE  "117"; # J2-12
+LOCATE  COMP  "sid_cs_n"   SITE  "121"; # J2-17
+LOCATE  COMP  "sid_rst_n"  SITE  "122"; # J2-18 
+LOCATE  COMP  "sid_rw"     SITE  "127"; # J2-21
+LOCATE  COMP  "sid_timer"  SITE  "128"; # J2-22
+
+LOCATE  COMP  "sid_data[0]"  SITE  "132"; # J2-27
+LOCATE  COMP  "sid_data[1]"  SITE  "133"; # J2-28
+LOCATE  COMP  "sid_data[2]"  SITE  "138"; # J2-33
+LOCATE  COMP  "sid_data[3]"  SITE  "139"; # J2-34
+LOCATE  COMP  "sid_data[4]"  SITE  "140"; # J2-35
+LOCATE  COMP  "sid_data[5]"  SITE  "141"; # J2-36
+LOCATE  COMP  "sid_data[6]"  SITE  "142"; # J2-37
+LOCATE  COMP  "sid_data[7]"  SITE  "143"; # J2-38
+
+LOCATE  COMP  "spi_sck"   SITE  "56"; # J5-19 
+LOCATE  COMP  "spi_mosi"  SITE  "54"; # J5-20
+LOCATE  COMP  "spi_busy"  SITE  "52"; # J5-22
+LOCATE  COMP  "spi_miso"  SITE  "50"; # J5-25 PCLKC2_0
+LOCATE  COMP  "spi_cs_n"  SITE  "49"; # J5-27 PCLKT2_0

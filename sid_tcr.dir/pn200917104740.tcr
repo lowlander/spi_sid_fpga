@@ -1,0 +1,7 @@
+#Start recording tcl command: 9/17/2020 10:07:40
+#Project Location: /home/erwin/Clients/AlfheimSystems/Projects/lattice/sid; Project name: sid
+prj_project open "/home/erwin/Clients/AlfheimSystems/Projects/lattice/sid/sid.ldf"
+prj_run Export -impl impl -task Jedecgen
+prj_run Export -impl impl -task Jedecgen
+prj_run Export -impl impl -task Jedecgen
+#Stop recording: 9/17/2020 10:47:40

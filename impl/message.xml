@@ -1,0 +1,702 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<BaliMessageLog>
+    <Task name="MapVHDLSimFile">
+        <Message>
+            <ID>35400250</ID>
+            <Severity>Info</Severity>
+            <Dynamic>0</Dynamic>
+        </Message>
+    </Task>
+    <Task name="Map">
+        <Message>
+            <ID>1166064</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>input</Dynamic>
+            <Dynamic>clk</Dynamic>
+        </Message>
+        <Message>
+            <ID>52101271</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>OSCH</Dynamic>
+            <Dynamic>OSCInst0</Dynamic>
+            <Dynamic>17.73</Dynamic>
+            <Dynamic>17.73</Dynamic>
+            <Dynamic>5.5</Dynamic>
+        </Message>
+        <Message>
+            <ID>51001046</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>clk</Dynamic>
+        </Message>
+    </Task>
+    <Task name="Lattice_Synthesis">
+        <Message>
+            <ID>35002000</ID>
+            <Severity>Info</Severity>
+        </Message>
+        <Message>
+            <ID>35001781</ID>
+            <Severity>Info</Severity>
+        </Message>
+        <Message>
+            <ID>35921504</ID>
+            <Severity>Info</Severity>
+            <Dynamic></Dynamic>
+            <Dynamic>J:/AlfheimSystems/Projects/lattice/sid/impl</Dynamic>
+        </Message>
+        <Message>
+            <ID>35921012</ID>
+            <Severity>Info</Severity>
+            <Dynamic>j:/alfheimsystems/projects/lattice/sid/spi_sid.vhd(34): </Dynamic>
+            <Dynamic>spi_sid</Dynamic>
+            <Navigation>j:/alfheimsystems/projects/lattice/sid/spi_sid.vhd</Navigation>
+            <Navigation>34</Navigation>
+        </Message>
+        <Message>
+            <ID>35921010</ID>
+            <Severity>Info</Severity>
+            <Dynamic>j:/alfheimsystems/projects/lattice/sid/spi_sid.vhd(54): </Dynamic>
+            <Dynamic>behavioral</Dynamic>
+            <Navigation>j:/alfheimsystems/projects/lattice/sid/spi_sid.vhd</Navigation>
+            <Navigation>54</Navigation>
+        </Message>
+        <Message>
+            <ID>35921012</ID>
+            <Severity>Info</Severity>
+            <Dynamic>j:/alfheimsystems/projects/lattice/sid/sid.vhd(34): </Dynamic>
+            <Dynamic>sid</Dynamic>
+            <Navigation>j:/alfheimsystems/projects/lattice/sid/sid.vhd</Navigation>
+            <Navigation>34</Navigation>
+        </Message>
+        <Message>
+            <ID>35921010</ID>
+            <Severity>Info</Severity>
+            <Dynamic>j:/alfheimsystems/projects/lattice/sid/sid.vhd(58): </Dynamic>
+            <Dynamic>behavioral</Dynamic>
+            <Navigation>j:/alfheimsystems/projects/lattice/sid/sid.vhd</Navigation>
+            <Navigation>58</Navigation>
+        </Message>
+        <Message>
+            <ID>35921012</ID>
+            <Severity>Info</Severity>
+            <Dynamic>j:/alfheimsystems/projects/lattice/sid/top_level.vhd(37): </Dynamic>
+            <Dynamic>top_level</Dynamic>
+            <Navigation>j:/alfheimsystems/projects/lattice/sid/top_level.vhd</Navigation>
+            <Navigation>37</Navigation>
+        </Message>
+        <Message>
+            <ID>35921010</ID>
+            <Severity>Info</Severity>
+            <Dynamic>j:/alfheimsystems/projects/lattice/sid/top_level.vhd(60): </Dynamic>
+            <Dynamic>behavioral</Dynamic>
+            <Navigation>j:/alfheimsystems/projects/lattice/sid/top_level.vhd</Navigation>
+            <Navigation>60</Navigation>
+        </Message>
+        <Message>
+            <ID>35921012</ID>
+            <Severity>Info</Severity>
+            <Dynamic>j:/alfheimsystems/projects/lattice/sid/pll.vhd(14): </Dynamic>
+            <Dynamic>pll</Dynamic>
+            <Navigation>j:/alfheimsystems/projects/lattice/sid/pll.vhd</Navigation>
+            <Navigation>14</Navigation>
+        </Message>
+        <Message>
+            <ID>35921010</ID>
+            <Severity>Info</Severity>
+            <Dynamic>j:/alfheimsystems/projects/lattice/sid/pll.vhd(21): </Dynamic>
+            <Dynamic>structure</Dynamic>
+            <Navigation>j:/alfheimsystems/projects/lattice/sid/pll.vhd</Navigation>
+            <Navigation>21</Navigation>
+        </Message>
+        <Message>
+            <ID>35921205</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>j:/alfheimsystems/projects/lattice/sid/top_level.vhd(58): </Dynamic>
+            <Dynamic>top_level</Dynamic>
+            <Dynamic>Behavioral</Dynamic>
+            <Navigation>j:/alfheimsystems/projects/lattice/sid/top_level.vhd</Navigation>
+            <Navigation>58</Navigation>
+        </Message>
+        <Message>
+            <ID>35002005</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>clk</Dynamic>
+        </Message>
+        <Message>
+            <ID>35002005</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>sid_timer</Dynamic>
+        </Message>
+        <Message>
+            <ID>35001774</ID>
+            <Severity>Info</Severity>
+            <Dynamic>\u_sid_spi/state</Dynamic>
+            <Dynamic>one-hot</Dynamic>
+        </Message>
+        <Message>
+            <ID>35001774</ID>
+            <Severity>Info</Severity>
+            <Dynamic>\u_sid_spi/u_sid/state</Dynamic>
+            <Dynamic>one-hot</Dynamic>
+        </Message>
+        <Message>
+            <ID>35001747</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>0</Dynamic>
+            <Dynamic>\u_sid_spi/state_FSM</Dynamic>
+        </Message>
+        <Message>
+            <ID>35001747</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>1</Dynamic>
+            <Dynamic>\u_sid_spi/state_FSM</Dynamic>
+        </Message>
+        <Message>
+            <ID>35001747</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>2</Dynamic>
+            <Dynamic>\u_sid_spi/state_FSM</Dynamic>
+        </Message>
+        <Message>
+            <ID>35001747</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>0</Dynamic>
+            <Dynamic>\u_sid_spi/u_sid/state_FSM</Dynamic>
+        </Message>
+        <Message>
+            <ID>35001747</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>1</Dynamic>
+            <Dynamic>\u_sid_spi/u_sid/state_FSM</Dynamic>
+        </Message>
+        <Message>
+            <ID>35002005</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>clk</Dynamic>
+        </Message>
+        <Message>
+            <ID>35001611</ID>
+            <Severity>Warning</Severity>
+        </Message>
+        <Message>
+            <ID>1166052</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>logical</Dynamic>
+            <Dynamic>clk</Dynamic>
+            <Navigation>clk</Navigation>
+        </Message>
+        <Message>
+            <ID>1166064</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>input</Dynamic>
+            <Dynamic>clk</Dynamic>
+        </Message>
+        <Message>
+            <ID>1163101</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>2</Dynamic>
+        </Message>
+    </Task>
+    <Task name="PAR">
+        <Message>
+            <ID>66011008</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>
+   Signal=osc_clk loads=1 clock_loads=1</Dynamic>
+        </Message>
+        <Message>
+            <ID>66011008</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>
+   Signal=osc_clk loads=1 clock_loads=1</Dynamic>
+        </Message>
+    </Task>
+    <Task name="TimingSimFileVHD">
+        <Message>
+            <ID>35400250</ID>
+            <Severity>Info</Severity>
+            <Dynamic>0</Dynamic>
+        </Message>
+    </Task>
+    <Task name="Synplify_Synthesis">
+        <Message>
+            <ID>2011000</ID>
+            <Severity>Info</Severity>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CG296 :&quot;J:\AlfheimSystems\Projects\lattice\sid\top_level.vhd&quot;:91:4:91:10|Incomplete sensitivity list; assuming completeness. Make sure all referenced variables in message CG290 are included in the sensitivity list.</Dynamic>
+            <Navigation>CG296</Navigation>
+            <Navigation>J:\AlfheimSystems\Projects\lattice\sid\top_level.vhd</Navigation>
+            <Navigation>91</Navigation>
+            <Navigation>4</Navigation>
+            <Navigation>91</Navigation>
+            <Navigation>10</Navigation>
+            <Navigation>Incomplete sensitivity list; assuming completeness. Make sure all referenced variables in message CG290 are included in the sensitivity list.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CG290 :&quot;J:\AlfheimSystems\Projects\lattice\sid\top_level.vhd&quot;:93:12:93:16|Referenced variable rst_n is not in sensitivity list.</Dynamic>
+            <Navigation>CG290</Navigation>
+            <Navigation>J:\AlfheimSystems\Projects\lattice\sid\top_level.vhd</Navigation>
+            <Navigation>93</Navigation>
+            <Navigation>12</Navigation>
+            <Navigation>93</Navigation>
+            <Navigation>16</Navigation>
+            <Navigation>Referenced variable rst_n is not in sensitivity list.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CG296 :&quot;J:\AlfheimSystems\Projects\lattice\sid\spi_sid.vhd&quot;:138:4:138:10|Incomplete sensitivity list; assuming completeness. Make sure all referenced variables in message CG290 are included in the sensitivity list.</Dynamic>
+            <Navigation>CG296</Navigation>
+            <Navigation>J:\AlfheimSystems\Projects\lattice\sid\spi_sid.vhd</Navigation>
+            <Navigation>138</Navigation>
+            <Navigation>4</Navigation>
+            <Navigation>138</Navigation>
+            <Navigation>10</Navigation>
+            <Navigation>Incomplete sensitivity list; assuming completeness. Make sure all referenced variables in message CG290 are included in the sensitivity list.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CG290 :&quot;J:\AlfheimSystems\Projects\lattice\sid\spi_sid.vhd&quot;:145:14:145:21|Referenced variable spi_cs_n is not in sensitivity list.</Dynamic>
+            <Navigation>CG290</Navigation>
+            <Navigation>J:\AlfheimSystems\Projects\lattice\sid\spi_sid.vhd</Navigation>
+            <Navigation>145</Navigation>
+            <Navigation>14</Navigation>
+            <Navigation>145</Navigation>
+            <Navigation>21</Navigation>
+            <Navigation>Referenced variable spi_cs_n is not in sensitivity list.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CD434 :&quot;J:\AlfheimSystems\Projects\lattice\sid\spi_sid.vhd&quot;:153:36:153:43|Signal spi_cs_n in the sensitivity list is not used in the process. Make sure all variables in the sensitivity list are referenced in the process.</Dynamic>
+            <Navigation>CD434</Navigation>
+            <Navigation>J:\AlfheimSystems\Projects\lattice\sid\spi_sid.vhd</Navigation>
+            <Navigation>153</Navigation>
+            <Navigation>36</Navigation>
+            <Navigation>153</Navigation>
+            <Navigation>43</Navigation>
+            <Navigation>Signal spi_cs_n in the sensitivity list is not used in the process. Make sure all variables in the sensitivity list are referenced in the process.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CG296 :&quot;J:\AlfheimSystems\Projects\lattice\sid\spi_sid.vhd&quot;:153:4:153:10|Incomplete sensitivity list; assuming completeness. Make sure all referenced variables in message CG290 are included in the sensitivity list.</Dynamic>
+            <Navigation>CG296</Navigation>
+            <Navigation>J:\AlfheimSystems\Projects\lattice\sid\spi_sid.vhd</Navigation>
+            <Navigation>153</Navigation>
+            <Navigation>4</Navigation>
+            <Navigation>153</Navigation>
+            <Navigation>10</Navigation>
+            <Navigation>Incomplete sensitivity list; assuming completeness. Make sure all referenced variables in message CG290 are included in the sensitivity list.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CG290 :&quot;J:\AlfheimSystems\Projects\lattice\sid\spi_sid.vhd&quot;:170:16:170:23|Referenced variable sid_busy is not in sensitivity list.</Dynamic>
+            <Navigation>CG290</Navigation>
+            <Navigation>J:\AlfheimSystems\Projects\lattice\sid\spi_sid.vhd</Navigation>
+            <Navigation>170</Navigation>
+            <Navigation>16</Navigation>
+            <Navigation>170</Navigation>
+            <Navigation>23</Navigation>
+            <Navigation>Referenced variable sid_busy is not in sensitivity list.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CG290 :&quot;J:\AlfheimSystems\Projects\lattice\sid\spi_sid.vhd&quot;:158:28:158:38|Referenced variable spi_cmd_buf is not in sensitivity list.</Dynamic>
+            <Navigation>CG290</Navigation>
+            <Navigation>J:\AlfheimSystems\Projects\lattice\sid\spi_sid.vhd</Navigation>
+            <Navigation>158</Navigation>
+            <Navigation>28</Navigation>
+            <Navigation>158</Navigation>
+            <Navigation>38</Navigation>
+            <Navigation>Referenced variable spi_cmd_buf is not in sensitivity list.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CG290 :&quot;J:\AlfheimSystems\Projects\lattice\sid\spi_sid.vhd&quot;:157:30:157:42|Referenced variable spi_cmd_valid is not in sensitivity list.</Dynamic>
+            <Navigation>CG290</Navigation>
+            <Navigation>J:\AlfheimSystems\Projects\lattice\sid\spi_sid.vhd</Navigation>
+            <Navigation>157</Navigation>
+            <Navigation>30</Navigation>
+            <Navigation>157</Navigation>
+            <Navigation>42</Navigation>
+            <Navigation>Referenced variable spi_cmd_valid is not in sensitivity list.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CG290 :&quot;J:\AlfheimSystems\Projects\lattice\sid\spi_sid.vhd&quot;:156:29:156:40|Referenced variable spi_miso_buf is not in sensitivity list.</Dynamic>
+            <Navigation>CG290</Navigation>
+            <Navigation>J:\AlfheimSystems\Projects\lattice\sid\spi_sid.vhd</Navigation>
+            <Navigation>156</Navigation>
+            <Navigation>29</Navigation>
+            <Navigation>156</Navigation>
+            <Navigation>40</Navigation>
+            <Navigation>Referenced variable spi_miso_buf is not in sensitivity list.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CG290 :&quot;J:\AlfheimSystems\Projects\lattice\sid\spi_sid.vhd&quot;:175:70:175:77|Referenced variable spi_mosi is not in sensitivity list.</Dynamic>
+            <Navigation>CG290</Navigation>
+            <Navigation>J:\AlfheimSystems\Projects\lattice\sid\spi_sid.vhd</Navigation>
+            <Navigation>175</Navigation>
+            <Navigation>70</Navigation>
+            <Navigation>175</Navigation>
+            <Navigation>77</Navigation>
+            <Navigation>Referenced variable spi_mosi is not in sensitivity list.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CG290 :&quot;J:\AlfheimSystems\Projects\lattice\sid\spi_sid.vhd&quot;:186:37:186:48|Referenced variable spi_data_out is not in sensitivity list.</Dynamic>
+            <Navigation>CG290</Navigation>
+            <Navigation>J:\AlfheimSystems\Projects\lattice\sid\spi_sid.vhd</Navigation>
+            <Navigation>186</Navigation>
+            <Navigation>37</Navigation>
+            <Navigation>186</Navigation>
+            <Navigation>48</Navigation>
+            <Navigation>Referenced variable spi_data_out is not in sensitivity list.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CG296 :&quot;J:\AlfheimSystems\Projects\lattice\sid\sid.vhd&quot;:139:4:139:10|Incomplete sensitivity list; assuming completeness. Make sure all referenced variables in message CG290 are included in the sensitivity list.</Dynamic>
+            <Navigation>CG296</Navigation>
+            <Navigation>J:\AlfheimSystems\Projects\lattice\sid\sid.vhd</Navigation>
+            <Navigation>139</Navigation>
+            <Navigation>4</Navigation>
+            <Navigation>139</Navigation>
+            <Navigation>10</Navigation>
+            <Navigation>Incomplete sensitivity list; assuming completeness. Make sure all referenced variables in message CG290 are included in the sensitivity list.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CG290 :&quot;J:\AlfheimSystems\Projects\lattice\sid\sid.vhd&quot;:141:24:141:34|Referenced variable sid_clk_buf is not in sensitivity list.</Dynamic>
+            <Navigation>CG290</Navigation>
+            <Navigation>J:\AlfheimSystems\Projects\lattice\sid\sid.vhd</Navigation>
+            <Navigation>141</Navigation>
+            <Navigation>24</Navigation>
+            <Navigation>141</Navigation>
+            <Navigation>34</Navigation>
+            <Navigation>Referenced variable sid_clk_buf is not in sensitivity list.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CG296 :&quot;J:\AlfheimSystems\Projects\lattice\sid\sid.vhd&quot;:183:4:183:10|Incomplete sensitivity list; assuming completeness. Make sure all referenced variables in message CG290 are included in the sensitivity list.</Dynamic>
+            <Navigation>CG296</Navigation>
+            <Navigation>J:\AlfheimSystems\Projects\lattice\sid\sid.vhd</Navigation>
+            <Navigation>183</Navigation>
+            <Navigation>4</Navigation>
+            <Navigation>183</Navigation>
+            <Navigation>10</Navigation>
+            <Navigation>Incomplete sensitivity list; assuming completeness. Make sure all referenced variables in message CG290 are included in the sensitivity list.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CG290 :&quot;J:\AlfheimSystems\Projects\lattice\sid\sid.vhd&quot;:193:34:193:50|Referenced variable reset_clk_counter is not in sensitivity list.</Dynamic>
+            <Navigation>CG290</Navigation>
+            <Navigation>J:\AlfheimSystems\Projects\lattice\sid\sid.vhd</Navigation>
+            <Navigation>193</Navigation>
+            <Navigation>34</Navigation>
+            <Navigation>193</Navigation>
+            <Navigation>50</Navigation>
+            <Navigation>Referenced variable reset_clk_counter is not in sensitivity list.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CG290 :&quot;J:\AlfheimSystems\Projects\lattice\sid\sid.vhd&quot;:242:25:242:31|Referenced variable spi_cmd is not in sensitivity list.</Dynamic>
+            <Navigation>CG290</Navigation>
+            <Navigation>J:\AlfheimSystems\Projects\lattice\sid\sid.vhd</Navigation>
+            <Navigation>242</Navigation>
+            <Navigation>25</Navigation>
+            <Navigation>242</Navigation>
+            <Navigation>31</Navigation>
+            <Navigation>Referenced variable spi_cmd is not in sensitivity list.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CG290 :&quot;J:\AlfheimSystems\Projects\lattice\sid\sid.vhd&quot;:192:25:192:36|Referenced variable sid_cs_n_buf is not in sensitivity list.</Dynamic>
+            <Navigation>CG290</Navigation>
+            <Navigation>J:\AlfheimSystems\Projects\lattice\sid\sid.vhd</Navigation>
+            <Navigation>192</Navigation>
+            <Navigation>25</Navigation>
+            <Navigation>192</Navigation>
+            <Navigation>36</Navigation>
+            <Navigation>Referenced variable sid_cs_n_buf is not in sensitivity list.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CG290 :&quot;J:\AlfheimSystems\Projects\lattice\sid\sid.vhd&quot;:191:23:191:32|Referenced variable sid_rw_buf is not in sensitivity list.</Dynamic>
+            <Navigation>CG290</Navigation>
+            <Navigation>J:\AlfheimSystems\Projects\lattice\sid\sid.vhd</Navigation>
+            <Navigation>191</Navigation>
+            <Navigation>23</Navigation>
+            <Navigation>191</Navigation>
+            <Navigation>32</Navigation>
+            <Navigation>Referenced variable sid_rw_buf is not in sensitivity list.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CG290 :&quot;J:\AlfheimSystems\Projects\lattice\sid\sid.vhd&quot;:190:25:190:36|Referenced variable sid_data_buf is not in sensitivity list.</Dynamic>
+            <Navigation>CG290</Navigation>
+            <Navigation>J:\AlfheimSystems\Projects\lattice\sid\sid.vhd</Navigation>
+            <Navigation>190</Navigation>
+            <Navigation>25</Navigation>
+            <Navigation>190</Navigation>
+            <Navigation>36</Navigation>
+            <Navigation>Referenced variable sid_data_buf is not in sensitivity list.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CG290 :&quot;J:\AlfheimSystems\Projects\lattice\sid\sid.vhd&quot;:188:25:188:36|Referenced variable sid_addr_buf is not in sensitivity list.</Dynamic>
+            <Navigation>CG290</Navigation>
+            <Navigation>J:\AlfheimSystems\Projects\lattice\sid\sid.vhd</Navigation>
+            <Navigation>188</Navigation>
+            <Navigation>25</Navigation>
+            <Navigation>188</Navigation>
+            <Navigation>36</Navigation>
+            <Navigation>Referenced variable sid_addr_buf is not in sensitivity list.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CG290 :&quot;J:\AlfheimSystems\Projects\lattice\sid\sid.vhd&quot;:189:29:189:44|Referenced variable spi_addr_out_buf is not in sensitivity list.</Dynamic>
+            <Navigation>CG290</Navigation>
+            <Navigation>J:\AlfheimSystems\Projects\lattice\sid\sid.vhd</Navigation>
+            <Navigation>189</Navigation>
+            <Navigation>29</Navigation>
+            <Navigation>189</Navigation>
+            <Navigation>44</Navigation>
+            <Navigation>Referenced variable spi_addr_out_buf is not in sensitivity list.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CG290 :&quot;J:\AlfheimSystems\Projects\lattice\sid\sid.vhd&quot;:187:29:187:44|Referenced variable spi_data_out_buf is not in sensitivity list.</Dynamic>
+            <Navigation>CG290</Navigation>
+            <Navigation>J:\AlfheimSystems\Projects\lattice\sid\sid.vhd</Navigation>
+            <Navigation>187</Navigation>
+            <Navigation>29</Navigation>
+            <Navigation>187</Navigation>
+            <Navigation>44</Navigation>
+            <Navigation>Referenced variable spi_data_out_buf is not in sensitivity list.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CG290 :&quot;J:\AlfheimSystems\Projects\lattice\sid\sid.vhd&quot;:186:25:186:36|Referenced variable sid_busy_buf is not in sensitivity list.</Dynamic>
+            <Navigation>CG290</Navigation>
+            <Navigation>J:\AlfheimSystems\Projects\lattice\sid\sid.vhd</Navigation>
+            <Navigation>186</Navigation>
+            <Navigation>25</Navigation>
+            <Navigation>186</Navigation>
+            <Navigation>36</Navigation>
+            <Navigation>Referenced variable sid_busy_buf is not in sensitivity list.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CG290 :&quot;J:\AlfheimSystems\Projects\lattice\sid\sid.vhd&quot;:195:32:195:46|Referenced variable sid_cmd_ack_buf is not in sensitivity list.</Dynamic>
+            <Navigation>CG290</Navigation>
+            <Navigation>J:\AlfheimSystems\Projects\lattice\sid\sid.vhd</Navigation>
+            <Navigation>195</Navigation>
+            <Navigation>32</Navigation>
+            <Navigation>195</Navigation>
+            <Navigation>46</Navigation>
+            <Navigation>Referenced variable sid_cmd_ack_buf is not in sensitivity list.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CD638 :&quot;J:\AlfheimSystems\Projects\lattice\sid\sid.vhd&quot;:85:11:85:21|Signal spi_cmd_buf is undriven. Either assign the signal a value or remove the signal declaration.</Dynamic>
+            <Navigation>CD638</Navigation>
+            <Navigation>J:\AlfheimSystems\Projects\lattice\sid\sid.vhd</Navigation>
+            <Navigation>85</Navigation>
+            <Navigation>11</Navigation>
+            <Navigation>85</Navigation>
+            <Navigation>21</Navigation>
+            <Navigation>Signal spi_cmd_buf is undriven. Either assign the signal a value or remove the signal declaration.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CD638 :&quot;J:\AlfheimSystems\Projects\lattice\sid\sid.vhd&quot;:86:11:86:22|Signal spi_addr_buf is undriven. Either assign the signal a value or remove the signal declaration.</Dynamic>
+            <Navigation>CD638</Navigation>
+            <Navigation>J:\AlfheimSystems\Projects\lattice\sid\sid.vhd</Navigation>
+            <Navigation>86</Navigation>
+            <Navigation>11</Navigation>
+            <Navigation>86</Navigation>
+            <Navigation>22</Navigation>
+            <Navigation>Signal spi_addr_buf is undriven. Either assign the signal a value or remove the signal declaration.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CD638 :&quot;J:\AlfheimSystems\Projects\lattice\sid\sid.vhd&quot;:87:11:87:25|Signal spi_data_in_buf is undriven. Either assign the signal a value or remove the signal declaration.</Dynamic>
+            <Navigation>CD638</Navigation>
+            <Navigation>J:\AlfheimSystems\Projects\lattice\sid\sid.vhd</Navigation>
+            <Navigation>87</Navigation>
+            <Navigation>11</Navigation>
+            <Navigation>87</Navigation>
+            <Navigation>25</Navigation>
+            <Navigation>Signal spi_data_in_buf is undriven. Either assign the signal a value or remove the signal declaration.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CL240 :&quot;J:\AlfheimSystems\Projects\lattice\sid\spi_sid.vhd&quot;:49:8:49:16|Signal sid_timer is floating; a simulation mismatch is possible.</Dynamic>
+            <Navigation>CL240</Navigation>
+            <Navigation>J:\AlfheimSystems\Projects\lattice\sid\spi_sid.vhd</Navigation>
+            <Navigation>49</Navigation>
+            <Navigation>8</Navigation>
+            <Navigation>49</Navigation>
+            <Navigation>16</Navigation>
+            <Navigation>Signal sid_timer is floating; a simulation mismatch is possible.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CL265 :&quot;J:\AlfheimSystems\Projects\lattice\sid\spi_sid.vhd&quot;:140:8:140:9|Removing unused bit 13 of spi_cmd_buf_3(15 downto 0). Either assign all bits or reduce the width of the signal.</Dynamic>
+            <Navigation>CL265</Navigation>
+            <Navigation>J:\AlfheimSystems\Projects\lattice\sid\spi_sid.vhd</Navigation>
+            <Navigation>140</Navigation>
+            <Navigation>8</Navigation>
+            <Navigation>140</Navigation>
+            <Navigation>9</Navigation>
+            <Navigation>Removing unused bit 13 of spi_cmd_buf_3(15 downto 0). Either assign all bits or reduce the width of the signal.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CL113 :&quot;J:\AlfheimSystems\Projects\lattice\sid\spi_sid.vhd&quot;:140:8:140:9|Feedback mux created for signal spi_cmd_buf[15:14]. To avoid the feedback mux, assign values explicitly under all conditions of conditional assignment statements.</Dynamic>
+            <Navigation>CL113</Navigation>
+            <Navigation>J:\AlfheimSystems\Projects\lattice\sid\spi_sid.vhd</Navigation>
+            <Navigation>140</Navigation>
+            <Navigation>8</Navigation>
+            <Navigation>140</Navigation>
+            <Navigation>9</Navigation>
+            <Navigation>Feedback mux created for signal spi_cmd_buf[15:14]. To avoid the feedback mux, assign values explicitly under all conditions of conditional assignment statements.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CL113 :&quot;J:\AlfheimSystems\Projects\lattice\sid\spi_sid.vhd&quot;:140:8:140:9|Feedback mux created for signal spi_cmd_buf[12:0]. To avoid the feedback mux, assign values explicitly under all conditions of conditional assignment statements.</Dynamic>
+            <Navigation>CL113</Navigation>
+            <Navigation>J:\AlfheimSystems\Projects\lattice\sid\spi_sid.vhd</Navigation>
+            <Navigation>140</Navigation>
+            <Navigation>8</Navigation>
+            <Navigation>140</Navigation>
+            <Navigation>9</Navigation>
+            <Navigation>Feedback mux created for signal spi_cmd_buf[12:0]. To avoid the feedback mux, assign values explicitly under all conditions of conditional assignment statements.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CL113 :&quot;J:\AlfheimSystems\Projects\lattice\sid\spi_sid.vhd&quot;:140:8:140:9|Feedback mux created for signal state[1:0]. To avoid the feedback mux, assign values explicitly under all conditions of conditional assignment statements.</Dynamic>
+            <Navigation>CL113</Navigation>
+            <Navigation>J:\AlfheimSystems\Projects\lattice\sid\spi_sid.vhd</Navigation>
+            <Navigation>140</Navigation>
+            <Navigation>8</Navigation>
+            <Navigation>140</Navigation>
+            <Navigation>9</Navigation>
+            <Navigation>Feedback mux created for signal state[1:0]. To avoid the feedback mux, assign values explicitly under all conditions of conditional assignment statements.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CL113 :&quot;J:\AlfheimSystems\Projects\lattice\sid\spi_sid.vhd&quot;:140:8:140:9|Feedback mux created for signal spi_miso_buf. To avoid the feedback mux, assign values explicitly under all conditions of conditional assignment statements.</Dynamic>
+            <Navigation>CL113</Navigation>
+            <Navigation>J:\AlfheimSystems\Projects\lattice\sid\spi_sid.vhd</Navigation>
+            <Navigation>140</Navigation>
+            <Navigation>8</Navigation>
+            <Navigation>140</Navigation>
+            <Navigation>9</Navigation>
+            <Navigation>Feedback mux created for signal spi_miso_buf. To avoid the feedback mux, assign values explicitly under all conditions of conditional assignment statements.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CL113 :&quot;J:\AlfheimSystems\Projects\lattice\sid\spi_sid.vhd&quot;:140:8:140:9|Feedback mux created for signal spi_cmd_valid. To avoid the feedback mux, assign values explicitly under all conditions of conditional assignment statements.</Dynamic>
+            <Navigation>CL113</Navigation>
+            <Navigation>J:\AlfheimSystems\Projects\lattice\sid\spi_sid.vhd</Navigation>
+            <Navigation>140</Navigation>
+            <Navigation>8</Navigation>
+            <Navigation>140</Navigation>
+            <Navigation>9</Navigation>
+            <Navigation>Feedback mux created for signal spi_cmd_valid. To avoid the feedback mux, assign values explicitly under all conditions of conditional assignment statements.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CL190 :&quot;J:\AlfheimSystems\Projects\lattice\sid\sid.vhd&quot;:152:8:152:9|Optimizing register bit reset_clk_counter(3) to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.</Dynamic>
+            <Navigation>CL190</Navigation>
+            <Navigation>J:\AlfheimSystems\Projects\lattice\sid\sid.vhd</Navigation>
+            <Navigation>152</Navigation>
+            <Navigation>8</Navigation>
+            <Navigation>152</Navigation>
+            <Navigation>9</Navigation>
+            <Navigation>Optimizing register bit reset_clk_counter(3) to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CL260 :&quot;J:\AlfheimSystems\Projects\lattice\sid\sid.vhd&quot;:152:8:152:9|Pruning register bit 3 of reset_clk_counter(3 downto 0). If this is not the intended behavior, drive the input with valid values, or an input from the top level.</Dynamic>
+            <Navigation>CL260</Navigation>
+            <Navigation>J:\AlfheimSystems\Projects\lattice\sid\sid.vhd</Navigation>
+            <Navigation>152</Navigation>
+            <Navigation>8</Navigation>
+            <Navigation>152</Navigation>
+            <Navigation>9</Navigation>
+            <Navigation>Pruning register bit 3 of reset_clk_counter(3 downto 0). If this is not the intended behavior, drive the input with valid values, or an input from the top level.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>MT529 :&quot;j:\alfheimsystems\projects\lattice\sid\sid.vhd&quot;:152:8:152:9|Found inferred clock pll|CLKOP_inferred_clock which controls 53 sequential elements including u_sid_spi.u_sid.state[0]. This clock has no specified timing constraint which may prevent conversion of gated or generated clocks and may adversely impact design performance.</Dynamic>
+            <Navigation>MT529</Navigation>
+            <Navigation>j:\alfheimsystems\projects\lattice\sid\sid.vhd</Navigation>
+            <Navigation>152</Navigation>
+            <Navigation>8</Navigation>
+            <Navigation>152</Navigation>
+            <Navigation>9</Navigation>
+            <Navigation>Found inferred clock pll|CLKOP_inferred_clock which controls 53 sequential elements including u_sid_spi.u_sid.state[0]. This clock has no specified timing constraint which may prevent conversion of gated or generated clocks and may adversely impact design performance. </Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>MT246 :&quot;j:\alfheimsystems\projects\lattice\sid\pll.vhd&quot;:104:4:104:12|Blackbox EHXPLLJ is missing a user supplied timing model. This may have a negative effect on timing analysis and optimizations (Quality of Results)</Dynamic>
+            <Navigation>MT246</Navigation>
+            <Navigation>j:\alfheimsystems\projects\lattice\sid\pll.vhd</Navigation>
+            <Navigation>104</Navigation>
+            <Navigation>4</Navigation>
+            <Navigation>104</Navigation>
+            <Navigation>12</Navigation>
+            <Navigation>Blackbox EHXPLLJ is missing a user supplied timing model. This may have a negative effect on timing analysis and optimizations (Quality of Results)</Navigation>
+        </Message>
+        <Message>
+            <ID>2019993</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>MT420 |Found inferred clock pll|CLKOP_inferred_clock with period 5.00ns. Please declare a user-defined clock on net u_pll.clk_gen.</Dynamic>
+            <Navigation>MT420</Navigation>
+            <Navigation>Found inferred clock pll|CLKOP_inferred_clock with period 5.00ns. Please declare a user-defined clock on net u_pll.clk_gen.</Navigation>
+        </Message>
+    </Task>
+</BaliMessageLog>

@@ -1,0 +1,202 @@
+<HTML>
+<HEAD><TITLE>I/O Timing Report</TITLE>
+<STYLE TYPE="text/css">
+<!--
+ body,pre{    font-family:'Courier New', monospace;    color: #000000;    font-size:88%;    background-color: #ffffff;}h1 {    font-weight: bold;    margin-top: 24px;    margin-bottom: 10px;    border-bottom: 3px solid #000;    font-size: 1em;}h2 {    font-weight: bold;    margin-top: 18px;    margin-bottom: 5px;    font-size: 0.90em;}h3 {    font-weight: bold;    margin-top: 12px;    margin-bottom: 5px;    font-size: 0.80em;}p {    font-size:78%;}P.Table {    margin-top: 4px;    margin-bottom: 4px;    margin-right: 4px;    margin-left: 4px;}table{    border-width: 1px 1px 1px 1px;    border-style: solid solid solid solid;    border-color: black black black black;    border-collapse: collapse;}th {    font-weight:bold;    padding: 4px;    border-width: 1px 1px 1px 1px;    border-style: solid solid solid solid;    border-color: black black black black;    vertical-align:top;    text-align:left;    font-size:78%;}td {    padding: 4px;    border-width: 1px 1px 1px 1px;    border-style: solid solid solid solid;    border-color: black black black black;    vertical-align:top;    font-size:78%;}a {    color:#013C9A;    text-decoration:none;}a:visited {    color:#013C9A;}a:hover, a:active {    text-decoration:underline;    color:#5BAFD4;}.pass{background-color: #00ff00;}.fail{background-color: #ff0000;}.comment{    font-size: 90%;    font-style: italic;}
+-->
+</STYLE>
+</HEAD>
+<PRE><A name="Top"></A><B><U><big>I/O Timing Report</big></U></B>
+Loading design for application iotiming from file sid_impl.ncd.
+Design name: top_level
+NCD version: 3.3
+Vendor:      LATTICE
+Device:      LCMXO2-7000HE
+Package:     TQFP144
+Performance: 5
+Package Status:                     Final          Version 1.39.
+Performance Hardware Data Status:   Final          Version 34.4.
+Loading design for application iotiming from file sid_impl.ncd.
+Design name: top_level
+NCD version: 3.3
+Vendor:      LATTICE
+Device:      LCMXO2-7000HE
+Package:     TQFP144
+Performance: 6
+Package Status:                     Final          Version 1.39.
+Performance Hardware Data Status:   Final          Version 34.4.
+Loading design for application iotiming from file sid_impl.ncd.
+Design name: top_level
+NCD version: 3.3
+Vendor:      LATTICE
+Device:      LCMXO2-7000HE
+Package:     TQFP144
+Performance: M
+Package Status:                     Final          Version 1.39.
+Performance Hardware Data Status:   Final          Version 34.4.
+// Design: top_level
+// Package: TQFP144
+// ncd File: sid_impl.ncd
+// Version: Diamond (64-bit) 3.11.0.396.4
+// Written on Sat Sep 26 01:23:16 2020
+// M: Minimum Performance Grade
+// iotiming sid_impl.ncd sid_impl.prf -gui -msgset J:/AlfheimSystems/Projects/lattice/sid/promote.xml
+
+I/O Timing Report (All units are in ns)
+
+Worst Case Results across Performance Grades (M, 6, 5, 4):
+
+// Input Setup and Hold Times
+
+Port  Clock Edge  Setup Performance_Grade  Hold Performance_Grade
+----------------------------------------------------------------------
+(no input setup/hold data)
+
+
+// Clock to Output Delay
+
+Port  Clock Edge  Max_Delay Performance_Grade  Min_Delay Performance_Grade
+------------------------------------------------------------------------
+(no clock to output min/max data)
+
+
+// Internal_Clock to Input
+
+Port  Internal_Clock
+--------------------------------------------------------
+sid_d osc_clk       
+sid_d clk_fast      
+sid_d osc_clk       
+sid_d clk_fast      
+sid_d osc_clk       
+sid_d clk_fast      
+sid_d osc_clk       
+sid_d clk_fast      
+sid_d osc_clk       
+sid_d clk_fast      
+sid_d osc_clk       
+sid_d clk_fast      
+sid_d osc_clk       
+sid_d clk_fast      
+sid_d osc_clk       
+sid_d clk_fast      
+spi_c osc_clk       
+spi_c clk_fast      
+spi_m osc_clk       
+spi_m clk_fast      
+spi_s osc_clk       
+spi_s clk_fast      
+
+
+// Internal_Clock to Output
+
+Port        Internal_Clock
+--------------------------------------------------------
+led[0]      osc_clk       
+led[0]      clk_fast      
+led[1]      osc_clk       
+led[1]      clk_fast      
+led[2]      osc_clk       
+led[2]      clk_fast      
+led[3]      osc_clk       
+led[3]      clk_fast      
+led[4]      osc_clk       
+led[4]      clk_fast      
+led[5]      osc_clk       
+led[5]      clk_fast      
+led[6]      osc_clk       
+led[6]      clk_fast      
+led[7]      osc_clk       
+led[7]      clk_fast      
+sid_addr[0] osc_clk       
+sid_addr[0] clk_fast      
+sid_addr[1] osc_clk       
+sid_addr[1] clk_fast      
+sid_addr[2] osc_clk       
+sid_addr[2] clk_fast      
+sid_addr[3] osc_clk       
+sid_addr[3] clk_fast      
+sid_addr[4] osc_clk       
+sid_addr[4] clk_fast      
+sid_cs_n    osc_clk       
+sid_cs_n    clk_fast      
+sid_data[0] osc_clk       
+sid_data[0] clk_fast      
+sid_data[1] osc_clk       
+sid_data[1] clk_fast      
+sid_data[2] osc_clk       
+sid_data[2] clk_fast      
+sid_data[3] osc_clk       
+sid_data[3] clk_fast      
+sid_data[4] osc_clk       
+sid_data[4] clk_fast      
+sid_data[5] osc_clk       
+sid_data[5] clk_fast      
+sid_data[6] osc_clk       
+sid_data[6] clk_fast      
+sid_data[7] osc_clk       
+sid_data[7] clk_fast      
+sid_rst_n   osc_clk       
+sid_rst_n   clk_fast      
+sid_rw      osc_clk       
+sid_rw      clk_fast      
+spi_busy    osc_clk       
+spi_busy    clk_fast      
+spi_miso    osc_clk       
+spi_miso    clk_fast      
+
+
+
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+</PRE></FONT>
+</BODY>
+</HTML>

@@ -1,0 +1,468 @@
+
+          Lattice Mapping Report File for Design Module 'top_level'
+
+
+Design Information
+------------------
+
+Command line:   map -a MachXO2 -p LCMXO2-7000HE -t TQFP144 -s 4 -oc Industrial
+     sid_impl.ngd -o sid_impl_map.ncd -pr sid_impl.prf -mp sid_impl.mrp -lpf
+     J:/AlfheimSystems/Projects/lattice/sid/impl/sid_impl.lpf -lpf
+     J:/AlfheimSystems/Projects/lattice/sid/sid.lpf -c 0 -gui -msgset
+     J:/AlfheimSystems/Projects/lattice/sid/promote.xml 
+Target Vendor:  LATTICE
+Target Device:  LCMXO2-7000HETQFP144
+Target Performance:   4
+Mapper:  xo2c00,  version:  Diamond (64-bit) 3.11.0.396.4
+Mapped on:  09/26/20  01:22:52
+
+Design Summary
+--------------
+
+   Number of registers:     74 out of  7209 (1%)
+      PFU registers:           74 out of  6864 (1%)
+      PIO registers:            0 out of   345 (0%)
+   Number of SLICEs:        53 out of  3432 (2%)
+      SLICEs as Logic/ROM:     53 out of  3432 (2%)
+      SLICEs as RAM:            0 out of  2574 (0%)
+      SLICEs as Carry:          0 out of  3432 (0%)
+   Number of LUT4s:         94 out of  6864 (1%)
+      Number used as logic LUTs:         94
+      Number used as distributed RAM:     0
+      Number used as ripple logic:        0
+      Number used as shift registers:     0
+   Number of PIO sites used: 32 + 4(JTAG) out of 115 (31%)
+   Number of block RAMs:  0 out of 26 (0%)
+   Number of GSRs:        1 out of 1 (100%)
+   EFB used :        No
+   JTAG used :       No
+   Readback used :   No
+   Oscillator used : Yes
+   Startup used :    No
+   POR :             On
+   Bandgap :         On
+   Number of Power Controller:  0 out of 1 (0%)
+   Number of Dynamic Bank Controller (BCINRD):  0 out of 6 (0%)
+   Number of Dynamic Bank Controller (BCLVDSO):  0 out of 1 (0%)
+   Number of DCCA:  0 out of 8 (0%)
+   Number of DCMA:  0 out of 2 (0%)
+   Number of PLLs:  1 out of 2 (50%)
+   Number of DQSDLLs:  0 out of 2 (0%)
+   Number of CLKDIVC:  0 out of 4 (0%)
+   Number of ECLKSYNCA:  0 out of 4 (0%)
+   Number of ECLKBRIDGECS:  0 out of 2 (0%)
+   Notes:-
+      1. Total number of LUT4s = (Number of logic LUT4s) + 2*(Number of
+     distributed RAMs) + 2*(Number of ripple logic)
+      2. Number of logic LUT4s does not include count of distributed RAM and
+     ripple logic.
+   Number of clocks:  2
+     Net osc_clk: 1 loads, 1 rising, 0 falling (Driver: OSCInst0 )
+     Net clk_fast: 51 loads, 51 rising, 0 falling (Driver: u_pll/PLLInst_0 )
+   Number of Clock Enables:  27
+
+                                    Page 1
+
+
+
+
+Design:  top_level                                     Date:  09/26/20  01:22:52
+
+Design Summary (cont)
+---------------------
+     Net u_sid_spi/clk_fast_enable_1: 1 loads, 1 LSLICEs
+     Net u_sid_spi/clk_fast_enable_2: 1 loads, 1 LSLICEs
+     Net u_sid_spi/clk_fast_enable_4: 1 loads, 1 LSLICEs
+     Net u_sid_spi/clk_fast_enable_6: 1 loads, 1 LSLICEs
+     Net u_sid_spi/clk_fast_enable_7: 1 loads, 1 LSLICEs
+     Net u_sid_spi/clk_fast_enable_25: 1 loads, 1 LSLICEs
+     Net u_sid_spi/clk_fast_enable_24: 1 loads, 1 LSLICEs
+     Net u_sid_spi/clk_fast_enable_32: 1 loads, 1 LSLICEs
+     Net u_sid_spi/clk_fast_enable_19: 1 loads, 1 LSLICEs
+     Net u_sid_spi/clk_fast_enable_49: 2 loads, 2 LSLICEs
+     Net u_sid_spi/clk_fast_enable_20: 1 loads, 1 LSLICEs
+     Net u_sid_spi/clk_fast_enable_21: 1 loads, 1 LSLICEs
+     Net u_sid_spi/clk_fast_enable_22: 1 loads, 1 LSLICEs
+     Net u_sid_spi/clk_fast_enable_23: 1 loads, 1 LSLICEs
+     Net u_sid_spi/clk_fast_enable_26: 1 loads, 1 LSLICEs
+     Net u_sid_spi/clk_fast_enable_27: 1 loads, 1 LSLICEs
+     Net u_sid_spi/clk_fast_enable_28: 1 loads, 1 LSLICEs
+     Net u_sid_spi/clk_fast_enable_45: 1 loads, 1 LSLICEs
+     Net u_sid_spi/clk_fast_enable_51: 1 loads, 1 LSLICEs
+     Net u_sid_spi/clk_fast_enable_52: 1 loads, 1 LSLICEs
+     Net u_sid_spi/u_sid/clk_fast_enable_50: 2 loads, 2 LSLICEs
+     Net u_sid_spi/u_sid/clk_fast_enable_37: 7 loads, 7 LSLICEs
+     Net u_sid_spi/u_sid/clk_fast_enable_9: 1 loads, 1 LSLICEs
+     Net u_sid_spi/u_sid/clk_fast_enable_17: 1 loads, 1 LSLICEs
+     Net u_sid_spi/u_sid/clk_fast_enable_29: 1 loads, 1 LSLICEs
+     Net u_sid_spi/u_sid/clk_fast_enable_44: 4 loads, 4 LSLICEs
+     Net u_sid_spi/u_sid/clk_fast_enable_31: 1 loads, 1 LSLICEs
+   Number of LSRs:  6
+     Net spi_cs_n_c: 2 loads, 2 LSLICEs
+     Net sid_clk_c: 2 loads, 2 LSLICEs
+     Net u_sid_spi/n1855: 1 loads, 1 LSLICEs
+     Net u_sid_spi/u_sid/n1865: 2 loads, 2 LSLICEs
+     Net u_sid_spi/u_sid/n594: 7 loads, 7 LSLICEs
+     Net u_sid_spi/u_sid/n1180: 1 loads, 1 LSLICEs
+   Number of nets driven by tri-state buffers:  0
+   Top 10 highest fanout non-clock nets:
+     Net u_sid_spi/spi_bit_counter_2: 22 loads
+     Net u_sid_spi/spi_bit_counter_1: 20 loads
+     Net u_sid_spi/spi_bit_counter_0: 19 loads
+     Net u_sid_spi/next_spi_cmd_buf_8: 15 loads
+     Net u_sid_spi/n11: 13 loads
+     Net u_sid_spi/n96: 13 loads
+     Net u_sid_spi/spi_bit_counter_3: 13 loads
+     Net u_sid_spi/n94: 11 loads
+     Net sid_clk_c: 10 loads
+     Net u_sid_spi/u_sid/n267: 10 loads
+
+
+
+
+   Number of warnings:  3
+   Number of errors:    0
+     
+
+
+
+
+                                    Page 2
+
+
+
+
+Design:  top_level                                     Date:  09/26/20  01:22:52
+
+Design Errors/Warnings
+----------------------
+
+WARNING - map: input pad net 'clk' has no legal load.
+WARNING - map: OSCH 'OSCInst0' has FREQUENCY preference value set to 17.73 MHZ,
+     which is different from the actual value 17.73 MHZ. The FREQUENCY
+     preference is still within the 5.5% tolerence of the actual value.
+WARNING - map: IO buffer missing for top level port clk...logic will be
+     discarded.
+
+IO (PIO) Attributes
+-------------------
+
++---------------------+-----------+-----------+------------+
+| IO Name             | Direction | Levelmode | IO         |
+|                     |           |  IO_TYPE  | Register   |
++---------------------+-----------+-----------+------------+
+| sid_data[1]         | BIDIR     | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| spi_cs_n            | INPUT     | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| sid_clk             | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| spi_mosi            | INPUT     | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| spi_sck             | INPUT     | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| rst_n               | INPUT     | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| spi_busy            | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| sid_data[2]         | BIDIR     | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| sid_data[3]         | BIDIR     | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| sid_rst_n           | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| sid_rw              | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| sid_timer           | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| sid_cs_n            | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| sid_addr[0]         | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| sid_data[4]         | BIDIR     | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| sid_addr[1]         | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| sid_data[5]         | BIDIR     | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| sid_addr[2]         | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| sid_addr[3]         | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| sid_addr[4]         | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| spi_miso            | OUTPUT    | LVCMOS33  |            |
+
+                                    Page 3
+
+
+
+
+Design:  top_level                                     Date:  09/26/20  01:22:52
+
+IO (PIO) Attributes (cont)
+--------------------------
++---------------------+-----------+-----------+------------+
+| sid_data[7]         | BIDIR     | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| led[0]              | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| sid_data[6]         | BIDIR     | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| led[1]              | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| led[2]              | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| led[3]              | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| led[4]              | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| led[5]              | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| led[6]              | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| led[7]              | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| sid_data[0]         | BIDIR     | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+
+Removed logic
+-------------
+
+Block i1578 undriven or does not drive anything - clipped.
+Signal u_sid_spi/u_sid/n1858 was merged into signal sid_clk_c
+Signal n1905 undriven or does not drive anything - clipped.
+Signal VCC_net undriven or does not drive anything - clipped.
+Block u_sid_spi/u_sid/clk_slow_I_0_1_lut_rep_29 was optimized away.
+Block m0_lut was optimized away.
+
+     
+
+PLL/DLL Summary
+---------------
+
+PLL 1:                                     Pin/Node Value
+  PLL Instance Name:                                u_pll/PLLInst_0
+  PLL Type:                                         EHXPLLJ
+  Input Clock:                             NODE     osc_clk
+  Output Clock(P):                         NODE     clk_fast
+  Output Clock(S):                         PIN,NODE sid_clk_c
+  Output Clock(S2):                                 NONE
+  Output Clock(S3):                                 NONE
+  Feedback Signal:                         NODE     clk_fast
+  Reset Signal:                                     NONE
+  M Divider Reset Signal:                           NONE
+  C Divider Reset Signal:                           NONE
+  D Divider Reset Signal:                           NONE
+  Standby Signal:                                   NONE
+  PLL LOCK signal:                                  NONE
+  PLL Data bus CLK Signal:                          NONE
+  PLL Data bus Strobe Signal:                       NONE
+
+                                    Page 4
+
+
+
+
+Design:  top_level                                     Date:  09/26/20  01:22:52
+
+PLL/DLL Summary (cont)
+----------------------
+  PLL Data bus Reset Signal:                        NONE
+  PLL Data bus Write Enable Signal:                 NONE
+  PLL Data bus Address0:                            NONE
+  PLL Data bus Address1:                            NONE
+  PLL Data bus Address2:                            NONE
+  PLL Data bus Address3:                            NONE
+  PLL Data bus Address4:                            NONE
+  PLL Data In bus Data0:                            NONE
+  PLL Data In bus Data1:                            NONE
+  PLL Data In bus Data2:                            NONE
+  PLL Data In bus Data3:                            NONE
+  PLL Data In bus Data4:                            NONE
+  PLL Data In bus Data5:                            NONE
+  PLL Data In bus Data6:                            NONE
+  PLL Data In bus Data7:                            NONE
+  PLL Data bus Acknowledge:                         NONE
+  PLL Data Out bus Data0:                           NONE
+  PLL Data Out bus Data1:                           NONE
+  PLL Data Out bus Data2:                           NONE
+  PLL Data Out bus Data3:                           NONE
+  PLL Data Out bus Data4:                           NONE
+  PLL Data Out bus Data5:                           NONE
+  PLL Data Out bus Data6:                           NONE
+  PLL Data Out bus Data7:                           NONE
+  Input Clock Frequency (MHz):                      17.7345
+  Output Clock(P) Frequency (MHz):                  106.4068
+  Output Clock(S) Frequency (MHz):                   0.9852
+  Output Clock(S2) Frequency (MHz):                 NA
+  Output Clock(S3) Frequency (MHz):                 NA
+  CLKOP Post Divider A Input:                       DIVA
+  CLKOS Post Divider B Input:                       DIVB
+  CLKOS2 Post Divider C Input:                      DIVC
+  CLKOS3 Post Divider D Input:                      DIVD
+  Pre Divider A Input:                              VCO_PHASE
+  Pre Divider B Input:                              DIVA
+  Pre Divider C Input:                              VCO_PHASE
+  Pre Divider D Input:                              VCO_PHASE
+  VCO Bypass A Input:                               VCO_PHASE
+  VCO Bypass B Input:                               VCO_PHASE
+  VCO Bypass C Input:                               VCO_PHASE
+  VCO Bypass D Input:                               VCO_PHASE
+  FB_MODE:                                          CLKOP
+  CLKI Divider:                                     1
+  CLKFB Divider:                                    6
+  CLKOP Divider:                                    5
+  CLKOS Divider:                                    108
+  CLKOS2 Divider:                                   1
+  CLKOS3 Divider:                                   1
+  Fractional N Divider:                             0
+  CLKOP Desired Phase Shift(degree):                0
+  CLKOP Trim Option Rising/Falling:                 RISING
+  CLKOP Trim Option Delay:                          0
+  CLKOS Desired Phase Shift(degree):                0
+  CLKOS Trim Option Rising/Falling:                 RISING
+  CLKOS Trim Option Delay:                          0
+  CLKOS2 Desired Phase Shift(degree):               0
+
+                                    Page 5
+
+
+
+
+Design:  top_level                                     Date:  09/26/20  01:22:52
+
+PLL/DLL Summary (cont)
+----------------------
+  CLKOS3 Desired Phase Shift(degree):               0
+
+OSC Summary
+-----------
+
+OSC 1:                                     Pin/Node Value
+  OSC Instance Name:                                OSCInst0
+  OSC Type:                                         OSCH
+  STDBY Input:                                      NONE
+  OSC Output:                              NODE     osc_clk
+  OSC Nominal Frequency (MHz):                      17.73
+
+ASIC Components
+---------------
+
+Instance Name: OSCInst0
+         Type: OSCH
+Instance Name: u_pll/PLLInst_0
+         Type: EHXPLLJ
+
+GSR Usage
+---------
+
+GSR Component:
+   The Global Set Reset (GSR) resource has been used to implement a global reset
+        of the design. The reset signal used for GSR control is 'rst_n_c'.
+        
+
+     GSR Property:
+   The design components with GSR property set to ENABLED will respond to global
+        set reset while the components with GSR property set to DISABLED will
+        not.
+        
+
+     Components with synchronous local reset also reset by asynchronous GSR
+----------------------------------------------------------------------
+
+     These components have the GSR property set to ENABLED and the local reset
+     is synchronous. The components will respond to the synchronous local reset
+     and to the unrelated asynchronous reset signal 'rst_n_c' via the GSR
+     component.
+
+     Type and number of components of the type: 
+   Register = 25 
+
+     Type and instance name of component: 
+   Register : u_sid_spi/spi_bit_counter_i0_i0
+   Register : u_sid_spi/spi_bit_counter_i0_i1
+   Register : u_sid_spi/spi_bit_counter_i0_i2
+   Register : u_sid_spi/spi_bit_counter_i0_i3
+   Register : u_sid_spi/spi_cmd_valid_109
+   Register : u_sid_spi/u_sid/reset_clk_counter_344__i0
+   Register : u_sid_spi/u_sid/sid_data_buf__i2
+   Register : u_sid_spi/u_sid/sid_data_buf__i0
+   Register : u_sid_spi/u_sid/sid_busy_buf_100
+   Register : u_sid_spi/u_sid/sid_data_buf__i1
+
+                                    Page 6
+
+
+
+
+Design:  top_level                                     Date:  09/26/20  01:22:52
+
+GSR Usage (cont)
+----------------
+   Register : u_sid_spi/u_sid/sid_data_buf__i7
+   Register : u_sid_spi/u_sid/sid_data_buf__i6
+   Register : u_sid_spi/u_sid/sid_data_buf__i5
+   Register : u_sid_spi/u_sid/sid_data_buf__i4
+   Register : u_sid_spi/u_sid/sid_data_buf__i3
+   Register : u_sid_spi/u_sid/sid_addr_buf__i1
+   Register : u_sid_spi/u_sid/state_FSM_i9
+   Register : u_sid_spi/u_sid/state_FSM_i8
+   Register : u_sid_spi/u_sid/sid_addr_buf__i5
+   Register : u_sid_spi/u_sid/sid_addr_buf__i4
+   Register : u_sid_spi/u_sid/sid_addr_buf__i3
+   Register : u_sid_spi/u_sid/sid_addr_buf__i2
+   Register : u_sid_spi/u_sid/reset_clk_counter_344__i3
+   Register : u_sid_spi/u_sid/reset_clk_counter_344__i2
+   Register : u_sid_spi/u_sid/reset_clk_counter_344__i1
+
+Run Time and Memory Usage
+-------------------------
+
+   Total CPU Time: 0 secs  
+   Total REAL Time: 2 secs  
+   Peak Memory Usage: 60 MB
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                    Page 7
+
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+     Copyright (c) 1995 AT&T Corp.   All rights reserved.
+     Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+     Copyright (c) 2001 Agere Systems   All rights reserved.
+     Copyright (c) 2002-2019 Lattice Semiconductor Corporation,  All rights
+     reserved.

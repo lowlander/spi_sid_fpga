@@ -1,0 +1,801 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML><HEAD>
+<META http-equiv=Content-Type content="text/html; charset=iso-8859-1">
+<STYLE type=text/css>
+<!--
+.blink {text-decoration:blink}
+.ms  {font-size: 9pt; font-family: monospace; font-weight: normal}
+.msb {font-size: 9pt; font-family: monospace; font-weight: bold  }
+-->
+</STYLE>
+<META content="MSHTML 6.00.2900.2180" name=GENERATOR></HEAD>
+<BODY><B>
+</B>
+<BR><PRE><A name="Report Header"></A>
+--------------------------------------------------------------------------------
+Lattice TRACE Report - Setup, Version Diamond (64-bit) 3.11.0.396.4
+Mon Sep 21 21:51:04 2020
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2019 Lattice Semiconductor Corporation,  All rights reserved.
+
+Report Information
+------------------
+Design file:     top_level
+Device,speed:    LCMXO2-7000HE,4
+Report level:    verbose report, limited to 10 items per preference
+--------------------------------------------------------------------------------
+
+
+
+</A><A name="FREQUENCY NET 'clk_gen' 106.406832 MH"></A>================================================================================
+Preference: FREQUENCY NET "clk_gen" 106.406832 MHz ;
+            10 items scored, 0 timing errors detected.
+--------------------------------------------------------------------------------
+<font color=#000000> 
+
+Passed: The following path meets requirements by 1.438ns
+ </font>
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              <A href="#@comp:u_sid_spi/SLICE_38">u_sid_spi/spi_cmd_valid_92</A>  (from <A href="#@net:spi_sck_xfer_pipe[2]">spi_sck_xfer_pipe[2]</A> +)
+   Destination:    FF         Data in        <A href="#@comp:u_sid_spi/u_sid/SLICE_77">u_sid_spi/u_sid/sid_data_buf__i7</A>  (to <A href="#@net:clk_gen">clk_gen</A> +)
+
+   Delay:               3.393ns  (28.0% logic, 72.0% route), 2 logic levels.
+
+ Constraint Details:
+
+      3.393ns physical path delay u_sid_spi/SLICE_38 to u_sid_spi/u_sid/SLICE_77 meets
+      9.398ns delay constraint less
+      4.284ns skew and
+      0.000ns feedback compensation and
+      0.283ns CE_SET requirement (totaling 4.831ns) by 1.438ns
+
+ Physical Path Details:
+
+      <A href="#@path:FREQUENCY NET 'clk_gen' 106.406832 MHz ;:REG_DEL, 0.454,R8C16C.CLK,R8C16C.Q0,u_sid_spi/SLICE_38:ROUTE, 0.984,R8C16C.Q0,R7C17C.D1,u_sid_spi/spi_cmd_valid:CTOF_DEL, 0.497,R7C17C.D1,R7C17C.F1,u_sid_spi/SLICE_70:ROUTE, 1.458,R7C17C.F1,R9C15C.CE,u_sid_spi/u_sid/clk_gen_enable_27">Data path</A> u_sid_spi/SLICE_38 to u_sid_spi/u_sid/SLICE_77:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.454     R8C16C.CLK to      R8C16C.Q0 <A href="#@comp:u_sid_spi/SLICE_38">u_sid_spi/SLICE_38</A> (from <A href="#@net:spi_sck_xfer_pipe[2]">spi_sck_xfer_pipe[2]</A>)
+ROUTE         6     0.984<A href="#@net:u_sid_spi/spi_cmd_valid:R8C16C.Q0:R7C17C.D1:0.984">      R8C16C.Q0 to R7C17C.D1     </A> <A href="#@net:u_sid_spi/spi_cmd_valid">u_sid_spi/spi_cmd_valid</A>
+CTOF_DEL    ---     0.497      R7C17C.D1 to      R7C17C.F1 <A href="#@comp:u_sid_spi/SLICE_70">u_sid_spi/SLICE_70</A>
+ROUTE         7     1.458<A href="#@net:u_sid_spi/u_sid/clk_gen_enable_27:R7C17C.F1:R9C15C.CE:1.458">      R7C17C.F1 to R9C15C.CE     </A> <A href="#@net:u_sid_spi/u_sid/clk_gen_enable_27">u_sid_spi/u_sid/clk_gen_enable_27</A> (to <A href="#@net:clk_gen">clk_gen</A>)
+                  --------
+                    3.393   (28.0% logic, 72.0% route), 2 logic levels.
+
+ Clock Skew Details: 
+
+      <A href="#@path:FREQUENCY NET 'clk_gen' 106.406832 MHz ;:PADI_DEL, 1.163,3.PAD,3.PADDI,clk:ROUTE, 0.788,3.PADDI,LPLL.CLKI,clk_c:CLKI2OP_DEL, 0.000,LPLL.CLKI,LPLL.CLKOP,u_pll/PLLInst_0:ROUTE, 1.891,LPLL.CLKOP,R2C19B.CLK,clk_gen:REG_DEL, 0.454,R2C19B.CLK,R2C19B.Q1,SLICE_13:ROUTE, 3.830,R2C19B.Q1,R8C16C.CLK,spi_sck_xfer_pipe[2]">Source Clock Path</A> clk to u_sid_spi/SLICE_38:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+PADI_DEL    ---     1.163          3.PAD to        3.PADDI <A href="#@comp:clk">clk</A>
+ROUTE         1     0.788<A href="#@net:clk_c:3.PADDI:LPLL.CLKI:0.788">        3.PADDI to LPLL.CLKI     </A> <A href="#@net:clk_c">clk_c</A>
+CLKI2OP_DE  ---     0.000      LPLL.CLKI to     LPLL.CLKOP <A href="#@comp:u_pll/PLLInst_0">u_pll/PLLInst_0</A>
+ROUTE        31     1.891<A href="#@net:clk_gen:LPLL.CLKOP:R2C19B.CLK:1.891">     LPLL.CLKOP to R2C19B.CLK    </A> <A href="#@net:clk_gen">clk_gen</A>
+REG_DEL     ---     0.454     R2C19B.CLK to      R2C19B.Q1 <A href="#@comp:SLICE_13">SLICE_13</A>
+ROUTE        21     3.830<A href="#@net:spi_sck_xfer_pipe[2]:R2C19B.Q1:R8C16C.CLK:3.830">      R2C19B.Q1 to R8C16C.CLK    </A> <A href="#@net:spi_sck_xfer_pipe[2]">spi_sck_xfer_pipe[2]</A>
+                  --------
+                    8.126   (19.9% logic, 80.1% route), 3 logic levels.
+
+      Source Clock f/b:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+CLKFB2OP_D  ---     0.000     LPLL.CLKFB to     LPLL.CLKOP <A href="#@comp:u_pll/PLLInst_0">u_pll/PLLInst_0</A>
+ROUTE        31     2.064<A href="#@net:clk_gen:LPLL.CLKOP:LPLL.CLKFB:2.064">     LPLL.CLKOP to LPLL.CLKFB    </A> <A href="#@net:clk_gen">clk_gen</A>
+                  --------
+                    2.064   (0.0% logic, 100.0% route), 1 logic levels.
+
+      <A href="#@path:FREQUENCY NET 'clk_gen' 106.406832 MHz ;:PADI_DEL, 1.163,3.PAD,3.PADDI,clk:ROUTE, 0.788,3.PADDI,LPLL.CLKI,clk_c:CLKI2OP_DEL, 0.000,LPLL.CLKI,LPLL.CLKOP,u_pll/PLLInst_0:ROUTE, 1.891,LPLL.CLKOP,R9C15C.CLK,clk_gen">Destination Clock Path</A> clk to u_sid_spi/u_sid/SLICE_77:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+PADI_DEL    ---     1.163          3.PAD to        3.PADDI <A href="#@comp:clk">clk</A>
+ROUTE         1     0.788<A href="#@net:clk_c:3.PADDI:LPLL.CLKI:0.788">        3.PADDI to LPLL.CLKI     </A> <A href="#@net:clk_c">clk_c</A>
+CLKI2OP_DE  ---     0.000      LPLL.CLKI to     LPLL.CLKOP <A href="#@comp:u_pll/PLLInst_0">u_pll/PLLInst_0</A>
+ROUTE        31     1.891<A href="#@net:clk_gen:LPLL.CLKOP:R9C15C.CLK:1.891">     LPLL.CLKOP to R9C15C.CLK    </A> <A href="#@net:clk_gen">clk_gen</A>
+                  --------
+                    3.842   (30.3% logic, 69.7% route), 2 logic levels.
+
+      Destination Clock f/b:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+CLKFB2OP_D  ---     0.000     LPLL.CLKFB to     LPLL.CLKOP <A href="#@comp:u_pll/PLLInst_0">u_pll/PLLInst_0</A>
+ROUTE        31     2.064<A href="#@net:clk_gen:LPLL.CLKOP:LPLL.CLKFB:2.064">     LPLL.CLKOP to LPLL.CLKFB    </A> <A href="#@net:clk_gen">clk_gen</A>
+                  --------
+                    2.064   (0.0% logic, 100.0% route), 1 logic levels.
+<font color=#000000> 
+
+Passed: The following path meets requirements by 1.438ns
+ </font>
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              <A href="#@comp:u_sid_spi/SLICE_38">u_sid_spi/spi_cmd_valid_92</A>  (from <A href="#@net:spi_sck_xfer_pipe[2]">spi_sck_xfer_pipe[2]</A> +)
+   Destination:    FF         Data in        <A href="#@comp:u_sid_spi/u_sid/SLICE_72">u_sid_spi/u_sid/sid_addr_buf__i1</A>  (to <A href="#@net:clk_gen">clk_gen</A> +)
+                   FF                        <A href="#@net:u_sid_spi/u_sid/sid_addr_buf__i2">u_sid_spi/u_sid/sid_addr_buf__i2</A>
+
+   Delay:               3.393ns  (28.0% logic, 72.0% route), 2 logic levels.
+
+ Constraint Details:
+
+      3.393ns physical path delay u_sid_spi/SLICE_38 to u_sid_spi/u_sid/SLICE_72 meets
+      9.398ns delay constraint less
+      4.284ns skew and
+      0.000ns feedback compensation and
+      0.283ns CE_SET requirement (totaling 4.831ns) by 1.438ns
+
+ Physical Path Details:
+
+      <A href="#@path:FREQUENCY NET 'clk_gen' 106.406832 MHz ;:REG_DEL, 0.454,R8C16C.CLK,R8C16C.Q0,u_sid_spi/SLICE_38:ROUTE, 0.984,R8C16C.Q0,R7C17C.D1,u_sid_spi/spi_cmd_valid:CTOF_DEL, 0.497,R7C17C.D1,R7C17C.F1,u_sid_spi/SLICE_70:ROUTE, 1.458,R7C17C.F1,R9C18C.CE,u_sid_spi/u_sid/clk_gen_enable_27">Data path</A> u_sid_spi/SLICE_38 to u_sid_spi/u_sid/SLICE_72:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.454     R8C16C.CLK to      R8C16C.Q0 <A href="#@comp:u_sid_spi/SLICE_38">u_sid_spi/SLICE_38</A> (from <A href="#@net:spi_sck_xfer_pipe[2]">spi_sck_xfer_pipe[2]</A>)
+ROUTE         6     0.984<A href="#@net:u_sid_spi/spi_cmd_valid:R8C16C.Q0:R7C17C.D1:0.984">      R8C16C.Q0 to R7C17C.D1     </A> <A href="#@net:u_sid_spi/spi_cmd_valid">u_sid_spi/spi_cmd_valid</A>
+CTOF_DEL    ---     0.497      R7C17C.D1 to      R7C17C.F1 <A href="#@comp:u_sid_spi/SLICE_70">u_sid_spi/SLICE_70</A>
+ROUTE         7     1.458<A href="#@net:u_sid_spi/u_sid/clk_gen_enable_27:R7C17C.F1:R9C18C.CE:1.458">      R7C17C.F1 to R9C18C.CE     </A> <A href="#@net:u_sid_spi/u_sid/clk_gen_enable_27">u_sid_spi/u_sid/clk_gen_enable_27</A> (to <A href="#@net:clk_gen">clk_gen</A>)
+                  --------
+                    3.393   (28.0% logic, 72.0% route), 2 logic levels.
+
+ Clock Skew Details: 
+
+      <A href="#@path:FREQUENCY NET 'clk_gen' 106.406832 MHz ;:PADI_DEL, 1.163,3.PAD,3.PADDI,clk:ROUTE, 0.788,3.PADDI,LPLL.CLKI,clk_c:CLKI2OP_DEL, 0.000,LPLL.CLKI,LPLL.CLKOP,u_pll/PLLInst_0:ROUTE, 1.891,LPLL.CLKOP,R2C19B.CLK,clk_gen:REG_DEL, 0.454,R2C19B.CLK,R2C19B.Q1,SLICE_13:ROUTE, 3.830,R2C19B.Q1,R8C16C.CLK,spi_sck_xfer_pipe[2]">Source Clock Path</A> clk to u_sid_spi/SLICE_38:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+PADI_DEL    ---     1.163          3.PAD to        3.PADDI <A href="#@comp:clk">clk</A>
+ROUTE         1     0.788<A href="#@net:clk_c:3.PADDI:LPLL.CLKI:0.788">        3.PADDI to LPLL.CLKI     </A> <A href="#@net:clk_c">clk_c</A>
+CLKI2OP_DE  ---     0.000      LPLL.CLKI to     LPLL.CLKOP <A href="#@comp:u_pll/PLLInst_0">u_pll/PLLInst_0</A>
+ROUTE        31     1.891<A href="#@net:clk_gen:LPLL.CLKOP:R2C19B.CLK:1.891">     LPLL.CLKOP to R2C19B.CLK    </A> <A href="#@net:clk_gen">clk_gen</A>
+REG_DEL     ---     0.454     R2C19B.CLK to      R2C19B.Q1 <A href="#@comp:SLICE_13">SLICE_13</A>
+ROUTE        21     3.830<A href="#@net:spi_sck_xfer_pipe[2]:R2C19B.Q1:R8C16C.CLK:3.830">      R2C19B.Q1 to R8C16C.CLK    </A> <A href="#@net:spi_sck_xfer_pipe[2]">spi_sck_xfer_pipe[2]</A>
+                  --------
+                    8.126   (19.9% logic, 80.1% route), 3 logic levels.
+
+      Source Clock f/b:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+CLKFB2OP_D  ---     0.000     LPLL.CLKFB to     LPLL.CLKOP <A href="#@comp:u_pll/PLLInst_0">u_pll/PLLInst_0</A>
+ROUTE        31     2.064<A href="#@net:clk_gen:LPLL.CLKOP:LPLL.CLKFB:2.064">     LPLL.CLKOP to LPLL.CLKFB    </A> <A href="#@net:clk_gen">clk_gen</A>
+                  --------
+                    2.064   (0.0% logic, 100.0% route), 1 logic levels.
+
+      <A href="#@path:FREQUENCY NET 'clk_gen' 106.406832 MHz ;:PADI_DEL, 1.163,3.PAD,3.PADDI,clk:ROUTE, 0.788,3.PADDI,LPLL.CLKI,clk_c:CLKI2OP_DEL, 0.000,LPLL.CLKI,LPLL.CLKOP,u_pll/PLLInst_0:ROUTE, 1.891,LPLL.CLKOP,R9C18C.CLK,clk_gen">Destination Clock Path</A> clk to u_sid_spi/u_sid/SLICE_72:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+PADI_DEL    ---     1.163          3.PAD to        3.PADDI <A href="#@comp:clk">clk</A>
+ROUTE         1     0.788<A href="#@net:clk_c:3.PADDI:LPLL.CLKI:0.788">        3.PADDI to LPLL.CLKI     </A> <A href="#@net:clk_c">clk_c</A>
+CLKI2OP_DE  ---     0.000      LPLL.CLKI to     LPLL.CLKOP <A href="#@comp:u_pll/PLLInst_0">u_pll/PLLInst_0</A>
+ROUTE        31     1.891<A href="#@net:clk_gen:LPLL.CLKOP:R9C18C.CLK:1.891">     LPLL.CLKOP to R9C18C.CLK    </A> <A href="#@net:clk_gen">clk_gen</A>
+                  --------
+                    3.842   (30.3% logic, 69.7% route), 2 logic levels.
+
+      Destination Clock f/b:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+CLKFB2OP_D  ---     0.000     LPLL.CLKFB to     LPLL.CLKOP <A href="#@comp:u_pll/PLLInst_0">u_pll/PLLInst_0</A>
+ROUTE        31     2.064<A href="#@net:clk_gen:LPLL.CLKOP:LPLL.CLKFB:2.064">     LPLL.CLKOP to LPLL.CLKFB    </A> <A href="#@net:clk_gen">clk_gen</A>
+                  --------
+                    2.064   (0.0% logic, 100.0% route), 1 logic levels.
+<font color=#000000> 
+
+Passed: The following path meets requirements by 1.438ns
+ </font>
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              <A href="#@comp:u_sid_spi/SLICE_38">u_sid_spi/spi_cmd_valid_92</A>  (from <A href="#@net:spi_sck_xfer_pipe[2]">spi_sck_xfer_pipe[2]</A> +)
+   Destination:    FF         Data in        <A href="#@comp:u_sid_spi/u_sid/SLICE_11">u_sid_spi/u_sid/sid_data_buf__i3</A>  (to <A href="#@net:clk_gen">clk_gen</A> +)
+                   FF                        <A href="#@net:u_sid_spi/u_sid/sid_data_buf__i4">u_sid_spi/u_sid/sid_data_buf__i4</A>
+
+   Delay:               3.393ns  (28.0% logic, 72.0% route), 2 logic levels.
+
+ Constraint Details:
+
+      3.393ns physical path delay u_sid_spi/SLICE_38 to u_sid_spi/u_sid/SLICE_11 meets
+      9.398ns delay constraint less
+      4.284ns skew and
+      0.000ns feedback compensation and
+      0.283ns CE_SET requirement (totaling 4.831ns) by 1.438ns
+
+ Physical Path Details:
+
+      <A href="#@path:FREQUENCY NET 'clk_gen' 106.406832 MHz ;:REG_DEL, 0.454,R8C16C.CLK,R8C16C.Q0,u_sid_spi/SLICE_38:ROUTE, 0.984,R8C16C.Q0,R7C17C.D1,u_sid_spi/spi_cmd_valid:CTOF_DEL, 0.497,R7C17C.D1,R7C17C.F1,u_sid_spi/SLICE_70:ROUTE, 1.458,R7C17C.F1,R9C15A.CE,u_sid_spi/u_sid/clk_gen_enable_27">Data path</A> u_sid_spi/SLICE_38 to u_sid_spi/u_sid/SLICE_11:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.454     R8C16C.CLK to      R8C16C.Q0 <A href="#@comp:u_sid_spi/SLICE_38">u_sid_spi/SLICE_38</A> (from <A href="#@net:spi_sck_xfer_pipe[2]">spi_sck_xfer_pipe[2]</A>)
+ROUTE         6     0.984<A href="#@net:u_sid_spi/spi_cmd_valid:R8C16C.Q0:R7C17C.D1:0.984">      R8C16C.Q0 to R7C17C.D1     </A> <A href="#@net:u_sid_spi/spi_cmd_valid">u_sid_spi/spi_cmd_valid</A>
+CTOF_DEL    ---     0.497      R7C17C.D1 to      R7C17C.F1 <A href="#@comp:u_sid_spi/SLICE_70">u_sid_spi/SLICE_70</A>
+ROUTE         7     1.458<A href="#@net:u_sid_spi/u_sid/clk_gen_enable_27:R7C17C.F1:R9C15A.CE:1.458">      R7C17C.F1 to R9C15A.CE     </A> <A href="#@net:u_sid_spi/u_sid/clk_gen_enable_27">u_sid_spi/u_sid/clk_gen_enable_27</A> (to <A href="#@net:clk_gen">clk_gen</A>)
+                  --------
+                    3.393   (28.0% logic, 72.0% route), 2 logic levels.
+
+ Clock Skew Details: 
+
+      <A href="#@path:FREQUENCY NET 'clk_gen' 106.406832 MHz ;:PADI_DEL, 1.163,3.PAD,3.PADDI,clk:ROUTE, 0.788,3.PADDI,LPLL.CLKI,clk_c:CLKI2OP_DEL, 0.000,LPLL.CLKI,LPLL.CLKOP,u_pll/PLLInst_0:ROUTE, 1.891,LPLL.CLKOP,R2C19B.CLK,clk_gen:REG_DEL, 0.454,R2C19B.CLK,R2C19B.Q1,SLICE_13:ROUTE, 3.830,R2C19B.Q1,R8C16C.CLK,spi_sck_xfer_pipe[2]">Source Clock Path</A> clk to u_sid_spi/SLICE_38:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+PADI_DEL    ---     1.163          3.PAD to        3.PADDI <A href="#@comp:clk">clk</A>
+ROUTE         1     0.788<A href="#@net:clk_c:3.PADDI:LPLL.CLKI:0.788">        3.PADDI to LPLL.CLKI     </A> <A href="#@net:clk_c">clk_c</A>
+CLKI2OP_DE  ---     0.000      LPLL.CLKI to     LPLL.CLKOP <A href="#@comp:u_pll/PLLInst_0">u_pll/PLLInst_0</A>
+ROUTE        31     1.891<A href="#@net:clk_gen:LPLL.CLKOP:R2C19B.CLK:1.891">     LPLL.CLKOP to R2C19B.CLK    </A> <A href="#@net:clk_gen">clk_gen</A>
+REG_DEL     ---     0.454     R2C19B.CLK to      R2C19B.Q1 <A href="#@comp:SLICE_13">SLICE_13</A>
+ROUTE        21     3.830<A href="#@net:spi_sck_xfer_pipe[2]:R2C19B.Q1:R8C16C.CLK:3.830">      R2C19B.Q1 to R8C16C.CLK    </A> <A href="#@net:spi_sck_xfer_pipe[2]">spi_sck_xfer_pipe[2]</A>
+                  --------
+                    8.126   (19.9% logic, 80.1% route), 3 logic levels.
+
+      Source Clock f/b:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+CLKFB2OP_D  ---     0.000     LPLL.CLKFB to     LPLL.CLKOP <A href="#@comp:u_pll/PLLInst_0">u_pll/PLLInst_0</A>
+ROUTE        31     2.064<A href="#@net:clk_gen:LPLL.CLKOP:LPLL.CLKFB:2.064">     LPLL.CLKOP to LPLL.CLKFB    </A> <A href="#@net:clk_gen">clk_gen</A>
+                  --------
+                    2.064   (0.0% logic, 100.0% route), 1 logic levels.
+
+      <A href="#@path:FREQUENCY NET 'clk_gen' 106.406832 MHz ;:PADI_DEL, 1.163,3.PAD,3.PADDI,clk:ROUTE, 0.788,3.PADDI,LPLL.CLKI,clk_c:CLKI2OP_DEL, 0.000,LPLL.CLKI,LPLL.CLKOP,u_pll/PLLInst_0:ROUTE, 1.891,LPLL.CLKOP,R9C15A.CLK,clk_gen">Destination Clock Path</A> clk to u_sid_spi/u_sid/SLICE_11:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+PADI_DEL    ---     1.163          3.PAD to        3.PADDI <A href="#@comp:clk">clk</A>
+ROUTE         1     0.788<A href="#@net:clk_c:3.PADDI:LPLL.CLKI:0.788">        3.PADDI to LPLL.CLKI     </A> <A href="#@net:clk_c">clk_c</A>
+CLKI2OP_DE  ---     0.000      LPLL.CLKI to     LPLL.CLKOP <A href="#@comp:u_pll/PLLInst_0">u_pll/PLLInst_0</A>
+ROUTE        31     1.891<A href="#@net:clk_gen:LPLL.CLKOP:R9C15A.CLK:1.891">     LPLL.CLKOP to R9C15A.CLK    </A> <A href="#@net:clk_gen">clk_gen</A>
+                  --------
+                    3.842   (30.3% logic, 69.7% route), 2 logic levels.
+
+      Destination Clock f/b:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+CLKFB2OP_D  ---     0.000     LPLL.CLKFB to     LPLL.CLKOP <A href="#@comp:u_pll/PLLInst_0">u_pll/PLLInst_0</A>
+ROUTE        31     2.064<A href="#@net:clk_gen:LPLL.CLKOP:LPLL.CLKFB:2.064">     LPLL.CLKOP to LPLL.CLKFB    </A> <A href="#@net:clk_gen">clk_gen</A>
+                  --------
+                    2.064   (0.0% logic, 100.0% route), 1 logic levels.
+<font color=#000000> 
+
+Passed: The following path meets requirements by 1.438ns
+ </font>
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              <A href="#@comp:u_sid_spi/SLICE_38">u_sid_spi/spi_cmd_valid_92</A>  (from <A href="#@net:spi_sck_xfer_pipe[2]">spi_sck_xfer_pipe[2]</A> +)
+   Destination:    FF         Data in        <A href="#@comp:u_sid_spi/u_sid/SLICE_73">u_sid_spi/u_sid/sid_addr_buf__i3</A>  (to <A href="#@net:clk_gen">clk_gen</A> +)
+                   FF                        <A href="#@net:u_sid_spi/u_sid/sid_addr_buf__i4">u_sid_spi/u_sid/sid_addr_buf__i4</A>
+
+   Delay:               3.393ns  (28.0% logic, 72.0% route), 2 logic levels.
+
+ Constraint Details:
+
+      3.393ns physical path delay u_sid_spi/SLICE_38 to u_sid_spi/u_sid/SLICE_73 meets
+      9.398ns delay constraint less
+      4.284ns skew and
+      0.000ns feedback compensation and
+      0.283ns CE_SET requirement (totaling 4.831ns) by 1.438ns
+
+ Physical Path Details:
+
+      <A href="#@path:FREQUENCY NET 'clk_gen' 106.406832 MHz ;:REG_DEL, 0.454,R8C16C.CLK,R8C16C.Q0,u_sid_spi/SLICE_38:ROUTE, 0.984,R8C16C.Q0,R7C17C.D1,u_sid_spi/spi_cmd_valid:CTOF_DEL, 0.497,R7C17C.D1,R7C17C.F1,u_sid_spi/SLICE_70:ROUTE, 1.458,R7C17C.F1,R9C18D.CE,u_sid_spi/u_sid/clk_gen_enable_27">Data path</A> u_sid_spi/SLICE_38 to u_sid_spi/u_sid/SLICE_73:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.454     R8C16C.CLK to      R8C16C.Q0 <A href="#@comp:u_sid_spi/SLICE_38">u_sid_spi/SLICE_38</A> (from <A href="#@net:spi_sck_xfer_pipe[2]">spi_sck_xfer_pipe[2]</A>)
+ROUTE         6     0.984<A href="#@net:u_sid_spi/spi_cmd_valid:R8C16C.Q0:R7C17C.D1:0.984">      R8C16C.Q0 to R7C17C.D1     </A> <A href="#@net:u_sid_spi/spi_cmd_valid">u_sid_spi/spi_cmd_valid</A>
+CTOF_DEL    ---     0.497      R7C17C.D1 to      R7C17C.F1 <A href="#@comp:u_sid_spi/SLICE_70">u_sid_spi/SLICE_70</A>
+ROUTE         7     1.458<A href="#@net:u_sid_spi/u_sid/clk_gen_enable_27:R7C17C.F1:R9C18D.CE:1.458">      R7C17C.F1 to R9C18D.CE     </A> <A href="#@net:u_sid_spi/u_sid/clk_gen_enable_27">u_sid_spi/u_sid/clk_gen_enable_27</A> (to <A href="#@net:clk_gen">clk_gen</A>)
+                  --------
+                    3.393   (28.0% logic, 72.0% route), 2 logic levels.
+
+ Clock Skew Details: 
+
+      <A href="#@path:FREQUENCY NET 'clk_gen' 106.406832 MHz ;:PADI_DEL, 1.163,3.PAD,3.PADDI,clk:ROUTE, 0.788,3.PADDI,LPLL.CLKI,clk_c:CLKI2OP_DEL, 0.000,LPLL.CLKI,LPLL.CLKOP,u_pll/PLLInst_0:ROUTE, 1.891,LPLL.CLKOP,R2C19B.CLK,clk_gen:REG_DEL, 0.454,R2C19B.CLK,R2C19B.Q1,SLICE_13:ROUTE, 3.830,R2C19B.Q1,R8C16C.CLK,spi_sck_xfer_pipe[2]">Source Clock Path</A> clk to u_sid_spi/SLICE_38:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+PADI_DEL    ---     1.163          3.PAD to        3.PADDI <A href="#@comp:clk">clk</A>
+ROUTE         1     0.788<A href="#@net:clk_c:3.PADDI:LPLL.CLKI:0.788">        3.PADDI to LPLL.CLKI     </A> <A href="#@net:clk_c">clk_c</A>
+CLKI2OP_DE  ---     0.000      LPLL.CLKI to     LPLL.CLKOP <A href="#@comp:u_pll/PLLInst_0">u_pll/PLLInst_0</A>
+ROUTE        31     1.891<A href="#@net:clk_gen:LPLL.CLKOP:R2C19B.CLK:1.891">     LPLL.CLKOP to R2C19B.CLK    </A> <A href="#@net:clk_gen">clk_gen</A>
+REG_DEL     ---     0.454     R2C19B.CLK to      R2C19B.Q1 <A href="#@comp:SLICE_13">SLICE_13</A>
+ROUTE        21     3.830<A href="#@net:spi_sck_xfer_pipe[2]:R2C19B.Q1:R8C16C.CLK:3.830">      R2C19B.Q1 to R8C16C.CLK    </A> <A href="#@net:spi_sck_xfer_pipe[2]">spi_sck_xfer_pipe[2]</A>
+                  --------
+                    8.126   (19.9% logic, 80.1% route), 3 logic levels.
+
+      Source Clock f/b:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+CLKFB2OP_D  ---     0.000     LPLL.CLKFB to     LPLL.CLKOP <A href="#@comp:u_pll/PLLInst_0">u_pll/PLLInst_0</A>
+ROUTE        31     2.064<A href="#@net:clk_gen:LPLL.CLKOP:LPLL.CLKFB:2.064">     LPLL.CLKOP to LPLL.CLKFB    </A> <A href="#@net:clk_gen">clk_gen</A>
+                  --------
+                    2.064   (0.0% logic, 100.0% route), 1 logic levels.
+
+      <A href="#@path:FREQUENCY NET 'clk_gen' 106.406832 MHz ;:PADI_DEL, 1.163,3.PAD,3.PADDI,clk:ROUTE, 0.788,3.PADDI,LPLL.CLKI,clk_c:CLKI2OP_DEL, 0.000,LPLL.CLKI,LPLL.CLKOP,u_pll/PLLInst_0:ROUTE, 1.891,LPLL.CLKOP,R9C18D.CLK,clk_gen">Destination Clock Path</A> clk to u_sid_spi/u_sid/SLICE_73:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+PADI_DEL    ---     1.163          3.PAD to        3.PADDI <A href="#@comp:clk">clk</A>
+ROUTE         1     0.788<A href="#@net:clk_c:3.PADDI:LPLL.CLKI:0.788">        3.PADDI to LPLL.CLKI     </A> <A href="#@net:clk_c">clk_c</A>
+CLKI2OP_DE  ---     0.000      LPLL.CLKI to     LPLL.CLKOP <A href="#@comp:u_pll/PLLInst_0">u_pll/PLLInst_0</A>
+ROUTE        31     1.891<A href="#@net:clk_gen:LPLL.CLKOP:R9C18D.CLK:1.891">     LPLL.CLKOP to R9C18D.CLK    </A> <A href="#@net:clk_gen">clk_gen</A>
+                  --------
+                    3.842   (30.3% logic, 69.7% route), 2 logic levels.
+
+      Destination Clock f/b:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+CLKFB2OP_D  ---     0.000     LPLL.CLKFB to     LPLL.CLKOP <A href="#@comp:u_pll/PLLInst_0">u_pll/PLLInst_0</A>
+ROUTE        31     2.064<A href="#@net:clk_gen:LPLL.CLKOP:LPLL.CLKFB:2.064">     LPLL.CLKOP to LPLL.CLKFB    </A> <A href="#@net:clk_gen">clk_gen</A>
+                  --------
+                    2.064   (0.0% logic, 100.0% route), 1 logic levels.
+<font color=#000000> 
+
+Passed: The following path meets requirements by 1.459ns
+ </font>
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              <A href="#@comp:u_sid_spi/SLICE_38">u_sid_spi/spi_cmd_valid_92</A>  (from <A href="#@net:spi_sck_xfer_pipe[2]">spi_sck_xfer_pipe[2]</A> +)
+   Destination:    FF         Data in        <A href="#@comp:u_sid_spi/u_sid/SLICE_12">u_sid_spi/u_sid/sid_data_buf__i5</A>  (to <A href="#@net:clk_gen">clk_gen</A> +)
+                   FF                        <A href="#@net:u_sid_spi/u_sid/sid_data_buf__i6">u_sid_spi/u_sid/sid_data_buf__i6</A>
+
+   Delay:               3.372ns  (28.2% logic, 71.8% route), 2 logic levels.
+
+ Constraint Details:
+
+      3.372ns physical path delay u_sid_spi/SLICE_38 to u_sid_spi/u_sid/SLICE_12 meets
+      9.398ns delay constraint less
+      4.284ns skew and
+      0.000ns feedback compensation and
+      0.283ns CE_SET requirement (totaling 4.831ns) by 1.459ns
+
+ Physical Path Details:
+
+      <A href="#@path:FREQUENCY NET 'clk_gen' 106.406832 MHz ;:REG_DEL, 0.454,R8C16C.CLK,R8C16C.Q0,u_sid_spi/SLICE_38:ROUTE, 0.984,R8C16C.Q0,R7C17C.D1,u_sid_spi/spi_cmd_valid:CTOF_DEL, 0.497,R7C17C.D1,R7C17C.F1,u_sid_spi/SLICE_70:ROUTE, 1.437,R7C17C.F1,R8C15A.CE,u_sid_spi/u_sid/clk_gen_enable_27">Data path</A> u_sid_spi/SLICE_38 to u_sid_spi/u_sid/SLICE_12:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.454     R8C16C.CLK to      R8C16C.Q0 <A href="#@comp:u_sid_spi/SLICE_38">u_sid_spi/SLICE_38</A> (from <A href="#@net:spi_sck_xfer_pipe[2]">spi_sck_xfer_pipe[2]</A>)
+ROUTE         6     0.984<A href="#@net:u_sid_spi/spi_cmd_valid:R8C16C.Q0:R7C17C.D1:0.984">      R8C16C.Q0 to R7C17C.D1     </A> <A href="#@net:u_sid_spi/spi_cmd_valid">u_sid_spi/spi_cmd_valid</A>
+CTOF_DEL    ---     0.497      R7C17C.D1 to      R7C17C.F1 <A href="#@comp:u_sid_spi/SLICE_70">u_sid_spi/SLICE_70</A>
+ROUTE         7     1.437<A href="#@net:u_sid_spi/u_sid/clk_gen_enable_27:R7C17C.F1:R8C15A.CE:1.437">      R7C17C.F1 to R8C15A.CE     </A> <A href="#@net:u_sid_spi/u_sid/clk_gen_enable_27">u_sid_spi/u_sid/clk_gen_enable_27</A> (to <A href="#@net:clk_gen">clk_gen</A>)
+                  --------
+                    3.372   (28.2% logic, 71.8% route), 2 logic levels.
+
+ Clock Skew Details: 
+
+      <A href="#@path:FREQUENCY NET 'clk_gen' 106.406832 MHz ;:PADI_DEL, 1.163,3.PAD,3.PADDI,clk:ROUTE, 0.788,3.PADDI,LPLL.CLKI,clk_c:CLKI2OP_DEL, 0.000,LPLL.CLKI,LPLL.CLKOP,u_pll/PLLInst_0:ROUTE, 1.891,LPLL.CLKOP,R2C19B.CLK,clk_gen:REG_DEL, 0.454,R2C19B.CLK,R2C19B.Q1,SLICE_13:ROUTE, 3.830,R2C19B.Q1,R8C16C.CLK,spi_sck_xfer_pipe[2]">Source Clock Path</A> clk to u_sid_spi/SLICE_38:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+PADI_DEL    ---     1.163          3.PAD to        3.PADDI <A href="#@comp:clk">clk</A>
+ROUTE         1     0.788<A href="#@net:clk_c:3.PADDI:LPLL.CLKI:0.788">        3.PADDI to LPLL.CLKI     </A> <A href="#@net:clk_c">clk_c</A>
+CLKI2OP_DE  ---     0.000      LPLL.CLKI to     LPLL.CLKOP <A href="#@comp:u_pll/PLLInst_0">u_pll/PLLInst_0</A>
+ROUTE        31     1.891<A href="#@net:clk_gen:LPLL.CLKOP:R2C19B.CLK:1.891">     LPLL.CLKOP to R2C19B.CLK    </A> <A href="#@net:clk_gen">clk_gen</A>
+REG_DEL     ---     0.454     R2C19B.CLK to      R2C19B.Q1 <A href="#@comp:SLICE_13">SLICE_13</A>
+ROUTE        21     3.830<A href="#@net:spi_sck_xfer_pipe[2]:R2C19B.Q1:R8C16C.CLK:3.830">      R2C19B.Q1 to R8C16C.CLK    </A> <A href="#@net:spi_sck_xfer_pipe[2]">spi_sck_xfer_pipe[2]</A>
+                  --------
+                    8.126   (19.9% logic, 80.1% route), 3 logic levels.
+
+      Source Clock f/b:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+CLKFB2OP_D  ---     0.000     LPLL.CLKFB to     LPLL.CLKOP <A href="#@comp:u_pll/PLLInst_0">u_pll/PLLInst_0</A>
+ROUTE        31     2.064<A href="#@net:clk_gen:LPLL.CLKOP:LPLL.CLKFB:2.064">     LPLL.CLKOP to LPLL.CLKFB    </A> <A href="#@net:clk_gen">clk_gen</A>
+                  --------
+                    2.064   (0.0% logic, 100.0% route), 1 logic levels.
+
+      <A href="#@path:FREQUENCY NET 'clk_gen' 106.406832 MHz ;:PADI_DEL, 1.163,3.PAD,3.PADDI,clk:ROUTE, 0.788,3.PADDI,LPLL.CLKI,clk_c:CLKI2OP_DEL, 0.000,LPLL.CLKI,LPLL.CLKOP,u_pll/PLLInst_0:ROUTE, 1.891,LPLL.CLKOP,R8C15A.CLK,clk_gen">Destination Clock Path</A> clk to u_sid_spi/u_sid/SLICE_12:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+PADI_DEL    ---     1.163          3.PAD to        3.PADDI <A href="#@comp:clk">clk</A>
+ROUTE         1     0.788<A href="#@net:clk_c:3.PADDI:LPLL.CLKI:0.788">        3.PADDI to LPLL.CLKI     </A> <A href="#@net:clk_c">clk_c</A>
+CLKI2OP_DE  ---     0.000      LPLL.CLKI to     LPLL.CLKOP <A href="#@comp:u_pll/PLLInst_0">u_pll/PLLInst_0</A>
+ROUTE        31     1.891<A href="#@net:clk_gen:LPLL.CLKOP:R8C15A.CLK:1.891">     LPLL.CLKOP to R8C15A.CLK    </A> <A href="#@net:clk_gen">clk_gen</A>
+                  --------
+                    3.842   (30.3% logic, 69.7% route), 2 logic levels.
+
+      Destination Clock f/b:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+CLKFB2OP_D  ---     0.000     LPLL.CLKFB to     LPLL.CLKOP <A href="#@comp:u_pll/PLLInst_0">u_pll/PLLInst_0</A>
+ROUTE        31     2.064<A href="#@net:clk_gen:LPLL.CLKOP:LPLL.CLKFB:2.064">     LPLL.CLKOP to LPLL.CLKFB    </A> <A href="#@net:clk_gen">clk_gen</A>
+                  --------
+                    2.064   (0.0% logic, 100.0% route), 1 logic levels.
+<font color=#000000> 
+
+Passed: The following path meets requirements by 1.483ns
+ </font>
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              <A href="#@comp:u_sid_spi/SLICE_38">u_sid_spi/spi_cmd_valid_92</A>  (from <A href="#@net:spi_sck_xfer_pipe[2]">spi_sck_xfer_pipe[2]</A> +)
+   Destination:    FF         Data in        <A href="#@comp:u_sid_spi/u_sid/SLICE_9">u_sid_spi/u_sid/sid_addr_buf__i5</A>  (to <A href="#@net:clk_gen">clk_gen</A> +)
+                   FF                        <A href="#@net:u_sid_spi/u_sid/sid_data_buf__i0">u_sid_spi/u_sid/sid_data_buf__i0</A>
+
+   Delay:               3.348ns  (28.4% logic, 71.6% route), 2 logic levels.
+
+ Constraint Details:
+
+      3.348ns physical path delay u_sid_spi/SLICE_38 to u_sid_spi/u_sid/SLICE_9 meets
+      9.398ns delay constraint less
+      4.284ns skew and
+      0.000ns feedback compensation and
+      0.283ns CE_SET requirement (totaling 4.831ns) by 1.483ns
+
+ Physical Path Details:
+
+      <A href="#@path:FREQUENCY NET 'clk_gen' 106.406832 MHz ;:REG_DEL, 0.454,R8C16C.CLK,R8C16C.Q0,u_sid_spi/SLICE_38:ROUTE, 0.984,R8C16C.Q0,R7C17C.D1,u_sid_spi/spi_cmd_valid:CTOF_DEL, 0.497,R7C17C.D1,R7C17C.F1,u_sid_spi/SLICE_70:ROUTE, 1.413,R7C17C.F1,R8C18D.CE,u_sid_spi/u_sid/clk_gen_enable_27">Data path</A> u_sid_spi/SLICE_38 to u_sid_spi/u_sid/SLICE_9:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.454     R8C16C.CLK to      R8C16C.Q0 <A href="#@comp:u_sid_spi/SLICE_38">u_sid_spi/SLICE_38</A> (from <A href="#@net:spi_sck_xfer_pipe[2]">spi_sck_xfer_pipe[2]</A>)
+ROUTE         6     0.984<A href="#@net:u_sid_spi/spi_cmd_valid:R8C16C.Q0:R7C17C.D1:0.984">      R8C16C.Q0 to R7C17C.D1     </A> <A href="#@net:u_sid_spi/spi_cmd_valid">u_sid_spi/spi_cmd_valid</A>
+CTOF_DEL    ---     0.497      R7C17C.D1 to      R7C17C.F1 <A href="#@comp:u_sid_spi/SLICE_70">u_sid_spi/SLICE_70</A>
+ROUTE         7     1.413<A href="#@net:u_sid_spi/u_sid/clk_gen_enable_27:R7C17C.F1:R8C18D.CE:1.413">      R7C17C.F1 to R8C18D.CE     </A> <A href="#@net:u_sid_spi/u_sid/clk_gen_enable_27">u_sid_spi/u_sid/clk_gen_enable_27</A> (to <A href="#@net:clk_gen">clk_gen</A>)
+                  --------
+                    3.348   (28.4% logic, 71.6% route), 2 logic levels.
+
+ Clock Skew Details: 
+
+      <A href="#@path:FREQUENCY NET 'clk_gen' 106.406832 MHz ;:PADI_DEL, 1.163,3.PAD,3.PADDI,clk:ROUTE, 0.788,3.PADDI,LPLL.CLKI,clk_c:CLKI2OP_DEL, 0.000,LPLL.CLKI,LPLL.CLKOP,u_pll/PLLInst_0:ROUTE, 1.891,LPLL.CLKOP,R2C19B.CLK,clk_gen:REG_DEL, 0.454,R2C19B.CLK,R2C19B.Q1,SLICE_13:ROUTE, 3.830,R2C19B.Q1,R8C16C.CLK,spi_sck_xfer_pipe[2]">Source Clock Path</A> clk to u_sid_spi/SLICE_38:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+PADI_DEL    ---     1.163          3.PAD to        3.PADDI <A href="#@comp:clk">clk</A>
+ROUTE         1     0.788<A href="#@net:clk_c:3.PADDI:LPLL.CLKI:0.788">        3.PADDI to LPLL.CLKI     </A> <A href="#@net:clk_c">clk_c</A>
+CLKI2OP_DE  ---     0.000      LPLL.CLKI to     LPLL.CLKOP <A href="#@comp:u_pll/PLLInst_0">u_pll/PLLInst_0</A>
+ROUTE        31     1.891<A href="#@net:clk_gen:LPLL.CLKOP:R2C19B.CLK:1.891">     LPLL.CLKOP to R2C19B.CLK    </A> <A href="#@net:clk_gen">clk_gen</A>
+REG_DEL     ---     0.454     R2C19B.CLK to      R2C19B.Q1 <A href="#@comp:SLICE_13">SLICE_13</A>
+ROUTE        21     3.830<A href="#@net:spi_sck_xfer_pipe[2]:R2C19B.Q1:R8C16C.CLK:3.830">      R2C19B.Q1 to R8C16C.CLK    </A> <A href="#@net:spi_sck_xfer_pipe[2]">spi_sck_xfer_pipe[2]</A>
+                  --------
+                    8.126   (19.9% logic, 80.1% route), 3 logic levels.
+
+      Source Clock f/b:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+CLKFB2OP_D  ---     0.000     LPLL.CLKFB to     LPLL.CLKOP <A href="#@comp:u_pll/PLLInst_0">u_pll/PLLInst_0</A>
+ROUTE        31     2.064<A href="#@net:clk_gen:LPLL.CLKOP:LPLL.CLKFB:2.064">     LPLL.CLKOP to LPLL.CLKFB    </A> <A href="#@net:clk_gen">clk_gen</A>
+                  --------
+                    2.064   (0.0% logic, 100.0% route), 1 logic levels.
+
+      <A href="#@path:FREQUENCY NET 'clk_gen' 106.406832 MHz ;:PADI_DEL, 1.163,3.PAD,3.PADDI,clk:ROUTE, 0.788,3.PADDI,LPLL.CLKI,clk_c:CLKI2OP_DEL, 0.000,LPLL.CLKI,LPLL.CLKOP,u_pll/PLLInst_0:ROUTE, 1.891,LPLL.CLKOP,R8C18D.CLK,clk_gen">Destination Clock Path</A> clk to u_sid_spi/u_sid/SLICE_9:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+PADI_DEL    ---     1.163          3.PAD to        3.PADDI <A href="#@comp:clk">clk</A>
+ROUTE         1     0.788<A href="#@net:clk_c:3.PADDI:LPLL.CLKI:0.788">        3.PADDI to LPLL.CLKI     </A> <A href="#@net:clk_c">clk_c</A>
+CLKI2OP_DE  ---     0.000      LPLL.CLKI to     LPLL.CLKOP <A href="#@comp:u_pll/PLLInst_0">u_pll/PLLInst_0</A>
+ROUTE        31     1.891<A href="#@net:clk_gen:LPLL.CLKOP:R8C18D.CLK:1.891">     LPLL.CLKOP to R8C18D.CLK    </A> <A href="#@net:clk_gen">clk_gen</A>
+                  --------
+                    3.842   (30.3% logic, 69.7% route), 2 logic levels.
+
+      Destination Clock f/b:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+CLKFB2OP_D  ---     0.000     LPLL.CLKFB to     LPLL.CLKOP <A href="#@comp:u_pll/PLLInst_0">u_pll/PLLInst_0</A>
+ROUTE        31     2.064<A href="#@net:clk_gen:LPLL.CLKOP:LPLL.CLKFB:2.064">     LPLL.CLKOP to LPLL.CLKFB    </A> <A href="#@net:clk_gen">clk_gen</A>
+                  --------
+                    2.064   (0.0% logic, 100.0% route), 1 logic levels.
+<font color=#000000> 
+
+Passed: The following path meets requirements by 1.546ns
+ </font>
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              <A href="#@comp:u_sid_spi/SLICE_64">u_sid_spi/spi_cmd_buf__i15</A>  (from <A href="#@net:spi_sck_xfer_pipe[2]">spi_sck_xfer_pipe[2]</A> +)
+   Destination:    FF         Data in        <A href="#@comp:u_sid_spi/u_sid/SLICE_50">u_sid_spi/u_sid/state_FSM_i5</A>  (to <A href="#@net:clk_gen">clk_gen</A> +)
+
+   Delay:               3.402ns  (42.6% logic, 57.4% route), 3 logic levels.
+
+ Constraint Details:
+
+      3.402ns physical path delay u_sid_spi/SLICE_64 to u_sid_spi/u_sid/SLICE_50 meets
+      9.398ns delay constraint less
+      4.284ns skew and
+      0.000ns feedback compensation and
+      0.166ns DIN_SET requirement (totaling 4.948ns) by 1.546ns
+
+ Physical Path Details:
+
+      <A href="#@path:FREQUENCY NET 'clk_gen' 106.406832 MHz ;:REG_DEL, 0.454,R9C17D.CLK,R9C17D.Q0,u_sid_spi/SLICE_64:ROUTE, 1.327,R9C17D.Q0,R7C18B.A1,u_sid_spi/spi_cmd_buf_15:CTOF_DEL, 0.497,R7C18B.A1,R7C18B.F1,u_sid_spi/u_sid/SLICE_15:ROUTE, 0.627,R7C18B.F1,R6C18C.D1,u_sid_spi/u_sid/n4_adj_197:CTOF_DEL, 0.497,R6C18C.D1,R6C18C.F1,u_sid_spi/u_sid/SLICE_50:ROUTE, 0.000,R6C18C.F1,R6C18C.DI1,u_sid_spi/u_sid/n746">Data path</A> u_sid_spi/SLICE_64 to u_sid_spi/u_sid/SLICE_50:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.454     R9C17D.CLK to      R9C17D.Q0 <A href="#@comp:u_sid_spi/SLICE_64">u_sid_spi/SLICE_64</A> (from <A href="#@net:spi_sck_xfer_pipe[2]">spi_sck_xfer_pipe[2]</A>)
+ROUTE         6     1.327<A href="#@net:u_sid_spi/spi_cmd_buf_15:R9C17D.Q0:R7C18B.A1:1.327">      R9C17D.Q0 to R7C18B.A1     </A> <A href="#@net:u_sid_spi/spi_cmd_buf_15">u_sid_spi/spi_cmd_buf_15</A>
+CTOF_DEL    ---     0.497      R7C18B.A1 to      R7C18B.F1 <A href="#@comp:u_sid_spi/u_sid/SLICE_15">u_sid_spi/u_sid/SLICE_15</A>
+ROUTE         1     0.627<A href="#@net:u_sid_spi/u_sid/n4_adj_197:R7C18B.F1:R6C18C.D1:0.627">      R7C18B.F1 to R6C18C.D1     </A> <A href="#@net:u_sid_spi/u_sid/n4_adj_197">u_sid_spi/u_sid/n4_adj_197</A>
+CTOF_DEL    ---     0.497      R6C18C.D1 to      R6C18C.F1 <A href="#@comp:u_sid_spi/u_sid/SLICE_50">u_sid_spi/u_sid/SLICE_50</A>
+ROUTE         1     0.000<A href="#@net:u_sid_spi/u_sid/n746:R6C18C.F1:R6C18C.DI1:0.000">      R6C18C.F1 to R6C18C.DI1    </A> <A href="#@net:u_sid_spi/u_sid/n746">u_sid_spi/u_sid/n746</A> (to <A href="#@net:clk_gen">clk_gen</A>)
+                  --------
+                    3.402   (42.6% logic, 57.4% route), 3 logic levels.
+
+ Clock Skew Details: 
+
+      <A href="#@path:FREQUENCY NET 'clk_gen' 106.406832 MHz ;:PADI_DEL, 1.163,3.PAD,3.PADDI,clk:ROUTE, 0.788,3.PADDI,LPLL.CLKI,clk_c:CLKI2OP_DEL, 0.000,LPLL.CLKI,LPLL.CLKOP,u_pll/PLLInst_0:ROUTE, 1.891,LPLL.CLKOP,R2C19B.CLK,clk_gen:REG_DEL, 0.454,R2C19B.CLK,R2C19B.Q1,SLICE_13:ROUTE, 3.830,R2C19B.Q1,R9C17D.CLK,spi_sck_xfer_pipe[2]">Source Clock Path</A> clk to u_sid_spi/SLICE_64:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+PADI_DEL    ---     1.163          3.PAD to        3.PADDI <A href="#@comp:clk">clk</A>
+ROUTE         1     0.788<A href="#@net:clk_c:3.PADDI:LPLL.CLKI:0.788">        3.PADDI to LPLL.CLKI     </A> <A href="#@net:clk_c">clk_c</A>
+CLKI2OP_DE  ---     0.000      LPLL.CLKI to     LPLL.CLKOP <A href="#@comp:u_pll/PLLInst_0">u_pll/PLLInst_0</A>
+ROUTE        31     1.891<A href="#@net:clk_gen:LPLL.CLKOP:R2C19B.CLK:1.891">     LPLL.CLKOP to R2C19B.CLK    </A> <A href="#@net:clk_gen">clk_gen</A>
+REG_DEL     ---     0.454     R2C19B.CLK to      R2C19B.Q1 <A href="#@comp:SLICE_13">SLICE_13</A>
+ROUTE        21     3.830<A href="#@net:spi_sck_xfer_pipe[2]:R2C19B.Q1:R9C17D.CLK:3.830">      R2C19B.Q1 to R9C17D.CLK    </A> <A href="#@net:spi_sck_xfer_pipe[2]">spi_sck_xfer_pipe[2]</A>
+                  --------
+                    8.126   (19.9% logic, 80.1% route), 3 logic levels.
+
+      Source Clock f/b:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+CLKFB2OP_D  ---     0.000     LPLL.CLKFB to     LPLL.CLKOP <A href="#@comp:u_pll/PLLInst_0">u_pll/PLLInst_0</A>
+ROUTE        31     2.064<A href="#@net:clk_gen:LPLL.CLKOP:LPLL.CLKFB:2.064">     LPLL.CLKOP to LPLL.CLKFB    </A> <A href="#@net:clk_gen">clk_gen</A>
+                  --------
+                    2.064   (0.0% logic, 100.0% route), 1 logic levels.
+
+      <A href="#@path:FREQUENCY NET 'clk_gen' 106.406832 MHz ;:PADI_DEL, 1.163,3.PAD,3.PADDI,clk:ROUTE, 0.788,3.PADDI,LPLL.CLKI,clk_c:CLKI2OP_DEL, 0.000,LPLL.CLKI,LPLL.CLKOP,u_pll/PLLInst_0:ROUTE, 1.891,LPLL.CLKOP,R6C18C.CLK,clk_gen">Destination Clock Path</A> clk to u_sid_spi/u_sid/SLICE_50:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+PADI_DEL    ---     1.163          3.PAD to        3.PADDI <A href="#@comp:clk">clk</A>
+ROUTE         1     0.788<A href="#@net:clk_c:3.PADDI:LPLL.CLKI:0.788">        3.PADDI to LPLL.CLKI     </A> <A href="#@net:clk_c">clk_c</A>
+CLKI2OP_DE  ---     0.000      LPLL.CLKI to     LPLL.CLKOP <A href="#@comp:u_pll/PLLInst_0">u_pll/PLLInst_0</A>
+ROUTE        31     1.891<A href="#@net:clk_gen:LPLL.CLKOP:R6C18C.CLK:1.891">     LPLL.CLKOP to R6C18C.CLK    </A> <A href="#@net:clk_gen">clk_gen</A>
+                  --------
+                    3.842   (30.3% logic, 69.7% route), 2 logic levels.
+
+      Destination Clock f/b:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+CLKFB2OP_D  ---     0.000     LPLL.CLKFB to     LPLL.CLKOP <A href="#@comp:u_pll/PLLInst_0">u_pll/PLLInst_0</A>
+ROUTE        31     2.064<A href="#@net:clk_gen:LPLL.CLKOP:LPLL.CLKFB:2.064">     LPLL.CLKOP to LPLL.CLKFB    </A> <A href="#@net:clk_gen">clk_gen</A>
+                  --------
+                    2.064   (0.0% logic, 100.0% route), 1 logic levels.
+<font color=#000000> 
+
+Passed: The following path meets requirements by 1.761ns
+ </font>
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              <A href="#@comp:u_sid_spi/SLICE_58">u_sid_spi/spi_cmd_buf__i14</A>  (from <A href="#@net:spi_sck_xfer_pipe[2]">spi_sck_xfer_pipe[2]</A> +)
+   Destination:    FF         Data in        <A href="#@comp:u_sid_spi/u_sid/SLICE_50">u_sid_spi/u_sid/state_FSM_i5</A>  (to <A href="#@net:clk_gen">clk_gen</A> +)
+
+   Delay:               3.187ns  (45.4% logic, 54.6% route), 3 logic levels.
+
+ Constraint Details:
+
+      3.187ns physical path delay u_sid_spi/SLICE_58 to u_sid_spi/u_sid/SLICE_50 meets
+      9.398ns delay constraint less
+      4.284ns skew and
+      0.000ns feedback compensation and
+      0.166ns DIN_SET requirement (totaling 4.948ns) by 1.761ns
+
+ Physical Path Details:
+
+      <A href="#@path:FREQUENCY NET 'clk_gen' 106.406832 MHz ;:REG_DEL, 0.454,R8C17A.CLK,R8C17A.Q0,u_sid_spi/SLICE_58:ROUTE, 1.112,R8C17A.Q0,R7C18B.C1,u_sid_spi/spi_cmd_buf_14:CTOF_DEL, 0.497,R7C18B.C1,R7C18B.F1,u_sid_spi/u_sid/SLICE_15:ROUTE, 0.627,R7C18B.F1,R6C18C.D1,u_sid_spi/u_sid/n4_adj_197:CTOF_DEL, 0.497,R6C18C.D1,R6C18C.F1,u_sid_spi/u_sid/SLICE_50:ROUTE, 0.000,R6C18C.F1,R6C18C.DI1,u_sid_spi/u_sid/n746">Data path</A> u_sid_spi/SLICE_58 to u_sid_spi/u_sid/SLICE_50:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.454     R8C17A.CLK to      R8C17A.Q0 <A href="#@comp:u_sid_spi/SLICE_58">u_sid_spi/SLICE_58</A> (from <A href="#@net:spi_sck_xfer_pipe[2]">spi_sck_xfer_pipe[2]</A>)
+ROUTE         5     1.112<A href="#@net:u_sid_spi/spi_cmd_buf_14:R8C17A.Q0:R7C18B.C1:1.112">      R8C17A.Q0 to R7C18B.C1     </A> <A href="#@net:u_sid_spi/spi_cmd_buf_14">u_sid_spi/spi_cmd_buf_14</A>
+CTOF_DEL    ---     0.497      R7C18B.C1 to      R7C18B.F1 <A href="#@comp:u_sid_spi/u_sid/SLICE_15">u_sid_spi/u_sid/SLICE_15</A>
+ROUTE         1     0.627<A href="#@net:u_sid_spi/u_sid/n4_adj_197:R7C18B.F1:R6C18C.D1:0.627">      R7C18B.F1 to R6C18C.D1     </A> <A href="#@net:u_sid_spi/u_sid/n4_adj_197">u_sid_spi/u_sid/n4_adj_197</A>
+CTOF_DEL    ---     0.497      R6C18C.D1 to      R6C18C.F1 <A href="#@comp:u_sid_spi/u_sid/SLICE_50">u_sid_spi/u_sid/SLICE_50</A>
+ROUTE         1     0.000<A href="#@net:u_sid_spi/u_sid/n746:R6C18C.F1:R6C18C.DI1:0.000">      R6C18C.F1 to R6C18C.DI1    </A> <A href="#@net:u_sid_spi/u_sid/n746">u_sid_spi/u_sid/n746</A> (to <A href="#@net:clk_gen">clk_gen</A>)
+                  --------
+                    3.187   (45.4% logic, 54.6% route), 3 logic levels.
+
+ Clock Skew Details: 
+
+      <A href="#@path:FREQUENCY NET 'clk_gen' 106.406832 MHz ;:PADI_DEL, 1.163,3.PAD,3.PADDI,clk:ROUTE, 0.788,3.PADDI,LPLL.CLKI,clk_c:CLKI2OP_DEL, 0.000,LPLL.CLKI,LPLL.CLKOP,u_pll/PLLInst_0:ROUTE, 1.891,LPLL.CLKOP,R2C19B.CLK,clk_gen:REG_DEL, 0.454,R2C19B.CLK,R2C19B.Q1,SLICE_13:ROUTE, 3.830,R2C19B.Q1,R8C17A.CLK,spi_sck_xfer_pipe[2]">Source Clock Path</A> clk to u_sid_spi/SLICE_58:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+PADI_DEL    ---     1.163          3.PAD to        3.PADDI <A href="#@comp:clk">clk</A>
+ROUTE         1     0.788<A href="#@net:clk_c:3.PADDI:LPLL.CLKI:0.788">        3.PADDI to LPLL.CLKI     </A> <A href="#@net:clk_c">clk_c</A>
+CLKI2OP_DE  ---     0.000      LPLL.CLKI to     LPLL.CLKOP <A href="#@comp:u_pll/PLLInst_0">u_pll/PLLInst_0</A>
+ROUTE        31     1.891<A href="#@net:clk_gen:LPLL.CLKOP:R2C19B.CLK:1.891">     LPLL.CLKOP to R2C19B.CLK    </A> <A href="#@net:clk_gen">clk_gen</A>
+REG_DEL     ---     0.454     R2C19B.CLK to      R2C19B.Q1 <A href="#@comp:SLICE_13">SLICE_13</A>
+ROUTE        21     3.830<A href="#@net:spi_sck_xfer_pipe[2]:R2C19B.Q1:R8C17A.CLK:3.830">      R2C19B.Q1 to R8C17A.CLK    </A> <A href="#@net:spi_sck_xfer_pipe[2]">spi_sck_xfer_pipe[2]</A>
+                  --------
+                    8.126   (19.9% logic, 80.1% route), 3 logic levels.
+
+      Source Clock f/b:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+CLKFB2OP_D  ---     0.000     LPLL.CLKFB to     LPLL.CLKOP <A href="#@comp:u_pll/PLLInst_0">u_pll/PLLInst_0</A>
+ROUTE        31     2.064<A href="#@net:clk_gen:LPLL.CLKOP:LPLL.CLKFB:2.064">     LPLL.CLKOP to LPLL.CLKFB    </A> <A href="#@net:clk_gen">clk_gen</A>
+                  --------
+                    2.064   (0.0% logic, 100.0% route), 1 logic levels.
+
+      <A href="#@path:FREQUENCY NET 'clk_gen' 106.406832 MHz ;:PADI_DEL, 1.163,3.PAD,3.PADDI,clk:ROUTE, 0.788,3.PADDI,LPLL.CLKI,clk_c:CLKI2OP_DEL, 0.000,LPLL.CLKI,LPLL.CLKOP,u_pll/PLLInst_0:ROUTE, 1.891,LPLL.CLKOP,R6C18C.CLK,clk_gen">Destination Clock Path</A> clk to u_sid_spi/u_sid/SLICE_50:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+PADI_DEL    ---     1.163          3.PAD to        3.PADDI <A href="#@comp:clk">clk</A>
+ROUTE         1     0.788<A href="#@net:clk_c:3.PADDI:LPLL.CLKI:0.788">        3.PADDI to LPLL.CLKI     </A> <A href="#@net:clk_c">clk_c</A>
+CLKI2OP_DE  ---     0.000      LPLL.CLKI to     LPLL.CLKOP <A href="#@comp:u_pll/PLLInst_0">u_pll/PLLInst_0</A>
+ROUTE        31     1.891<A href="#@net:clk_gen:LPLL.CLKOP:R6C18C.CLK:1.891">     LPLL.CLKOP to R6C18C.CLK    </A> <A href="#@net:clk_gen">clk_gen</A>
+                  --------
+                    3.842   (30.3% logic, 69.7% route), 2 logic levels.
+
+      Destination Clock f/b:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+CLKFB2OP_D  ---     0.000     LPLL.CLKFB to     LPLL.CLKOP <A href="#@comp:u_pll/PLLInst_0">u_pll/PLLInst_0</A>
+ROUTE        31     2.064<A href="#@net:clk_gen:LPLL.CLKOP:LPLL.CLKFB:2.064">     LPLL.CLKOP to LPLL.CLKFB    </A> <A href="#@net:clk_gen">clk_gen</A>
+                  --------
+                    2.064   (0.0% logic, 100.0% route), 1 logic levels.
+<font color=#000000> 
+
+Passed: The following path meets requirements by 1.768ns
+ </font>
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              <A href="#@comp:u_sid_spi/SLICE_38">u_sid_spi/spi_cmd_valid_92</A>  (from <A href="#@net:spi_sck_xfer_pipe[2]">spi_sck_xfer_pipe[2]</A> +)
+   Destination:    FF         Data in        <A href="#@comp:u_sid_spi/u_sid/SLICE_50">u_sid_spi/u_sid/state_FSM_i5</A>  (to <A href="#@net:clk_gen">clk_gen</A> +)
+
+   Delay:               3.180ns  (45.5% logic, 54.5% route), 3 logic levels.
+
+ Constraint Details:
+
+      3.180ns physical path delay u_sid_spi/SLICE_38 to u_sid_spi/u_sid/SLICE_50 meets
+      9.398ns delay constraint less
+      4.284ns skew and
+      0.000ns feedback compensation and
+      0.166ns DIN_SET requirement (totaling 4.948ns) by 1.768ns
+
+ Physical Path Details:
+
+      <A href="#@path:FREQUENCY NET 'clk_gen' 106.406832 MHz ;:REG_DEL, 0.454,R8C16C.CLK,R8C16C.Q0,u_sid_spi/SLICE_38:ROUTE, 1.105,R8C16C.Q0,R7C18B.D1,u_sid_spi/spi_cmd_valid:CTOF_DEL, 0.497,R7C18B.D1,R7C18B.F1,u_sid_spi/u_sid/SLICE_15:ROUTE, 0.627,R7C18B.F1,R6C18C.D1,u_sid_spi/u_sid/n4_adj_197:CTOF_DEL, 0.497,R6C18C.D1,R6C18C.F1,u_sid_spi/u_sid/SLICE_50:ROUTE, 0.000,R6C18C.F1,R6C18C.DI1,u_sid_spi/u_sid/n746">Data path</A> u_sid_spi/SLICE_38 to u_sid_spi/u_sid/SLICE_50:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.454     R8C16C.CLK to      R8C16C.Q0 <A href="#@comp:u_sid_spi/SLICE_38">u_sid_spi/SLICE_38</A> (from <A href="#@net:spi_sck_xfer_pipe[2]">spi_sck_xfer_pipe[2]</A>)
+ROUTE         6     1.105<A href="#@net:u_sid_spi/spi_cmd_valid:R8C16C.Q0:R7C18B.D1:1.105">      R8C16C.Q0 to R7C18B.D1     </A> <A href="#@net:u_sid_spi/spi_cmd_valid">u_sid_spi/spi_cmd_valid</A>
+CTOF_DEL    ---     0.497      R7C18B.D1 to      R7C18B.F1 <A href="#@comp:u_sid_spi/u_sid/SLICE_15">u_sid_spi/u_sid/SLICE_15</A>
+ROUTE         1     0.627<A href="#@net:u_sid_spi/u_sid/n4_adj_197:R7C18B.F1:R6C18C.D1:0.627">      R7C18B.F1 to R6C18C.D1     </A> <A href="#@net:u_sid_spi/u_sid/n4_adj_197">u_sid_spi/u_sid/n4_adj_197</A>
+CTOF_DEL    ---     0.497      R6C18C.D1 to      R6C18C.F1 <A href="#@comp:u_sid_spi/u_sid/SLICE_50">u_sid_spi/u_sid/SLICE_50</A>
+ROUTE         1     0.000<A href="#@net:u_sid_spi/u_sid/n746:R6C18C.F1:R6C18C.DI1:0.000">      R6C18C.F1 to R6C18C.DI1    </A> <A href="#@net:u_sid_spi/u_sid/n746">u_sid_spi/u_sid/n746</A> (to <A href="#@net:clk_gen">clk_gen</A>)
+                  --------
+                    3.180   (45.5% logic, 54.5% route), 3 logic levels.
+
+ Clock Skew Details: 
+
+      <A href="#@path:FREQUENCY NET 'clk_gen' 106.406832 MHz ;:PADI_DEL, 1.163,3.PAD,3.PADDI,clk:ROUTE, 0.788,3.PADDI,LPLL.CLKI,clk_c:CLKI2OP_DEL, 0.000,LPLL.CLKI,LPLL.CLKOP,u_pll/PLLInst_0:ROUTE, 1.891,LPLL.CLKOP,R2C19B.CLK,clk_gen:REG_DEL, 0.454,R2C19B.CLK,R2C19B.Q1,SLICE_13:ROUTE, 3.830,R2C19B.Q1,R8C16C.CLK,spi_sck_xfer_pipe[2]">Source Clock Path</A> clk to u_sid_spi/SLICE_38:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+PADI_DEL    ---     1.163          3.PAD to        3.PADDI <A href="#@comp:clk">clk</A>
+ROUTE         1     0.788<A href="#@net:clk_c:3.PADDI:LPLL.CLKI:0.788">        3.PADDI to LPLL.CLKI     </A> <A href="#@net:clk_c">clk_c</A>
+CLKI2OP_DE  ---     0.000      LPLL.CLKI to     LPLL.CLKOP <A href="#@comp:u_pll/PLLInst_0">u_pll/PLLInst_0</A>
+ROUTE        31     1.891<A href="#@net:clk_gen:LPLL.CLKOP:R2C19B.CLK:1.891">     LPLL.CLKOP to R2C19B.CLK    </A> <A href="#@net:clk_gen">clk_gen</A>
+REG_DEL     ---     0.454     R2C19B.CLK to      R2C19B.Q1 <A href="#@comp:SLICE_13">SLICE_13</A>
+ROUTE        21     3.830<A href="#@net:spi_sck_xfer_pipe[2]:R2C19B.Q1:R8C16C.CLK:3.830">      R2C19B.Q1 to R8C16C.CLK    </A> <A href="#@net:spi_sck_xfer_pipe[2]">spi_sck_xfer_pipe[2]</A>
+                  --------
+                    8.126   (19.9% logic, 80.1% route), 3 logic levels.
+
+      Source Clock f/b:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+CLKFB2OP_D  ---     0.000     LPLL.CLKFB to     LPLL.CLKOP <A href="#@comp:u_pll/PLLInst_0">u_pll/PLLInst_0</A>
+ROUTE        31     2.064<A href="#@net:clk_gen:LPLL.CLKOP:LPLL.CLKFB:2.064">     LPLL.CLKOP to LPLL.CLKFB    </A> <A href="#@net:clk_gen">clk_gen</A>
+                  --------
+                    2.064   (0.0% logic, 100.0% route), 1 logic levels.
+
+      <A href="#@path:FREQUENCY NET 'clk_gen' 106.406832 MHz ;:PADI_DEL, 1.163,3.PAD,3.PADDI,clk:ROUTE, 0.788,3.PADDI,LPLL.CLKI,clk_c:CLKI2OP_DEL, 0.000,LPLL.CLKI,LPLL.CLKOP,u_pll/PLLInst_0:ROUTE, 1.891,LPLL.CLKOP,R6C18C.CLK,clk_gen">Destination Clock Path</A> clk to u_sid_spi/u_sid/SLICE_50:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+PADI_DEL    ---     1.163          3.PAD to        3.PADDI <A href="#@comp:clk">clk</A>
+ROUTE         1     0.788<A href="#@net:clk_c:3.PADDI:LPLL.CLKI:0.788">        3.PADDI to LPLL.CLKI     </A> <A href="#@net:clk_c">clk_c</A>
+CLKI2OP_DE  ---     0.000      LPLL.CLKI to     LPLL.CLKOP <A href="#@comp:u_pll/PLLInst_0">u_pll/PLLInst_0</A>
+ROUTE        31     1.891<A href="#@net:clk_gen:LPLL.CLKOP:R6C18C.CLK:1.891">     LPLL.CLKOP to R6C18C.CLK    </A> <A href="#@net:clk_gen">clk_gen</A>
+                  --------
+                    3.842   (30.3% logic, 69.7% route), 2 logic levels.
+
+      Destination Clock f/b:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+CLKFB2OP_D  ---     0.000     LPLL.CLKFB to     LPLL.CLKOP <A href="#@comp:u_pll/PLLInst_0">u_pll/PLLInst_0</A>
+ROUTE        31     2.064<A href="#@net:clk_gen:LPLL.CLKOP:LPLL.CLKFB:2.064">     LPLL.CLKOP to LPLL.CLKFB    </A> <A href="#@net:clk_gen">clk_gen</A>
+                  --------
+                    2.064   (0.0% logic, 100.0% route), 1 logic levels.
+<font color=#000000> 
+
+Passed: The following path meets requirements by 1.866ns
+ </font>
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              <A href="#@comp:u_sid_spi/SLICE_58">u_sid_spi/spi_cmd_buf__i14</A>  (from <A href="#@net:spi_sck_xfer_pipe[2]">spi_sck_xfer_pipe[2]</A> +)
+   Destination:    FF         Data in        <A href="#@comp:u_sid_spi/u_sid/SLICE_14">u_sid_spi/u_sid/sid_rw_buf_117</A>  (to <A href="#@net:clk_gen">clk_gen</A> +)
+
+   Delay:               2.965ns  (32.1% logic, 67.9% route), 2 logic levels.
+
+ Constraint Details:
+
+      2.965ns physical path delay u_sid_spi/SLICE_58 to u_sid_spi/u_sid/SLICE_14 meets
+      9.398ns delay constraint less
+      4.284ns skew and
+      0.000ns feedback compensation and
+      0.283ns CE_SET requirement (totaling 4.831ns) by 1.866ns
+
+ Physical Path Details:
+
+      <A href="#@path:FREQUENCY NET 'clk_gen' 106.406832 MHz ;:REG_DEL, 0.454,R8C17A.CLK,R8C17A.Q0,u_sid_spi/SLICE_58:ROUTE, 1.357,R8C17A.Q0,R7C18A.B1,u_sid_spi/spi_cmd_buf_14:CTOF_DEL, 0.497,R7C18A.B1,R7C18A.F1,u_sid_spi/u_sid/SLICE_53:ROUTE, 0.657,R7C18A.F1,R7C18C.CE,u_sid_spi/u_sid/clk_gen_enable_14">Data path</A> u_sid_spi/SLICE_58 to u_sid_spi/u_sid/SLICE_14:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.454     R8C17A.CLK to      R8C17A.Q0 <A href="#@comp:u_sid_spi/SLICE_58">u_sid_spi/SLICE_58</A> (from <A href="#@net:spi_sck_xfer_pipe[2]">spi_sck_xfer_pipe[2]</A>)
+ROUTE         5     1.357<A href="#@net:u_sid_spi/spi_cmd_buf_14:R8C17A.Q0:R7C18A.B1:1.357">      R8C17A.Q0 to R7C18A.B1     </A> <A href="#@net:u_sid_spi/spi_cmd_buf_14">u_sid_spi/spi_cmd_buf_14</A>
+CTOF_DEL    ---     0.497      R7C18A.B1 to      R7C18A.F1 <A href="#@comp:u_sid_spi/u_sid/SLICE_53">u_sid_spi/u_sid/SLICE_53</A>
+ROUTE         1     0.657<A href="#@net:u_sid_spi/u_sid/clk_gen_enable_14:R7C18A.F1:R7C18C.CE:0.657">      R7C18A.F1 to R7C18C.CE     </A> <A href="#@net:u_sid_spi/u_sid/clk_gen_enable_14">u_sid_spi/u_sid/clk_gen_enable_14</A> (to <A href="#@net:clk_gen">clk_gen</A>)
+                  --------
+                    2.965   (32.1% logic, 67.9% route), 2 logic levels.
+
+ Clock Skew Details: 
+
+      <A href="#@path:FREQUENCY NET 'clk_gen' 106.406832 MHz ;:PADI_DEL, 1.163,3.PAD,3.PADDI,clk:ROUTE, 0.788,3.PADDI,LPLL.CLKI,clk_c:CLKI2OP_DEL, 0.000,LPLL.CLKI,LPLL.CLKOP,u_pll/PLLInst_0:ROUTE, 1.891,LPLL.CLKOP,R2C19B.CLK,clk_gen:REG_DEL, 0.454,R2C19B.CLK,R2C19B.Q1,SLICE_13:ROUTE, 3.830,R2C19B.Q1,R8C17A.CLK,spi_sck_xfer_pipe[2]">Source Clock Path</A> clk to u_sid_spi/SLICE_58:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+PADI_DEL    ---     1.163          3.PAD to        3.PADDI <A href="#@comp:clk">clk</A>
+ROUTE         1     0.788<A href="#@net:clk_c:3.PADDI:LPLL.CLKI:0.788">        3.PADDI to LPLL.CLKI     </A> <A href="#@net:clk_c">clk_c</A>
+CLKI2OP_DE  ---     0.000      LPLL.CLKI to     LPLL.CLKOP <A href="#@comp:u_pll/PLLInst_0">u_pll/PLLInst_0</A>
+ROUTE        31     1.891<A href="#@net:clk_gen:LPLL.CLKOP:R2C19B.CLK:1.891">     LPLL.CLKOP to R2C19B.CLK    </A> <A href="#@net:clk_gen">clk_gen</A>
+REG_DEL     ---     0.454     R2C19B.CLK to      R2C19B.Q1 <A href="#@comp:SLICE_13">SLICE_13</A>
+ROUTE        21     3.830<A href="#@net:spi_sck_xfer_pipe[2]:R2C19B.Q1:R8C17A.CLK:3.830">      R2C19B.Q1 to R8C17A.CLK    </A> <A href="#@net:spi_sck_xfer_pipe[2]">spi_sck_xfer_pipe[2]</A>
+                  --------
+                    8.126   (19.9% logic, 80.1% route), 3 logic levels.
+
+      Source Clock f/b:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+CLKFB2OP_D  ---     0.000     LPLL.CLKFB to     LPLL.CLKOP <A href="#@comp:u_pll/PLLInst_0">u_pll/PLLInst_0</A>
+ROUTE        31     2.064<A href="#@net:clk_gen:LPLL.CLKOP:LPLL.CLKFB:2.064">     LPLL.CLKOP to LPLL.CLKFB    </A> <A href="#@net:clk_gen">clk_gen</A>
+                  --------
+                    2.064   (0.0% logic, 100.0% route), 1 logic levels.
+
+      <A href="#@path:FREQUENCY NET 'clk_gen' 106.406832 MHz ;:PADI_DEL, 1.163,3.PAD,3.PADDI,clk:ROUTE, 0.788,3.PADDI,LPLL.CLKI,clk_c:CLKI2OP_DEL, 0.000,LPLL.CLKI,LPLL.CLKOP,u_pll/PLLInst_0:ROUTE, 1.891,LPLL.CLKOP,R7C18C.CLK,clk_gen">Destination Clock Path</A> clk to u_sid_spi/u_sid/SLICE_14:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+PADI_DEL    ---     1.163          3.PAD to        3.PADDI <A href="#@comp:clk">clk</A>
+ROUTE         1     0.788<A href="#@net:clk_c:3.PADDI:LPLL.CLKI:0.788">        3.PADDI to LPLL.CLKI     </A> <A href="#@net:clk_c">clk_c</A>
+CLKI2OP_DE  ---     0.000      LPLL.CLKI to     LPLL.CLKOP <A href="#@comp:u_pll/PLLInst_0">u_pll/PLLInst_0</A>
+ROUTE        31     1.891<A href="#@net:clk_gen:LPLL.CLKOP:R7C18C.CLK:1.891">     LPLL.CLKOP to R7C18C.CLK    </A> <A href="#@net:clk_gen">clk_gen</A>
+                  --------
+                    3.842   (30.3% logic, 69.7% route), 2 logic levels.
+
+      Destination Clock f/b:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+CLKFB2OP_D  ---     0.000     LPLL.CLKFB to     LPLL.CLKOP <A href="#@comp:u_pll/PLLInst_0">u_pll/PLLInst_0</A>
+ROUTE        31     2.064<A href="#@net:clk_gen:LPLL.CLKOP:LPLL.CLKFB:2.064">     LPLL.CLKOP to LPLL.CLKFB    </A> <A href="#@net:clk_gen">clk_gen</A>
+                  --------
+                    2.064   (0.0% logic, 100.0% route), 1 logic levels.
+
+Report:  125.628MHz is the maximum frequency for this preference.
+
+
+</A><A name="FREQUENCY NET 'clk_c' 17.734472 MH"></A>================================================================================
+Preference: FREQUENCY NET "clk_c" 17.734472 MHz ;
+            0 items scored, 0 timing errors detected.
+--------------------------------------------------------------------------------
+
+<A name="Report Summary"></A><B><U><big>Report Summary</big></U></B>
+--------------
+----------------------------------------------------------------------------
+Preference                              |   Constraint|       Actual|Levels
+----------------------------------------------------------------------------
+                                        |             |             |
+FREQUENCY NET "clk_gen" 106.406832 MHz  |             |             |
+;                                       |  106.407 MHz|  125.628 MHz|   2  
+                                        |             |             |
+FREQUENCY NET "clk_c" 17.734472 MHz ;   |            -|            -|   0  
+                                        |             |             |
+----------------------------------------------------------------------------
+
+
+All preferences were met.
+
+
+<A name="Clock Domains Analysis"></A><B><U><big>Clock Domains Analysis</big></U></B>
+------------------------
+
+Found 3 clocks:
+
+Clock Domain: <A href="#@net:spi_sck_xfer_pipe[2]">spi_sck_xfer_pipe[2]</A>   Source: SLICE_13.Q1   Loads: 21
+   No transfer within this clock domain is found
+
+Clock Domain: <A href="#@net:clk_gen">clk_gen</A>   Source: u_pll/PLLInst_0.CLKOP   Loads: 31
+   Covered under: FREQUENCY NET "clk_gen" 106.406832 MHz ;
+
+   Data transfers from:
+   Clock Domain: <A href="#@net:spi_sck_xfer_pipe[2]">spi_sck_xfer_pipe[2]</A>   Source: SLICE_13.Q1
+      Covered under: FREQUENCY NET "clk_gen" 106.406832 MHz ;   Transfers: 16
+
+Clock Domain: <A href="#@net:clk_c">clk_c</A>   Source: clk.PAD   Loads: 1
+   No transfer within this clock domain is found
+
+
+Timing summary (Setup):
+---------------
+
+Timing errors: 0  Score: 0
+Cumulative negative slack: 0
+
+Constraints cover 215 paths, 2 nets, and 237 connections (49.89% coverage)
+

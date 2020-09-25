@@ -1,0 +1,11 @@
+D:\lscc\diamond\3.11_x64\synpbase\bin64\c_hdl.exe  -osyn  J:\AlfheimSystems\Projects\lattice\sid\impl\synwork\sid_impl_comp.srs  -top  top_level  -hdllog  J:\AlfheimSystems\Projects\lattice\sid\impl\synlog\sid_impl_compiler.srr  -encrypt  -mp  4  -verification_mode 0  -vhdl  -prodtype  synplify_pro  -dspmac -fixsmult -infer_seqShift -nram -sdff_counter -divnmod -nostructver  -encrypt  -pro  -dmgen  J:\AlfheimSystems\Projects\lattice\sid\impl\dm  -lite -ui -fid2 -ram -sharing on -ll 2000 -autosm  -ignore_undefined_lib  -lib work D:\lscc\diamond\3.11_x64\cae_library\synthesis\vhdl\machxo2.vhd -lib work J:\AlfheimSystems\Projects\lattice\sid\sid.vhd -lib work J:\AlfheimSystems\Projects\lattice\sid\spi_sid.vhd -lib work J:\AlfheimSystems\Projects\lattice\sid\pll.vhd -lib work J:\AlfheimSystems\Projects\lattice\sid\top_level.vhd  -jobname  "compiler" 
+relcom:D:\lscc\diamond\3.11_x64\synpbase\bin64\c_hdl.exe -osyn ..\synwork\sid_impl_comp.srs -top top_level -hdllog ..\synlog\sid_impl_compiler.srr -encrypt -mp 4 -verification_mode 0 -vhdl -prodtype synplify_pro -dspmac -fixsmult -infer_seqShift -nram -sdff_counter -divnmod -nostructver -encrypt -pro -dmgen ..\dm -lite -ui -fid2 -ram -sharing on -ll 2000 -autosm -ignore_undefined_lib -lib work D:\lscc\diamond\3.11_x64\cae_library\synthesis\vhdl\machxo2.vhd -lib work ..\..\sid.vhd -lib work ..\..\spi_sid.vhd -lib work ..\..\pll.vhd -lib work ..\..\top_level.vhd -jobname "compiler"
+rc:0 success:1 runtime:6
+file:..\synwork\sid_impl_comp.srs|io:o|time:1600714598|size:16308|exec:0|csum:
+file:..\synlog\sid_impl_compiler.srr|io:o|time:1600714599|size:12928|exec:0|csum:
+file:D:\lscc\diamond\3.11_x64\cae_library\synthesis\vhdl\machxo2.vhd|io:i|time:1542238332|size:73964|exec:0|csum:CFF92E93E4FE354031DBB4E0E47DD4A6
+file:..\..\sid.vhd|io:i|time:1600691591|size:10842|exec:0|csum:F42CD269F1879E154641A46DFDBC0DC2
+file:..\..\spi_sid.vhd|io:i|time:1600693967|size:6330|exec:0|csum:123154AEA2B96DFD2C8D6869B414AB91
+file:..\..\pll.vhd|io:i|time:1600713101|size:7634|exec:0|csum:5FB06EE38E6AF430FDC6DC26DF7E85E6
+file:..\..\top_level.vhd|io:i|time:1600714583|size:3113|exec:0|csum:E65E27070309C35212555A0692938106
+file:D:\lscc\diamond\3.11_x64\synpbase\bin64\c_hdl.exe|io:i|time:1554103094|size:5681664|exec:1|csum:39598EA786684F7CB53832C08B4CCDF5

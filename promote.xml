@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<userSetting name="J:/AlfheimSystems/Projects/lattice/sid/promote.xml" version="Diamond (64-bit) 3.11.0.396.4" date="Sat Sep 26 01:24:57 2020" vendor="Lattice Semiconductor Corporation" >
+  <msg mid="35921504" type="Info" />
+  <msg mid="35931002" type="Warning" />
+  <msg mid="35921123" type="Error" />
+  <msg mid="35921205" type="Warning" />
+  <msg mid="35921077" type="Error" />
+  <msg mid="35921251" type="Warning" />
+  <msg mid="35921613" type="Warning" />
+  <msg mid="35921303" type="Warning" />
+</userSetting>

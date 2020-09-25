@@ -1,0 +1,7 @@
+#Start recording tcl command: 9/18/2020 11:11:05
+#Project Location: /home/erwin/Clients/AlfheimSystems/Projects/lattice/sid; Project name: sid
+prj_project open "/home/erwin/Clients/AlfheimSystems/Projects/lattice/sid/sid.ldf"
+prj_run PAR -impl impl -task PARTrace
+prj_run Synthesis -impl impl -task Lattice_Synthesis
+prj_run Synthesis -impl impl -task Lattice_Synthesis
+#Stop recording: 9/18/2020 11:27:15

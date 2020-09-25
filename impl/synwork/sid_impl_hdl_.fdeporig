@@ -1,0 +1,47 @@
+#defaultlanguage:vhdl
+#OPTIONS:"|-top|top_level|-prodtype|synplify_pro|-dspmac|-fixsmult|-infer_seqShift|-nram|-sdff_counter|-divnmod|-nostructver|-encrypt|-pro|-lite|-ui|-fid2|-ram|-sharing|on|-ll|2000|-autosm|-ignore_undefined_lib|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-fileorder|J:\\AlfheimSystems\\Projects\\lattice\\sid\\impl\\syntmp\\hdlorder.tcl"
+#CUR:"D:\\lscc\\diamond\\3.11_x64\\synpbase\\bin64\\c_vhdl.exe":1554103268
+#CUR:"D:\\lscc\\diamond\\3.11_x64\\synpbase\\lib\\vhd\\location.map":1554127280
+#CUR:"D:\\lscc\\diamond\\3.11_x64\\synpbase\\lib\\vhd\\std.vhd":1554102464
+#CUR:"D:\\lscc\\diamond\\3.11_x64\\synpbase\\lib\\vhd\\snps_haps_pkg.vhd":1554102464
+#CUR:"D:\\lscc\\diamond\\3.11_x64\\synpbase\\lib\\vhd\\std1164.vhd":1554102464
+#CUR:"D:\\lscc\\diamond\\3.11_x64\\synpbase\\lib\\vhd\\numeric.vhd":1554102464
+#CUR:"D:\\lscc\\diamond\\3.11_x64\\synpbase\\lib\\vhd\\umr_capim.vhd":1554102464
+#CUR:"D:\\lscc\\diamond\\3.11_x64\\synpbase\\lib\\vhd\\arith.vhd":1554102464
+#CUR:"D:\\lscc\\diamond\\3.11_x64\\synpbase\\lib\\vhd\\unsigned.vhd":1554102464
+#CUR:"D:\\lscc\\diamond\\3.11_x64\\synpbase\\lib\\vhd\\hyperents.vhd":1554102464
+#CUR:"D:\\lscc\\diamond\\3.11_x64\\cae_library\\synthesis\\vhdl\\machxo2.vhd":1542238332
+#CUR:"J:\\AlfheimSystems\\Projects\\lattice\\sid\\spi_sid.vhd":1600693967
+#CUR:"J:\\AlfheimSystems\\Projects\\lattice\\sid\\sid.vhd":1600691591
+#CUR:"J:\\AlfheimSystems\\Projects\\lattice\\sid\\top_level.vhd":1600714583
+#CUR:"J:\\AlfheimSystems\\Projects\\lattice\\sid\\pll.vhd":1600713101
+0 "D:\lscc\diamond\3.11_x64\cae_library\synthesis\vhdl\machxo2.vhd" vhdl
+1 "J:\AlfheimSystems\Projects\lattice\sid\spi_sid.vhd" vhdl
+2 "J:\AlfheimSystems\Projects\lattice\sid\sid.vhd" vhdl
+3 "J:\AlfheimSystems\Projects\lattice\sid\top_level.vhd" vhdl
+4 "J:\AlfheimSystems\Projects\lattice\sid\pll.vhd" vhdl
+
+# Dependency Lists (Uses list)
+0 -1
+1 2 
+2 -1
+3 4 1 
+4 0 
+
+# Dependency Lists (Users Of)
+0 4 
+1 3 
+2 1 
+3 -1
+4 3 
+
+# Design Unit to File Association
+arch work spi_sid behavioral 1
+module work spi_sid 1
+arch work sid behavioral 2
+module work sid 2
+arch work top_level behavioral 3
+module work top_level 3
+config work structure_con 4
+arch work pll structure 4
+module work pll 4

@@ -1,0 +1,31 @@
+#Start recording tcl command: 9/22/2020 01:48:01
+#Project Location: J:/AlfheimSystems/Projects/lattice/sid; Project name: sid
+prj_project open "J:/AlfheimSystems/Projects/lattice/sid/sid.ldf"
+prj_run PAR -impl impl -task IOTiming
+prj_run PAR -impl impl -task IOTiming
+prj_run PAR -impl impl -task IOTiming
+prj_run PAR -impl impl -task IOTiming
+prj_run PAR -impl impl -task IOTiming
+prj_run PAR -impl impl -task IOTiming
+prj_run PAR -impl impl -task IOTiming
+prj_run PAR -impl impl -task IOTiming
+prj_run Export -impl impl -task Jedecgen
+pgr_project open "J:/AlfheimSystems/Projects/lattice/sid/impl/impl.xcf"
+pgr_program run
+prj_src add "J:/AlfheimSystems/Projects/lattice/sid/sim_sid/sim_sid.spf"
+prj_run Export -impl impl -task TimingSimFileVHD
+prj_run PAR -impl impl -task IOTiming
+prj_run PAR -impl impl -task IOTiming -forceOne
+prj_run Synthesis -impl impl -task Lattice_Synthesis -forceOne
+prj_run PAR -impl impl -task IOTiming
+prj_run PAR -impl impl -task IOTiming
+prj_run PAR -impl impl -task IOTiming -forceAll
+prj_run Export -impl impl -task Jedecgen
+pgr_program run
+prj_run Synthesis -impl impl -task Lattice_Synthesis
+prj_run PAR -impl impl -task IOTiming
+pgr_project save "J:/AlfheimSystems/Projects/lattice/sid/impl/impl.xcf"
+pgr_project close
+prj_run Export -impl impl -task Jedecgen -forceAll
+prj_run Export -impl impl -task Bitgen
+#Stop recording: 9/26/2020 01:24:58

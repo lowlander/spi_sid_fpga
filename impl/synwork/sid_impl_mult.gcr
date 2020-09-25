@@ -1,0 +1,15 @@
+i u_pll.CLKOP_i
+m 0 0
+u 25 53
+n ckid0_0 {t:u_sid_spi.u_sid.state[0].C} Black box on clock path
+p {t:u_pll.PLLInst_0.CLKOP}{t:u_pll.CLKOP_inferred_clock.I[0]}{t:u_pll.CLKOP_inferred_clock.OUT[0]}{p:u_pll.CLKOP}{t:u_pll.CLKOP}{t:spi_sck_xfer_pipe[2:0].C}
+e ckid0_1 {t:spi_sck_xfer_pipe[2:0].C} dffr
+d ckid0_0,ckid0_1 {t:u_pll.PLLInst_0.CLKOP} EHXPLLJ Black box on clock path
+i spi_sck_xfer_pipe_i[2]
+m 0 0
+u 7 23
+n ckid0_2 {t:u_sid_spi.state[1].C} Derived clock on input (not legal for GCC)
+p {t:spi_sck_xfer_pipe[2:0].Q[2]}{t:spi_sck_xfer_pipe_derived_clock[2].I[0]}{t:spi_sck_xfer_pipe_derived_clock[2].OUT[0]}{t:u_sid_spi.spi_sck}{p:u_sid_spi.spi_sck}{t:u_sid_spi.state[1].C}
+e ckid0_2 {t:u_sid_spi.state[1].C} dffre
+d ckid0_3 {t:spi_sck_xfer_pipe[2:0].Q[2]} dffr Potential generated clock but with a nonconvertable driver or an unknown conversion method
+l 0 0 0 0 0

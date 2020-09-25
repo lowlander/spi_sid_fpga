@@ -1,0 +1,7 @@
+D:\lscc\diamond\3.11_x64\synpbase\bin64\syn_nfilter.exe  -link  -top  top_level  -multisrs  J:\AlfheimSystems\Projects\lattice\sid\impl\synwork\sid_impl_comp.srs  -osyn  J:\AlfheimSystems\Projects\lattice\sid\impl\synwork\sid_impl_mult.srs  -log  J:\AlfheimSystems\Projects\lattice\sid\impl\synlog\sid_impl_multi_srs_gen.srr 
+relcom:D:\lscc\diamond\3.11_x64\synpbase\bin64\syn_nfilter.exe -link -top top_level -multisrs ..\synwork\sid_impl_comp.srs -osyn ..\synwork\sid_impl_mult.srs -log ..\synlog\sid_impl_multi_srs_gen.srr
+rc:0 success:1 runtime:1
+file:..\synwork\sid_impl_comp.srs|io:i|time:1600714598|size:16308|exec:0|csum:07AAB5FE132764B92F88B99BFA2294F5
+file:..\synwork\sid_impl_mult.srs|io:o|time:1600714601|size:2999|exec:0|csum:
+file:..\synlog\sid_impl_multi_srs_gen.srr|io:o|time:1600714601|size:1119|exec:0|csum:
+file:D:\lscc\diamond\3.11_x64\synpbase\bin64\syn_nfilter.exe|io:i|time:1554103352|size:8734720|exec:1|csum:0A206A5298321BBDD627E7975EAE3EC2

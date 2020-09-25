@@ -1,0 +1,38 @@
+@W: CG296 :"J:\AlfheimSystems\Projects\lattice\sid\top_level.vhd":91:4:91:10|Incomplete sensitivity list; assuming completeness. Make sure all referenced variables in message CG290 are included in the sensitivity list.
+@W: CG290 :"J:\AlfheimSystems\Projects\lattice\sid\top_level.vhd":93:12:93:16|Referenced variable rst_n is not in sensitivity list.
+@W: CG296 :"J:\AlfheimSystems\Projects\lattice\sid\spi_sid.vhd":138:4:138:10|Incomplete sensitivity list; assuming completeness. Make sure all referenced variables in message CG290 are included in the sensitivity list.
+@W: CG290 :"J:\AlfheimSystems\Projects\lattice\sid\spi_sid.vhd":145:14:145:21|Referenced variable spi_cs_n is not in sensitivity list.
+@W: CD434 :"J:\AlfheimSystems\Projects\lattice\sid\spi_sid.vhd":153:36:153:43|Signal spi_cs_n in the sensitivity list is not used in the process. Make sure all variables in the sensitivity list are referenced in the process.
+@W: CG296 :"J:\AlfheimSystems\Projects\lattice\sid\spi_sid.vhd":153:4:153:10|Incomplete sensitivity list; assuming completeness. Make sure all referenced variables in message CG290 are included in the sensitivity list.
+@W: CG290 :"J:\AlfheimSystems\Projects\lattice\sid\spi_sid.vhd":170:16:170:23|Referenced variable sid_busy is not in sensitivity list.
+@W: CG290 :"J:\AlfheimSystems\Projects\lattice\sid\spi_sid.vhd":158:28:158:38|Referenced variable spi_cmd_buf is not in sensitivity list.
+@W: CG290 :"J:\AlfheimSystems\Projects\lattice\sid\spi_sid.vhd":157:30:157:42|Referenced variable spi_cmd_valid is not in sensitivity list.
+@W: CG290 :"J:\AlfheimSystems\Projects\lattice\sid\spi_sid.vhd":156:29:156:40|Referenced variable spi_miso_buf is not in sensitivity list.
+@W: CG290 :"J:\AlfheimSystems\Projects\lattice\sid\spi_sid.vhd":175:70:175:77|Referenced variable spi_mosi is not in sensitivity list.
+@W: CG290 :"J:\AlfheimSystems\Projects\lattice\sid\spi_sid.vhd":186:37:186:48|Referenced variable spi_data_out is not in sensitivity list.
+@W: CG296 :"J:\AlfheimSystems\Projects\lattice\sid\sid.vhd":139:4:139:10|Incomplete sensitivity list; assuming completeness. Make sure all referenced variables in message CG290 are included in the sensitivity list.
+@W: CG290 :"J:\AlfheimSystems\Projects\lattice\sid\sid.vhd":141:24:141:34|Referenced variable sid_clk_buf is not in sensitivity list.
+@W: CG296 :"J:\AlfheimSystems\Projects\lattice\sid\sid.vhd":183:4:183:10|Incomplete sensitivity list; assuming completeness. Make sure all referenced variables in message CG290 are included in the sensitivity list.
+@W: CG290 :"J:\AlfheimSystems\Projects\lattice\sid\sid.vhd":193:34:193:50|Referenced variable reset_clk_counter is not in sensitivity list.
+@W: CG290 :"J:\AlfheimSystems\Projects\lattice\sid\sid.vhd":242:25:242:31|Referenced variable spi_cmd is not in sensitivity list.
+@W: CG290 :"J:\AlfheimSystems\Projects\lattice\sid\sid.vhd":192:25:192:36|Referenced variable sid_cs_n_buf is not in sensitivity list.
+@W: CG290 :"J:\AlfheimSystems\Projects\lattice\sid\sid.vhd":191:23:191:32|Referenced variable sid_rw_buf is not in sensitivity list.
+@W: CG290 :"J:\AlfheimSystems\Projects\lattice\sid\sid.vhd":190:25:190:36|Referenced variable sid_data_buf is not in sensitivity list.
+@W: CG290 :"J:\AlfheimSystems\Projects\lattice\sid\sid.vhd":188:25:188:36|Referenced variable sid_addr_buf is not in sensitivity list.
+@W: CG290 :"J:\AlfheimSystems\Projects\lattice\sid\sid.vhd":189:29:189:44|Referenced variable spi_addr_out_buf is not in sensitivity list.
+@W: CG290 :"J:\AlfheimSystems\Projects\lattice\sid\sid.vhd":187:29:187:44|Referenced variable spi_data_out_buf is not in sensitivity list.
+@W: CG290 :"J:\AlfheimSystems\Projects\lattice\sid\sid.vhd":186:25:186:36|Referenced variable sid_busy_buf is not in sensitivity list.
+@W: CG290 :"J:\AlfheimSystems\Projects\lattice\sid\sid.vhd":195:32:195:46|Referenced variable sid_cmd_ack_buf is not in sensitivity list.
+@W: CD638 :"J:\AlfheimSystems\Projects\lattice\sid\sid.vhd":85:11:85:21|Signal spi_cmd_buf is undriven. Either assign the signal a value or remove the signal declaration.
+@W: CD638 :"J:\AlfheimSystems\Projects\lattice\sid\sid.vhd":86:11:86:22|Signal spi_addr_buf is undriven. Either assign the signal a value or remove the signal declaration.
+@W: CD638 :"J:\AlfheimSystems\Projects\lattice\sid\sid.vhd":87:11:87:25|Signal spi_data_in_buf is undriven. Either assign the signal a value or remove the signal declaration.
+@W: CL240 :"J:\AlfheimSystems\Projects\lattice\sid\spi_sid.vhd":49:8:49:16|Signal sid_timer is floating; a simulation mismatch is possible.
+@W: CL265 :"J:\AlfheimSystems\Projects\lattice\sid\spi_sid.vhd":140:8:140:9|Removing unused bit 13 of spi_cmd_buf_3(15 downto 0). Either assign all bits or reduce the width of the signal.
+@W: CL113 :"J:\AlfheimSystems\Projects\lattice\sid\spi_sid.vhd":140:8:140:9|Feedback mux created for signal spi_cmd_buf[15:14]. To avoid the feedback mux, assign values explicitly under all conditions of conditional assignment statements.
+@W: CL113 :"J:\AlfheimSystems\Projects\lattice\sid\spi_sid.vhd":140:8:140:9|Feedback mux created for signal spi_cmd_buf[12:0]. To avoid the feedback mux, assign values explicitly under all conditions of conditional assignment statements.
+@W: CL113 :"J:\AlfheimSystems\Projects\lattice\sid\spi_sid.vhd":140:8:140:9|Feedback mux created for signal state[1:0]. To avoid the feedback mux, assign values explicitly under all conditions of conditional assignment statements.
+@W: CL113 :"J:\AlfheimSystems\Projects\lattice\sid\spi_sid.vhd":140:8:140:9|Feedback mux created for signal spi_miso_buf. To avoid the feedback mux, assign values explicitly under all conditions of conditional assignment statements.
+@W: CL113 :"J:\AlfheimSystems\Projects\lattice\sid\spi_sid.vhd":140:8:140:9|Feedback mux created for signal spi_cmd_valid. To avoid the feedback mux, assign values explicitly under all conditions of conditional assignment statements.
+@W: CL190 :"J:\AlfheimSystems\Projects\lattice\sid\sid.vhd":152:8:152:9|Optimizing register bit reset_clk_counter(3) to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL260 :"J:\AlfheimSystems\Projects\lattice\sid\sid.vhd":152:8:152:9|Pruning register bit 3 of reset_clk_counter(3 downto 0). If this is not the intended behavior, drive the input with valid values, or an input from the top level.
+

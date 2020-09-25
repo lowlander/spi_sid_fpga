@@ -1,0 +1,39 @@
+#Start recording tcl command: 9/21/2020 15:22:17
+#Project Location: J:/AlfheimSystems/Projects/lattice/sid; Project name: sid
+prj_project open "J:/AlfheimSystems/Projects/lattice/sid/sid.ldf"
+prj_src add "J:/AlfheimSystems/Projects/lattice/sid/top_level.vhdl"
+prj_src remove "J:/AlfheimSystems/Projects/lattice/sid/fifo.ipx"
+prj_src remove "J:/AlfheimSystems/Projects/lattice/sid/toplevel.vhd"
+prj_src add "J:/AlfheimSystems/Projects/lattice/sid/spi_sid.vhd"
+prj_src add "J:/AlfheimSystems/Projects/lattice/sid/sid.vhd"
+prj_run Synthesis -impl impl -task Lattice_Synthesis
+prj_src remove "J:/AlfheimSystems/Projects/lattice/sid/top_level.vhdl"
+prj_src add "J:/AlfheimSystems/Projects/lattice/sid/top_level.vhd"
+prj_run Synthesis -impl impl -task Lattice_Synthesis
+prj_run Synthesis -impl impl -task Lattice_Synthesis
+prj_run Synthesis -impl impl -task Lattice_Synthesis
+prj_run PAR -impl impl -task PARTrace
+prj_run PAR -impl impl -task IOTiming
+prj_run PAR -impl impl -task IOTiming
+prj_run PAR -impl impl -task IOTiming
+prj_run PAR -impl impl -task IOTiming -forceAll
+prj_src add "J:/AlfheimSystems/Projects/lattice/sid/pll.ipx"
+prj_run PAR -impl impl -task IOTiming
+prj_run PAR -impl impl -task IOTiming
+prj_run PAR -impl impl -task IOTiming
+prj_run PAR -impl impl -task IOTiming
+prj_run PAR -impl impl -task IOTiming -forceAll
+prj_run PAR -impl impl -task IOTiming
+prj_run PAR -impl impl -task IOTiming -forceOne
+prj_run PAR -impl impl -task IOTiming
+prj_run PAR -impl impl -task IOTiming
+prj_run PAR -impl impl -task IOTiming
+prj_run PAR -impl impl -task IOTiming
+prj_run PAR -impl impl -task IOTiming
+prj_run PAR -impl impl -task IOTiming
+prj_run PAR -impl impl -task IOTiming
+prj_run PAR -impl impl -task IOTiming
+eco_config sysio -comp {sid_data[1]} -pullmode {DOWN} -drive {8} -slewrate {FAST} -clamp {ON} -opendrain {OFF} -diffresistor {OFF} -diffdrive {NA} -bank_vccio {3.3} -hysteresis {SMALL}
+prj_run PAR -impl impl -task PARTrace
+prj_run PAR -impl impl -task PARTrace
+#Stop recording: 9/21/2020 22:28:58

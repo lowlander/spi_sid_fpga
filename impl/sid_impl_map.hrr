@@ -1,0 +1,39 @@
+---------------------------------------------------
+Report for cell top_level
+   Instance path: top_level
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	      53.00        100.0
+                                  LUT4	      94.00        100.0
+                                 IOBUF	         32        100.0
+                                PFUREG	         74        100.0
+SUB MODULES
+                                  cell	      count    SLC Usage(%)
+                               spi_sid	          1        97.3
+                                   pll	          1         0.5
+---------------------------------------------------
+Report for cell spi_sid
+   Instance path: top_level/u_sid_spi
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	      51.58        97.3
+                                  LUT4	      91.00        96.8
+                                PFUREG	         72        97.3
+SUB MODULES
+                                  cell	      count    SLC Usage(%)
+                                   sid	          1        43.6
+---------------------------------------------------
+Report for cell sid
+   Instance path: top_level/u_sid_spi/u_sid
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	      23.08        43.6
+                                  LUT4	      29.00        30.9
+                                PFUREG	         44        59.5
+---------------------------------------------------
+Report for cell pll
+   Instance path: top_level/u_pll
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	       0.25         0.5
+                                  LUT4	       1.00         1.1

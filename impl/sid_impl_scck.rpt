@@ -1,0 +1,49 @@
+
+Copyright (C) 1994-2018 Synopsys, Inc.
+This Synopsys software and all associated documentation are proprietary to Synopsys, Inc.
+and may only be used pursuant to the terms and conditions of a written license agreement
+with Synopsys, Inc. All other use, reproduction, modification, or distribution of the
+Synopsys software or the associated documentation is strictly prohibited.
+Tool: Synplify Pro (R)
+Build: N-2018.03L-SP1-1
+Install: D:\lscc\diamond\3.11_x64\synpbase
+OS: Windows 6.2
+
+Hostname: THINK
+
+Implementation : impl
+
+# Written on Mon Sep 21 20:56:43 2020
+
+##### FILES SYNTAX CHECKED ##############################################
+Constraint File(s):      (none)
+
+#Run constraint checker to find more issues with constraints.
+#########################################################################
+
+
+
+No issues found in constraint syntax.
+
+
+
+Clock Summary
+*************
+
+          Start                                              Requested     Requested     Clock                                       Clock                   Clock
+Level     Clock                                              Frequency     Period        Type                                        Group                   Load 
+------------------------------------------------------------------------------------------------------------------------------------------------------------------
+0 -       pll|CLKOP_inferred_clock                           200.0 MHz     5.000         inferred                                    Inferred_clkgroup_0     53   
+1 .         top_level|spi_sck_xfer_pipe_derived_clock[2]     200.0 MHz     5.000         derived (from pll|CLKOP_inferred_clock)     Inferred_clkgroup_0     23   
+==================================================================================================================================================================
+
+
+Clock Load Summary
+******************
+
+                                                 Clock     Source                                Clock Pin                            Non-clock Pin     Non-clock Pin
+Clock                                            Load      Pin                                   Seq Example                          Seq Example       Comb Example 
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------
+pll|CLKOP_inferred_clock                         53        u_pll.PLLInst_0.CLKOP(EHXPLLJ)        spi_sck_xfer_pipe[2:0].C             -                 -            
+top_level|spi_sck_xfer_pipe_derived_clock[2]     23        spi_sck_xfer_pipe[2:0].Q[2](dffr)     u_sid_spi.spi_bit_counter[3:0].C     -                 -            
+=====================================================================================================================================================================

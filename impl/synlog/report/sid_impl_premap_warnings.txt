@@ -1,0 +1,1 @@
+@W: MT529 :"j:\alfheimsystems\projects\lattice\sid\sid.vhd":152:8:152:9|Found inferred clock pll|CLKOP_inferred_clock which controls 53 sequential elements including u_sid_spi.u_sid.state[0]. This clock has no specified timing constraint which may prevent conversion of gated or generated clocks and may adversely impact design performance. 

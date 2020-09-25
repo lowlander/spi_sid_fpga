@@ -1,0 +1,1 @@
+project -fileorder "D:/lscc/diamond/3.11_x64/cae_library/synthesis/vhdl/machxo2.vhd" "J:/AlfheimSystems/Projects/lattice/sid/sid.vhd" "J:/AlfheimSystems/Projects/lattice/sid/spi_sid.vhd" "J:/AlfheimSystems/Projects/lattice/sid/pll.vhd" "J:/AlfheimSystems/Projects/lattice/sid/top_level.vhd" 

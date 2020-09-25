@@ -1,0 +1,44 @@
+
+Copyright (C) 1994-2018 Synopsys, Inc.
+This Synopsys software and all associated documentation are proprietary to Synopsys, Inc.
+and may only be used pursuant to the terms and conditions of a written license agreement
+with Synopsys, Inc. All other use, reproduction, modification, or distribution of the
+Synopsys software or the associated documentation is strictly prohibited.
+Tool: Synplify Pro (R)
+Build: N-2018.03L-SP1-1
+Install: D:\lscc\diamond\3.11_x64\synpbase
+OS: Windows 6.2
+
+Hostname: THINK
+
+Implementation : impl
+Synopsys HDL compiler and linker, Version comp2018q2p1, Build 461R, Built Apr  1 2019 09:17:43
+
+Modified Files: 1
+FID:  path (prevtimestamp, timestamp)
+12       J:\AlfheimSystems\Projects\lattice\sid\top_level.vhd (2020-09-21 20:34:40, 2020-09-21 20:56:23)
+
+*******************************************************************
+Modules that may have changed as a result of file changes: 0
+MID:  lib.cell.view
+
+*******************************************************************
+Unmodified files: 13
+FID:  path (timestamp)
+0        D:\lscc\diamond\3.11_x64\cae_library\synthesis\vhdl\machxo2.vhd (2018-11-15 00:32:12)
+1        D:\lscc\diamond\3.11_x64\synpbase\lib\vhd\arith.vhd (2019-04-01 09:07:44)
+2        D:\lscc\diamond\3.11_x64\synpbase\lib\vhd\hyperents.vhd (2019-04-01 09:07:44)
+3        D:\lscc\diamond\3.11_x64\synpbase\lib\vhd\location.map (2019-04-01 16:01:20)
+4        D:\lscc\diamond\3.11_x64\synpbase\lib\vhd\numeric.vhd (2019-04-01 09:07:44)
+5        D:\lscc\diamond\3.11_x64\synpbase\lib\vhd\snps_haps_pkg.vhd (2019-04-01 09:07:44)
+6        D:\lscc\diamond\3.11_x64\synpbase\lib\vhd\std.vhd (2019-04-01 09:07:44)
+7        D:\lscc\diamond\3.11_x64\synpbase\lib\vhd\std1164.vhd (2019-04-01 09:07:44)
+8        D:\lscc\diamond\3.11_x64\synpbase\lib\vhd\umr_capim.vhd (2019-04-01 09:07:44)
+9        D:\lscc\diamond\3.11_x64\synpbase\lib\vhd\unsigned.vhd (2019-04-01 09:07:44)
+13       J:\AlfheimSystems\Projects\lattice\sid\pll.vhd (2020-09-21 20:31:41)
+10       J:\AlfheimSystems\Projects\lattice\sid\sid.vhd (2020-09-21 14:33:11)
+11       J:\AlfheimSystems\Projects\lattice\sid\spi_sid.vhd (2020-09-21 15:12:47)
+
+*******************************************************************
+Unchanged modules: 0
+MID:  lib.cell.view

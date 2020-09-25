@@ -1,0 +1,66 @@
+----------------------------------------------------------------------
+Report for cell top_level.TECH
+Register bits:  74 of 7209 (1.026%)
+I/O cells:      32
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                                 BB         8          100.0
+                            EHXPLLJ         1          100.0
+                            FD1P3AX        28          100.0
+                            FD1P3IX        19          100.0
+                            FD1P3JX         5          100.0
+                            FD1S3AX        18          100.0
+                            FD1S3AY         3          100.0
+                            FD1S3IX         1          100.0
+                                GSR         1          100.0
+                                 IB         4          100.0
+                            L6MUX21         1          100.0
+                               LUT4        95          100.0
+                                 OB        19          100.0
+                                OBZ         1          100.0
+                               OSCH         1          100.0
+                              PFUMX         3          100.0
+                        VERIFIC_PWR         1          100.0
+SUB MODULES
+                                pll         1
+                                sid         1
+                            spi_sid         1
+                              TOTAL       212
+----------------------------------------------------------------------
+Report for cell spi_sid.v1
+Instance Path : u_sid_spi
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                            FD1P3AX        28          100.0
+                            FD1P3IX        19          100.0
+                            FD1P3JX         5          100.0
+                            FD1S3AX        16           88.9
+                            FD1S3AY         3          100.0
+                            FD1S3IX         1          100.0
+                            L6MUX21         1          100.0
+                               LUT4        92           96.8
+                              PFUMX         3          100.0
+SUB MODULES
+                                sid         1
+                              TOTAL       169
+----------------------------------------------------------------------
+Report for cell sid.v1
+Instance Path : u_sid_spi.u_sid
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                            FD1P3AX        10           35.7
+                            FD1P3IX        18           94.7
+                            FD1P3JX         1           20.0
+                            FD1S3AX        12           66.7
+                            FD1S3AY         2           66.7
+                            FD1S3IX         1          100.0
+                               LUT4        30           31.6
+                              TOTAL        74
+----------------------------------------------------------------------
+Report for cell pll.v1
+Instance Path : u_pll
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                            EHXPLLJ         1          100.0
+                               LUT4         1            1.1
+                              TOTAL         2

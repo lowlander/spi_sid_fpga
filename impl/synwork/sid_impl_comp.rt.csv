@@ -1,0 +1,7 @@
+Library, Design Unit, compile Time, Peak Mem Usage
+work, Entity: VLO Architecture: syn_black_box, 0h:00m:00s,     73 MB
+work, Entity: EHXPLLJ Architecture: syn_black_box, 0h:00m:00s,     73 MB
+work, Entity: pll Architecture: structure, 0h:00m:00s,     73 MB
+work, Entity: sid Architecture: behavioral, 0h:00m:00s,     73 MB
+work, Entity: spi_sid Architecture: behavioral, 0h:00m:00s,     74 MB
+work, Entity: top_level Architecture: behavioral, 0h:00m:00s,     74 MB
